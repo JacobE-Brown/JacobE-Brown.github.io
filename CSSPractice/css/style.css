@@ -1,0 +1,32 @@
+/* Jacob Brown 2-15-24*/
+
+header{
+    background-color:aquamarine
+}
+footer{
+    background-color:aquamarine
+}
+p, ul, li{
+    font-size: 20;
+}
+
+/* coppied from https://www.w3schools.com/css/css_pseudo_classes.asp but with colors shifted */
+/* unvisited link */
+a:link {
+    color: #FF4D4D;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #993366;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #FFFFFF;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #198CFF;
+  } 
