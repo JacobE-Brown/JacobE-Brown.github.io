@@ -32,7 +32,7 @@ span.colors {
 span.more {
     color: blue;
     text-decoration: underline;
-    border: 1px, dashed, gray;
+    border: 1px dashed gray;
     background-color: #D69BBE;
 }
 
