@@ -21,26 +21,32 @@ main, footer {
 	background-color:#C5A98B;
 	padding:10px
 }
+
 body {
     background-color: #b8d1eb;
     text-decoration-color:#000000;
     font-family:'Times New Roman', Times, serif;
 }
+
 nav ul {
 	list-style-type: none;
 	}
+
 h1 {
     font-family:'Garamond', serif;
     font-size:xx-large;
 }
+
 h2 {
     font-family:'Georgia', serif;
     font-weight:normal;
     font-style:italic;
 }
+
 main ul {
     list-style-image:url("../images/tomato.png")
 }
+
 footer {
     background-color:burlywood;
     font-size:0.75em;
