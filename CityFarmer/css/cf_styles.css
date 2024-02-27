@@ -39,7 +39,7 @@ h2 {
     font-style:italic;
 }
 main ul {
-    list-style-image:url("/images/tomato.png")
+    list-style-image:url("../images/tomato.png")
 }
 footer {
     background-color:burlywood;
