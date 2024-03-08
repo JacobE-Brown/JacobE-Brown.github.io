@@ -1,0 +1,20 @@
+/* Practice CustomFonts Style Sheet */
+
+.websafe{
+    font-family: Arial, Courier, "Courier New";
+}
+.google {
+    font-family: 'Dosis', Georgia, serif;
+}
+
+.romanesco-regular {
+    font-family: "Romanesco", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.luxurious-roman-regular {
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
+    font-style: normal;
+}
