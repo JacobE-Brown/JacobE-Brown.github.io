@@ -27,10 +27,16 @@ table{
 
 
 table th {
-    margin-right: 3rem;
+    margin: 33%;
     padding: .5rem;
     background-color: var(--LapisLazuli);
+    table-layout: fixed;
+    width: 500px;
     
+}
+
+table td {
+    text-align: start;
 }
 
 caption {
