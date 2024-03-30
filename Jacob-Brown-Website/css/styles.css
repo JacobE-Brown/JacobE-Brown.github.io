@@ -51,7 +51,7 @@ header ul {
 nav {
     width: 100%;
     float: left;
-    background-color: var(--CrayolasLemonYellow);
+    background-color: var(--AztecGold);
     overflow: hidden;
 }
 
@@ -59,7 +59,7 @@ header nav li{
     list-style-type: none;
     float: left;
     padding: 1rem;
-    background-color: var(--CrayolasLemonYellow);
+    background-color: var(--AztecGold);
 }
 
 header nav li:hover{
@@ -97,13 +97,13 @@ section {
     background: var(--CrayolasLemonYellow);
     border: 2px solid #000000;
     margin-top: .25rem;
+    padding: .5rem;
 }
 
 
 footer {
-    font-family:Georgia, 'Times New Roman', Times, serif;
     border: 2px solid #000000;
-    background: #265999;
-    color: #CA9703;
+    background: var(--DarkMidnightBlue);
+    color: var(--AztecGold);
     margin-top: .25rem;
 }

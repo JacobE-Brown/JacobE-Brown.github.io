@@ -24,26 +24,24 @@ table{
     width: 100%;
 }
 
-
-
 table th {
-    margin: 33%;
     padding: .5rem;
     background-color: var(--LapisLazuli);
     table-layout: fixed;
-    width: 500px;
+    width: 500rem;
     
 }
 
-table td {
-    text-align: start;
+table td, table td * {
+    vertical-align: top;
+    font-size: 2rem;
+    padding: .05rem;
 }
 
+
 caption {
-    background: var(--CrayolasLemonYellow);
-    border: px solid black;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    background: var(--DarkCornflowerBlue);
+    font-size: 2rem;
 }
 
 .code {
