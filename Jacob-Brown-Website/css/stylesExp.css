@@ -24,6 +24,11 @@ table{
     width: 100%;
 }
 
+caption {
+    background: var(--DarkCornflowerBlue);
+    font-size: 2rem;
+}
+
 table th {
     padding: .5rem;
     background-color: var(--LapisLazuli);
@@ -32,16 +37,14 @@ table th {
     
 }
 
-table td, table td * {
+tbody {
+    background: var(--CrayolasLemonYellow);
+}
+
+table td{
     vertical-align: top;
     font-size: 2rem;
     padding: .05rem;
-}
-
-
-caption {
-    background: var(--DarkCornflowerBlue);
-    font-size: 2rem;
 }
 
 .code {
