@@ -1,39 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+:root{
+    /* 
+    Using CSS Variables to make color managment easier: https://www.w3schools.com/css/css3_variables.asp
+    Using the color scheme from SCHEMECOLOR: https://www.schemecolor.com/dark-blue-and-gold-pastels.php */
+
+    --DarkMidnightBlue: #00346A;
+    --DarkCornflowerBlue: #294385;
+    --Parchment: #F4F2C9;   
+    --CrayolasLemonYellow: #FEF3A0;
+    --EarthYellow: #D8BF68;
+    --AztecGold: #C59E4F;
+    --LapisLazuli: #1864A3;
+
+
+    /*Creating the default font size for "rem" font size to work: https://www.sitepoint.com/understanding-and-using-rem-units-in-css/*/
+    font-size: 16px;
+}
+
 body {
-    
-    background: #F4F2C9;
+    /*Defineing the Default perameters for all elements withing the body tag*/
+    background: var(--Parchment);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    color: #333333;
-    font-size: 1.5em;
+    color: #000000;
+    font-size: 1.5rem;
 }
 
 header {
     font-family:Georgia, 'Times New Roman', Times, serif;
     overflow: hidden;
-    background: #265999;
-    color: #CA9703;
-    padding: 15px;
-    margin: 15px;
+    background: var(--DarkMidnightBlue);
+    color: var(--AztecGold);
     border: 2px solid #000000;
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 3rem;
+    margin-left: 2rem;
 }
 
 header ul {
-    margin: 0;
+    font-size: 1.5rem;
     padding: 0;
+    margin-right: 0;
+    display: inline;
+    box-shadow: 1rem 1rem #000000;
+}
+nav {
+    width: 100%;
+    float: left;
+    background-color: var(--CrayolasLemonYellow);
+    overflow: hidden;
 }
 
-header li{
+header nav li{
     list-style-type: none;
     float: left;
-    margin-right: 15px;
+    padding: 1rem;
+    background-color: var(--CrayolasLemonYellow);
 }
 
+header nav li:hover{
+    background-color: var(--EarthYellow);
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: purple;
+}
+
+/* selected link */
+a:active {
+    color: blueviolet;
+  }
+
 main {
-    margin: 15px;
-    padding: 15px;
+    padding: 1rem;
     width: auto;
     height: auto;
 }

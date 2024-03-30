@@ -1,26 +1,28 @@
+
 .projectscontainer {
     overflow: hidden;
     border: 2px solid #000000;
 }
 .projectscontainer h2{
     text-align: center;
-    font-size: 2em;
+    font-size: 2rem;
     background: #D5Ad36;
-    padding: 15px;
-    margin: 15px;
+    padding: 1rem;
+    margin: 1.5rem;
     border: 2px solid #000000;
 }
 
 .projectbox {
-    background:  #F4F2C9;
+    background: var(--Parchment);
     border: 1px solid #000000;
     float: left;
-    margin: 15px;
-    width: 31%;
+    margin: 1rem;
+    width: 31%;   
+    text-align: center;
 }
 
 .projectbox p {
-    margin: 15px;
+    margin: 1rem;
 }
 
 .projectbox h4 {
@@ -33,5 +35,5 @@
 
 .code {
     font-family: monospace;
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
