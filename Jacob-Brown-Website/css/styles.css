@@ -25,7 +25,7 @@ body {
     color: #000000;
     font-size: 1.5rem;
 }
-
+/*Header definitions*/
 header {
     font-family:Georgia, 'Times New Roman', Times, serif;
     overflow: hidden;
@@ -39,6 +39,24 @@ header img {
     margin-right: auto;
     float: left;
     width: 6rem;
+    display: inline;
+    padding: 2rem;
+}
+
+header img.Maxwell{
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    width: 9rem;
+    display: inline;
+    margin-top: 1.75rem;
+    margin-right: 1.5rem;
+    padding: 0px;
+    border: 5px solid black;
+}
+
+header img.Maxwell:hover{
+    background: blue;
 }
 
 header h1 {
@@ -47,6 +65,7 @@ header h1 {
     font-size: 3rem;
     margin-left: 2rem;
 }
+/*Header definitions*/
 
 
 /*Selectors for the Nav Bar*/
@@ -75,7 +94,11 @@ header nav li:hover{
     background-color: var(--EarthYellow);
 }
 
-/* unvisited link */
+/* unvisited link for nav */
+nav a:link {
+    color: red;
+}
+/*unvisited link */
 a:link {
     color: red;
 }
