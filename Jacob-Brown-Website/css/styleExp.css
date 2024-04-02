@@ -16,35 +16,38 @@
     font-size: 16px;
 }
 
+.projectscontainer {
+    overflow: hidden;
+    border: 2px solid #000000;
+}
 
-table{
+.projectscontainer h2{
+    text-align: center;
+    font-size: 2rem;
+    background: #D5Ad36;
+    padding: 1rem;
+    margin: 1.5rem;
+    border: 2px solid #000000;
+}
+
+.projectbox {
     background: var(--Parchment);
-    color: var();
-    margin: auto;
-    width: 100%;
+    border: 1px solid #000000;
+    float: left;
+    margin: 1rem;
+    width: 31%;
 }
 
-caption {
-    background: var(--DarkCornflowerBlue);
-    font-size: 2rem;
+.projectbox p {
+    margin: 1rem;
 }
 
-table th {
-    padding: .5rem;
-    background-color: var(--LapisLazuli);
-    table-layout: fixed;
-    width: 500rem;
-    
-}
-
-tbody {
-    background: var(--CrayolasLemonYellow);
-}
-
-table td{
-    vertical-align: top;
-    font-size: 2rem;
-    padding: .05rem;
+.projectbox h4 {
+    text-align: center;
+    border: 1px solid #000000;
+    margin: 10px;
+    background-color: #D5Ad36;
+    padding: 15px;
 }
 
 .code {
