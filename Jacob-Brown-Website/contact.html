@@ -1,46 +1,79 @@
-<!doctype html> 
+<!doctype html>
 <!--Jacob Brown 
 	1-18-24-->
-<html lang="en"> 
-	<head>
-		<title>Contact</title>
-		<meta name="author" content="Jacob Brown">
-		<meta charset="UTF-8" />
- 		<meta name="description" content="Jacob Brown software app designer Boise Idaho" />
-  		<meta name="keywords" content="C# server-side HTML5 CSS3 client-side software developer programmer" />
-  		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-	</head>
-	<body> 
-        <header role="banner"> 
-			<a href="index.html" target="_blank"><img src="./images/home.png"></a>
+<html lang="en">
 
-			<h1>Jacob Brown</h1>
+<head>
+	<title>Contact</title>
+	<meta name="author" content="Jacob Brown">
+	<meta charset="UTF-8" />
+	<meta name="description" content="Jacob Brown software app designer Boise Idaho" />
+	<meta name="keywords" content="C# server-side HTML5 CSS3 client-side software developer programmer" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/ContactStyle.css">
+</head>
 
-			<a href="https://www.youtube.com/watch?v=ycHVUvvOwzY" target="_blank"><img src="./images/Maxwell.gif" alt="MaxWell the Cat" class="Maxwell"></a>
-			
-			<nav role="main">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="experience.html">Experience</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<section>
-				<h3>Contact Information</h3>
-				<p>Phone: (208) 111-1111</p>
-				<p>Email: fakeemail.unmade028@passmail.net</p> 
-			</section>
-		</main>
-		<footer>
-			<p>Find me on: <a target="_blank" href="https://www.linkedin.com/">LinkedIn</a> and <a target="_blank" href="https://github.com/">GitHub</a>
-			</p>
-			
-			<a href="https://www.linkedin.com/" target="_blank"><img src="./images/LinkedIn.png" alt="LinkedIn"></a>
-			<a href="https://github.com/" target="_blank"><img src="./images/GitHub.png" alt="GitHub"></a>
-		</footer>
-	</body>  
+<body>
+	<header role="banner">
+		<a href="index.html" target="_blank"><img src="./images/home.png"></a>
+
+		<h1>Jacob Brown</h1>
+
+		<a href="https://www.youtube.com/watch?v=ycHVUvvOwzY" target="_blank"><img src="./images/Maxwell.gif"
+				alt="MaxWell the Cat" class="Maxwell"></a>
+
+		<nav role="main">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="experience.html">Experience</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h3>Contact Information</h3>
+			<p>Phone: (208) 111-1111</p>
+			<p>Email: fakeemail.unmade028@passmail.net</p>
+		</section>
+		<section>
+			<form name="Contact Me Form" action="mailto:jacobbrown4@my.cwi.edu?subject=Personal%20Portfolio%20Mail"
+				enctype="text/plain" method="POST">
+				<fieldset>
+					<label for="Submit Name">Enter your name:</label>
+					<input type="text" name="Submit Name">
+					<label for="Email">Please enter you email:</label>
+					<input type="text" name="Email">
+					<label for="ReasonForContact">Why are you Reaching out?</label>
+					<select id="ReasonForContact" name="ReasonForContact">
+						<option value="Employer">Employer</option>
+						<option value="Recruiter">Recruiter</option>
+						<option value="Project Request">I would like to request a project.</option>
+						<option value="Just Reaching Out">Just Reaching Out</option>
+					</select>
+					<p>Which of my projects are you interested in?</p>
+					<input type="radio" name="project" id="The Historic Monument" value="The Historic Monument"> <label
+						for="The Historic Monument">The Historic Monument</label>
+					<input type="radio" name="project" id="Arch Linux" value="Arch Linux"> <label for="Arch Linux">Arch
+						Linux</label>
+					<input type="radio" name="project" id="Git" value="Git"> <label for="Git">Git</label>
+				</fieldset>
+				<label for="Message">Please write your message:</label>
+				<textarea id="Message" name="message"> Please Type your message:</textarea>
+				<input type="submit" name="submit" value="Submit">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Find me on: <a target="_blank" href="https://www.linkedin.com/">LinkedIn</a> and <a target="_blank"
+				href="https://github.com/">GitHub</a>
+		</p>
+
+		<a href="https://www.linkedin.com/" target="_blank"><img src="./images/LinkedIn.png" alt="LinkedIn"></a>
+		<a href="https://github.com/" target="_blank"><img src="./images/GitHub.png" alt="GitHub"></a>
+	</footer>
+</body>
+
 </html>
