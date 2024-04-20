@@ -1,157 +1,149 @@
 /* 
-    linear Gradient for background (body tag{background})
+Jacob Brown
+4-20-24
+
+** This is a list of all the elements that are required by the Personal Portfolio prompt and where they are located in the document **
+
+
 */
 
-/*Important a custom font from font squirrel, used on line 75 for h1
-  Alex Brush Regular
-*/
+/* fonts taken from google and Squrriel fonts*/
+
 @font-face {
-    font-family: 'alex_brushregular';
-    src: 
-         url('../fonts/AlexBrush-Regular.ttf') format('ttf'),
-         url('../fonts/alexbrush-regular-webfont.woff2') format('woff2'),
-         url('alexbrush-regular-webfont.woff') format('woff');
+    font-family: "alex_brushregular";
+    src: url("../fonts/AlexBrush-Regular.ttf") format("ttf"),
+        url("../fonts/alexbrush-regular-webfont.woff2") format("woff2"),
+        url("alexbrush-regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
-/*Imported google font used in line 145 for main h2
-  Cederville Cursive
-*/
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 
-:root{
+/* Fonts */
+
+/* Mobile First Philosophy */
+
+/* Main Styles  */
+:root {
     /* 
     Using CSS Variables to make color managment easier: https://www.w3schools.com/css/css3_variables.asp
     Using the color scheme from SCHEMECOLOR: https://www.schemecolor.com/dark-blue-and-gold-pastels.php */
 
-    --DarkMidnightBlue: #00346A;
+    --DarkMidnightBlue: #00346a;
     --DarkCornflowerBlue: #294385;
-    --Parchment: #F4F2C9;   
-    --CrayolasLemonYellow: #FEF3A0;
-    --EarthYellow: #D8BF68;
-    --AztecGold: #C59E4F;
-    --LapisLazuli: #1864A3;
-
-
-    /*Creating the default font size for "rem" font size to work: https://www.sitepoint.com/understanding-and-using-rem-units-in-css/*/
-    font-size: 16px;
+    --Parchment: #f4f2c9;
+    --CrayolasLemonYellow: #fef3a0;
+    --EarthYellow: #d8bf68;
+    --AztecGold: #c59e4f;
+    --LapisLazuli: #1864a3;
 }
 
 body {
     /*Defineing the Default perameters for all elements withing the body tag*/
-    background: linear-gradient(to top, var(--AztecGold), var(--CrayolasLemonYellow));
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(
+        to top,
+        var(--AztecGold),
+        var(--CrayolasLemonYellow)
+    );
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
     color: #000000;
     font-size: 1.5rem;
 }
+
 /*Header definitions*/
 header {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    overflow: hidden;
-    background: linear-gradient(to right, var(--DarkCornflowerBlue) 30%, var(--DarkMidnightBlue));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: linear-gradient(
+        to right,
+        var(--DarkCornflowerBlue) 30%,
+        var(--DarkMidnightBlue)
+    );
     color: var(--AztecGold);
     border: 2px solid #000000;
     border-radius: 1rem;
 }
 
-header img {
-    margin-left: auto;
-    margin-right: auto;
-    float: left;
-    width: 6rem;
-    display: inline;
-    padding: 2rem;
+/* Ordering property for the flexbox for the media querries */
+
+/* ordering property for Home.png */
+header :nth-child(1) {
+    order: 2;
+}
+/* orering property for "Jacob Brown"  */
+header :nth-child(2) {
+    order: 1;
+}
+/* ordering property for "Maxwell" */
+header :nth-child(3) {
+    order: 3;
+}
+/* ordering property for "Nav" */
+header :nth-child(4) {
+    order: 4;
 }
 
-header img.Maxwell{
-    margin-left: auto;
-    margin-right: auto;
-    float: right;
+/* Ordering property for the flexbox for the media querries */
+
+header img {
+    max-width: 10rem;
+    padding: 0.25rem;
+}
+
+header img.Maxwell {
     width: 9rem;
-    display: inline;
-    margin-top: 1.75rem;
-    margin-right: 1.5rem;
     padding: 0px;
     border: 5px solid black;
 }
 
-header img.Maxwell:hover{
-    background: blue;
-}
-
 header h1 {
-    float: left;
-    font-family: 'alex_brushregular', cursive;
-    font-size: 4rem;
-    margin-left: 2rem;
+    font-family: "alex_brushregular", cursive;
+    font-size: 4.5rem;
     height: auto;
 }
+
 /*Header definitions*/
 
-
 /*Selectors for the Nav Bar*/
-header ul {
-    font-size: 1.5rem;
-    padding: 0;
-    margin-right: 0;
-    display: inline;
-    box-shadow: 1rem 1rem #000000;
-}
-nav {
+
+header nav {
     width: 100%;
-    float: left;
     background: var(--AztecGold);
-    overflow: hidden;
+    border-radius: .25rem;
 }
 
-header nav li{
+header nav ul {
+    display: flex;
     list-style-type: none;
-    float: left;
     padding: 1rem;
-    background: var(--AztecGold);
 }
 
-header nav li:hover{
-    background-color: var(--EarthYellow);
+header nav ul li a {
+    padding: 1rem;
+    text-decoration: none;
 }
 
-/* unvisited link for nav */
-nav a:link {
-    color: red;
+header nav ul li a:hover {
+    background: var(--EarthYellow);
 }
-/*unvisited link */
-a:link {
-    color: red;
-}
-
-/* visited link */
-a:visited {
-    color: green;
-}
-
-/* mouse over link */
-a:hover {
-    color: purple;
-}
-
-/* selected link */
-a:active {
-    color: blueviolet;
-  }
 
 /*Selectors for the Nav Bar*/
-
-main {
-    width: auto;
-    height: auto;
-}
 
 section {
-    background: linear-gradient(to right, var(--CrayolasLemonYellow), var(--EarthYellow) 50%);
+    background: linear-gradient(
+        to right,
+        var(--CrayolasLemonYellow),
+        var(--EarthYellow) 50%
+    );
     border: 2px solid #000000;
-    margin-top: .25rem;
-    padding: .5rem;
+    margin-top: 0.25rem;
+    padding: 0.5rem;
     border-radius: 4px;
 }
 
@@ -168,7 +160,11 @@ section h2 {
 
 footer {
     border: 2px solid #000000;
-    background: linear-gradient(to right, var(--DarkCornflowerBlue) 30%, var(--DarkMidnightBlue));
+    background: linear-gradient(
+        to right,
+        var(--DarkCornflowerBlue) 30%,
+        var(--DarkMidnightBlue)
+    );
     color: var(--AztecGold);
     overflow: hidden;
     text-align: center;
@@ -176,11 +172,19 @@ footer {
 
 footer p {
     font-size: 1.5rem;
-    margin: .75rem;
+    margin: 0.75rem;
 }
 
 footer img {
     width: 4rem;
-    padding: .5rem;
+    padding: 0.5rem;
     margin: 0;
+}
+
+/* Media Querry for Descktop eviroment */
+
+@media screen and (min-width: 425px) {
+    body {
+        background-color: lightblue;
+    }
 }
