@@ -54,6 +54,7 @@ body {
 
 /*Header definitions*/
 header {
+    max-width: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -93,7 +94,7 @@ header :nth-child(4) {
 
 header img {
     max-width: 10rem;
-    padding: 0.25rem;
+    padding: 0.25em;
 }
 
 header img.Maxwell {
@@ -104,8 +105,10 @@ header img.Maxwell {
 
 header h1 {
     font-family: "alex_brushregular", cursive;
-    font-size: 4.5rem;
+    font-size: 4rem;
     height: auto;
+    text-align: center;
+    margin-bottom: 0.25rem;
 }
 
 /*Header definitions*/
@@ -115,13 +118,15 @@ header h1 {
 header nav {
     width: 100%;
     background: var(--AztecGold);
-    border-radius: .25rem;
+    border-radius: 0% 0% 1rem 1rem;
 }
 
 header nav ul {
     display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     list-style-type: none;
-    padding: 1rem;
+    padding: 0%;
 }
 
 header nav ul li a {
@@ -130,7 +135,20 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
+    background: var(--DarkMidnightBlue);
+    color: black;
+}
+
+header nav ul li a:visited {
+    background: var(--LapisLazuli);
+}
+
+header nav ul li a:link {
     background: var(--EarthYellow);
+}
+
+header nav ul li a:active {
+    background: var(--Parchment);
 }
 
 /*Selectors for the Nav Bar*/
@@ -149,6 +167,7 @@ section {
 
 section h2 {
     font-family: "Cedarville Cursive", cursive;
+    text-align: center;
     font-weight: 400;
     font-style: normal;
     margin: 0;
@@ -185,6 +204,38 @@ footer img {
 
 @media screen and (min-width: 425px) {
     body {
-        background-color: lightblue;
+        header {
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        /* Ordering property for the flexbox for the media querries */
+
+        /* ordering property for Home.png */
+        header :nth-child(1) {
+            order: 1;
+        }
+        /* orering property for "Jacob Brown"  */
+        header :nth-child(2) {
+            order: 2;
+        }
+        /* ordering property for "Maxwell" */
+        header :nth-child(3) {
+            order: 3;
+        }
+        /* ordering property for "Nav" */
+        header :nth-child(4) {
+            order: 4;
+        }
+
+        /* Ordering property for the flexbox for the media querries */
+
+        header nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 1rem;
+            padding: 0%;
+        }
     }
 }
