@@ -1,0 +1,21 @@
+table {
+    border: solid black 1px;
+    
+}
+
+table caption {
+    text-align: center;
+    font-size: 2rem;
+    background: var(--AztecGold);
+    padding: 1rem;
+    border: 2px solid black;
+    color: black;
+    }
+
+table thead tr th {
+    border: 2px solid black;
+}
+
+table tbody tr td {
+    border: 2px solid black;
+}
