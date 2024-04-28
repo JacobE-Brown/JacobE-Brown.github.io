@@ -57,8 +57,9 @@ header {
     max-width: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    gap: 20px;
 
     font-family: Georgia, "Times New Roman", Times, serif;
     background: linear-gradient(
