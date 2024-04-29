@@ -142,7 +142,7 @@ header nav ul li a:hover {
 }
 
 header nav ul li a:visited {
-    background: var(--LapisLazuli);
+    background: var(--Parchment);
 }
 
 header nav ul li a:link {
@@ -150,7 +150,7 @@ header nav ul li a:link {
 }
 
 header nav ul li a:active {
-    background: var(--Parchment);
+    background: var(--CrayolasLemonYellow);
 }
 
 /*Selectors for the Nav Bar*/
