@@ -203,39 +203,37 @@ footer img {
 /* Media Querry for Descktop eviroment */
 
 @media screen and (min-width: 425px) {
-    body {
-        header {
-            justify-content: space-between;
-            flex-direction: row;
-        }
+    header {
+        justify-content: space-between;
+        flex-direction: row;
+    }
 
-        /* Ordering property for the flexbox for the media querries */
+    /* Ordering property for the flexbox for the media querries */
 
-        /* ordering property for Home.png */
-        header :nth-child(1) {
-            order: 1;
-        }
-        /* orering property for "Jacob Brown"  */
-        header :nth-child(2) {
-            order: 2;
-        }
-        /* ordering property for "Maxwell" */
-        header :nth-child(3) {
-            order: 3;
-        }
-        /* ordering property for "Nav" */
-        header :nth-child(4) {
-            order: 4;
-        }
+    /* ordering property for Home.png */
+    header :nth-child(1) {
+        order: 1;
+    }
+    /* orering property for "Jacob Brown"  */
+    header :nth-child(2) {
+        order: 2;
+    }
+    /* ordering property for "Maxwell" */
+    header :nth-child(3) {
+        order: 3;
+    }
+    /* ordering property for "Nav" */
+    header :nth-child(4) {
+        order: 4;
+    }
 
-        /* Ordering property for the flexbox for the media querries */
+    /* Ordering property for the flexbox for the media querries */
 
-        header nav ul {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            gap: 1rem;
-            padding: 0%;
-        }
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 0%;
     }
 }
