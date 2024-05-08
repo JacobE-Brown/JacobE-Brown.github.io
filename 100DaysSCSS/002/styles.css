@@ -1,0 +1,97 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, black 10%, gray 100%);
+  color: #fff;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-icon {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+.menu-icon .line-1,
+.menu-icon .line-2,
+.menu-icon .line-3 {
+  height: 8px;
+  width: 80px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease-in-out;
+  z-index: 40;
+  position: relative;
+  top: 10px;
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+.menu-icon .eye {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  top: -45px;
+  overflow: hidden;
+}
+.menu-icon .eye .pupil {
+  height: 15px;
+  width: 15px;
+  background-color: tomato;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s ease-out;
+}
+.menu-icon .line-2 {
+  margin: 14px 0;
+}
+
+.line-1.active {
+  transform: translate(0px, -15px);
+}
+
+.line-2.active {
+  transform: translate(-30px, 15px) rotate(60deg);
+}
+
+.line-3.active {
+  transform: translate(30px, -7px) rotate(-60deg);
+}
+
+.line-1.no-animation {
+  transform: translate(0px, 0px); /* Set the original position */
+}
+
+.line-2.no-animation {
+  transform: translate(0px, 0px); /* Set the original position */
+}
+
+.line-3.no-animation {
+  transform: translate(0px, 0px); /* Set the original position */
+}
+
+.pupil {
+  /* Other styles */
+  visibility: hidden; /* Initially hide the pupil */
+}
+
+.visible {
+  visibility: visible; /* Show the pupil when the class is toggled */
+}/*# sourceMappingURL=styles.css.map */

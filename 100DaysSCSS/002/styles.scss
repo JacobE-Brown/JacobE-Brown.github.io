@@ -1,0 +1,120 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    background: linear-gradient((45deg, black 10%, gray 100%));
+    color: #fff;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// Variables Menu Icon
+
+$menu-icon-line-height: 8px;
+$menu-icon-line-space: 14px;
+$menu-icon-line-offsetY: $menu-icon-line-height + $menu-icon-line-space;
+$menu-icon-height: (3 * $menu-icon-line-height) + (2 * $menu-icon-line-space);
+$cubic-bezier-in: cubic-bezier(0.3, 1, 0.7, 1);
+$cubic-bezier-out: cubic-bezier(1, 0.7, 1, 0.3);
+
+.menu-icon {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    z-index: 50;
+    // border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+
+    //Line Properties
+    .line-1,
+    .line-2,
+    .line-3 {
+        height: $menu-icon-line-height;
+        width: 80px;
+        background-color: #fff;
+        border-radius: 3px;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+        transition: background-color 0.2s ease-in-out;
+        z-index: 40;
+        position: relative;
+        top: 10px;
+        transition: transform 0.3s ease; /* Add transition for smooth animation */
+    }
+
+    .eye {
+        $eyeBox: 45px;
+        width: $eyeBox;
+        height: $eyeBox;
+        // border: 1px solid black;
+        position: relative;
+        top: -45px;
+        overflow: hidden;
+        // visibility: hidden;
+
+        .pupil {
+            $eyeRadius: 15px;
+            height: $eyeRadius;
+            width: $eyeRadius;
+            background-color: tomato;
+            border-radius: 50%;
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+            transition: transform 0.1s ease-out;
+        }
+    }
+    // Line Properties
+
+    .line-2 {
+        margin: $menu-icon-line-space 0;
+    }
+}
+
+//Originally I was trying to use animation like in the example work, but after consulting with ChatGPT it showed me that transform did the same task more easily and neater than defining many different keyframes. It also worked better with my js script, whereas before I was getting weird rubber banding where the animation would not work in reverse, even whem making a reverse animation and applying it to the .line-#.no-animaiton properties.
+
+.line-1.active {
+    transform: translate(0px, -15px);
+}
+
+.line-2.active {
+    transform: translate(-30px, 15px) rotate(60deg);
+}
+
+.line-3.active {
+    transform: translate(30px, -7px) rotate(-60deg);
+}
+
+.line-1.no-animation {
+    transform: translate(0px, 0px); /* Set the original position */
+}
+
+.line-2.no-animation {
+    transform: translate(0px, 0px); /* Set the original position */
+}
+
+.line-3.no-animation {
+    transform: translate(0px, 0px); /* Set the original position */
+}
+
+
+.pupil {
+    /* Other styles */
+    visibility: hidden; /* Initially hide the pupil */
+}
+
+.visible {
+    visibility: visible; /* Show the pupil when the class is toggled */
+}
