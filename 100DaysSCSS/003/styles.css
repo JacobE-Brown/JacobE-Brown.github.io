@@ -38,6 +38,7 @@
   height: 200px;
   width: 200px;
   z-index: 0;
+  animation: changeSky 5s ease-out infinite;
 }
 .circle .sun {
   position: absolute;
@@ -49,24 +50,25 @@
   top: 7px;
   left: 85px;
   transform-origin: 40% 400%;
-  animation: moveSun 5s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+  animation: moveSun 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
 }
 .circle .ground {
   position: absolute;
-  background-color: bisque;
+  background-color: #fdecdc;
   height: 100px;
   width: 200px;
   bottom: -20%;
   z-index: 3;
+  animation: changeGround 5s ease-out infinite;
 }
 .circle .pyramide {
   position: absolute;
   height: 57px;
   width: 116px;
-  border: white dotted 2px;
   top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 5;
 }
 .circle .pyramide .side-1 {
   position: absolute;
@@ -78,6 +80,7 @@
   background-color: red; /* Change color as needed */
   bottom: 0%;
   left: 0%;
+  animation: shade-side-1 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
 }
 .circle .pyramide .side-2 {
   position: absolute;
@@ -88,6 +91,20 @@
   background-color: blue; /* Change color as needed */
   bottom: 0%;
   left: 50%;
+  animation: shade-side-2 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+}
+.circle .shadow {
+  position: absolute;
+  -webkit-clip-path: polygon(42px 0, 158px 0, 50% 100%);
+          clip-path: polygon(42px 0, 158px 0, 50% 100%);
+  background-color: green;
+  height: 50px;
+  width: 200px;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  animation: changeShadow 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
 }
 
 @keyframes moveSun {
@@ -104,7 +121,96 @@
     transform: rotate(110deg);
   }
 }
-@keyframes changeSky {}
-@keyframes shadow {}
-@keyframes change-side-1 {}
-@keyframes change-side-2 {}/*# sourceMappingURL=styles.css.map */
+@keyframes changeSky {
+  0% {
+    background-color: #1d5d9b;
+  }
+  15% {
+    background-color: #f4d160;
+  }
+  25% {
+    background-color: #75c2f6;
+  }
+  30% {
+    background-color: #75c2f6;
+  }
+  70% {
+    background-color: #75c2f6;
+  }
+  100% {
+    background-color: #1d5d9b;
+  }
+}
+@keyframes changeGround {
+  0% {
+    background-color: #907d6e;
+  }
+  5% {
+    background-color: #907d6e;
+  }
+  30% {
+    background-color: #fdecdc;
+  }
+  45% {
+    background-color: #fdecdc;
+  }
+  70% {
+    background-color: #fdecdc;
+  }
+  80% {
+    background-color: #907d6e;
+  }
+  100% {
+    background-color: #907d6e;
+  }
+}
+@keyframes changeShadow {
+  0% {
+    -webkit-clip-path: polygon(42px 0, 158px 0, 200px 30%);
+            clip-path: polygon(42px 0, 158px 0, 200px 30%);
+    background-color: #907d6e;
+  }
+  30% {
+    -webkit-clip-path: polygon(42px 0, 158px 0, 150px 60%);
+            clip-path: polygon(42px 0, 158px 0, 150px 60%);
+    background-color: #f0d0b8;
+  }
+  45% {
+    -webkit-clip-path: polygon(42px 0, 158px 0, 150px 60%);
+            clip-path: polygon(42px 0, 158px 0, 150px 60%);
+    background-color: #f0d0b8;
+  }
+  100% {
+    -webkit-clip-path: polygon(42px 0, 158px 0, -200px 40%);
+            clip-path: polygon(42px 0, 158px 0, -200px 40%);
+    background-color: #907d6e;
+  }
+}
+@keyframes shade-side-1 {
+  0% {
+    background-color: #c8a58a;
+  }
+  30% {
+    background-color: #f5e1bf;
+  }
+  45% {
+    background-color: #f5e1bf;
+  }
+  100% {
+    background-color: #c8a58a;
+  }
+}
+@keyframes shade-side-2 {
+  0% {
+    background-color: #d4af92;
+  }
+  30% {
+    background-color: #ddc7af;
+  }
+  45% {
+    background-color: #ddc7af;
+  }
+  100% {
+    background-color: #d4af92;
+  }
+}/*# sourceMappingURL=styles.css.map */
