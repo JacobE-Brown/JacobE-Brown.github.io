@@ -1,0 +1,116 @@
+//boxShadow from https://getcssscan.com/css-box-shadow-examples
+
+@use "sass:math";
+
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    // background: #e56262;
+    background: linear-gradient(45deg, #8a4495 10%, #fbd773 100%);
+    color: #333;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$bezier: cubic-bezier(0.21, 0.98, 0.6, 0.99);
+
+$dotOneDiam: 100px;
+$dotTwoDiam: 75px;
+$dotThreeDiam: 50px;
+
+$centerDotOne: math.div($dotOneDiam, 2);
+$centerDotTwo: math.div($dotTwoDiam, 2);
+$centerDotThree: math.div($dotThreeDiam, 2);
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot-1 {
+    position: absolute;
+    height: $dotOneDiam;
+    width: $dotOneDiam;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    top: calc(50% - #{$centerDotOne});
+    left: calc(50% - #{$centerDotOne});
+    border-radius: 50%;
+    animation: dot-1-animation 5s alternate infinite
+        cubic-bezier(0.21, 0.98, 0.6, 0.99);
+}
+
+.dot-2 {
+    position: absolute;
+    height: $dotTwoDiam;
+    width: $dotTwoDiam;
+    background-color: #fff;
+    top: calc(50% - #{$centerDotTwo});
+    left: calc(50% - #{$centerDotTwo});
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    animation: dot-2-animation 5s alternate infinite
+        cubic-bezier(0.21, 0.98, 0.6, 0.99);
+}
+
+.dot-3 {
+    position: absolute;
+    height: $dotThreeDiam;
+    width: $dotThreeDiam;
+    background-color: #fff;
+    top: calc(50% - #{$centerDotThree});
+    left: calc(50% - #{$centerDotThree});
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    animation: dot-3-animation 5s alternate infinite
+        cubic-bezier(0.21, 0.98, 0.6, 0.99);
+}
+
+@keyframes dot-1-animation {
+    0%,
+    10% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes dot-2-animation {
+  0%,
+  40% {
+      transform: scale(0);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+@keyframes dot-3-animation {
+  0%,
+  70% {
+      transform: scale(0);
+  }
+  100% {
+      transform: scale(1);
+  }
+}

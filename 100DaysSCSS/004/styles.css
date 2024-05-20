@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: linear-gradient(45deg, #8a4495 10%, #fbd773 100%);
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dot-1 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  border-radius: 50%;
+  animation: dot-1-animation 5s alternate infinite cubic-bezier(0.21, 0.98, 0.6, 0.99);
+}
+
+.dot-2 {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  background-color: #fff;
+  top: calc(50% - 37.5px);
+  left: calc(50% - 37.5px);
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  animation: dot-2-animation 5s alternate infinite cubic-bezier(0.21, 0.98, 0.6, 0.99);
+}
+
+.dot-3 {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  animation: dot-3-animation 5s alternate infinite cubic-bezier(0.21, 0.98, 0.6, 0.99);
+}
+
+@keyframes dot-1-animation {
+  0%, 10% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes dot-2-animation {
+  0%, 40% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes dot-3-animation {
+  0%, 70% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=styles.css.map */
