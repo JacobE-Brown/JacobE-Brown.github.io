@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+<div class="frame">
+    <div class="center">
+        <div class="statisticsTable">
+            <div class="header">
+                <div class="report">
+                    <p class="large-font">WEEKLY REPORT</p>
+                    <p class="small-font">01. Feb - 07. Feb</p>
+                </div>
+                <div class="revenue">
+                    <p class="small-font">Revenue</p>
+                    <p class="large-font">$ 3621.79</p>
+                </div>
+            </div>
+            <div class="data-body">
+                <div class="graph-header">
+                    <div class="legend-1"></div>
+                    <p>Views</p>
+                    <div class="legend-2"></div>
+                    <p>Purchases</p>
+                </div>
+                <svg class="graph-body">
+                    <!--height: 8rem;
+                            8rem == 128px
+                            8 * 16
+                        width: 100%;
+                            $bodySquareHeight: 175px;
+
+                        283.15 128px upon inspection
+                    -->
+
+                    <!-- Define Grid Lines -->
+                    <line
+                        class="grid-Line"
+                        x1="10"
+                        y1="32"
+                        x2="273"
+                        y2="32"
+                        stroke="#FFDEAD"
+                        stroke-width="1"
+                    />
+
+                    <line
+                        class="grid-Line"
+                        x1="10"
+                        y1="64"
+                        x2="273"
+                        y2="64"
+                        stroke="#FFDEAD"
+                        stroke-width="1"
+                    />
+
+                    <line
+                        class="grid-Line"
+                        x1="10"
+                        y1="96"
+                        x2="273"
+                        y2="96"
+                        stroke="#FFDEAD"
+                        stroke-width="1"
+                    />
+                    <!-- Define Grid-Lines -->
+                    <!-- Define data-lines -->
+
+                    <!-- <line
+                        class="line-1"
+                        x1="50"
+                        y1="50"
+                        x2="350"
+                        y2="150"
+                        stroke="red"
+                        stroke-width="2"
+                    />
+                    <line
+                        class="line-2"
+                        x1="50"
+                        y1="150"
+                        x2="350"
+                        y2="50"
+                        stroke="blue"
+                        stroke-width="2"
+                    /> -->
+                    <defs>
+                        <marker
+                            id="circleMarker-blue"
+                            markerWidth="6"
+                            markerHeight="6"
+                            refX="3"
+                            refY="3"
+                        >
+                            <circle cx="3" cy="3" r="2" fill="blue" />
+                        </marker>
+                    </defs>
+                    <defs>
+                        <marker
+                            id="circleMarker-red"
+                            markerWidth="6"
+                            markerHeight="6"
+                            refX="3"
+                            refY="3"
+                        >
+                            <circle cx="3" cy="3" r="2" fill="red" />
+                        </marker>
+                    </defs>
+
+                    <!-- the words take up about 35px -->
+                    <polyline class="data-line-blue"
+                        points="35,50 70,50 105,30 140,50 175,25 210,60 245,90"
+                        fill="none"
+                        stroke="blue"
+                        stroke-width="2"
+
+                        marker-start="url(#circleMarker-blue)"
+                        marker-mid="url(#circleMarker-blue)"
+                        marker-end="url(#circleMarker-blue)"
+                    />
+
+                    <polyline class="data-line-red"
+                    points="35,20 70,40 105,90 140,60 175,65 210,50 245,10"
+                    fill="none"
+                    stroke="red"
+                    stroke-width="2"
+
+                    marker-start="url(#circleMarker-red)"
+                    marker-mid="url(#circleMarker-red)"
+                    marker-end="url(#circleMarker-red)"
+                />
+                </svg>
+                <p class="week-days">MON TUE WED THU FRI SAT SUN</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>

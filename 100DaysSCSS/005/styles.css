@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: linear-gradient(45deg, #8a4495 10%, #fbd773 100%);
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.statisticsTable {
+  height: 231.63px;
+  width: 283.15px;
+  background-color: #fff;
+  display: block;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.header {
+  height: 56.63px;
+  width: 100%;
+  background-color: #fbd773;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+}
+.header .large-font,
+.header .small-font {
+  color: #fff;
+  font-weight: bold;
+}
+.header .large-font {
+  margin: 0%;
+  font-size: 1rem;
+}
+.header .small-font {
+  margin: 0%;
+  font-size: 0.8rem;
+}
+.header .report {
+  flex: 2;
+  padding: 0.5em;
+}
+.header .revenue {
+  flex: 1;
+  padding: 0.5em;
+}
+
+.data-body {
+  height: 118.37px;
+  width: 100%;
+  margin: 0%;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.data-body .graph-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 20px;
+  font-size: 13px;
+}
+.data-body .graph-header .legend-1,
+.data-body .graph-header .legend-2 {
+  width: 25px;
+  height: 4.2px;
+  margin-right: 10px;
+}
+.data-body .graph-header .legend-1 {
+  background-color: blue;
+}
+.data-body .graph-header .legend-2 {
+  background-color: red;
+}
+.data-body .graph-header p {
+  margin: 0%;
+  margin-right: 10px;
+}
+.data-body .graph-body {
+  height: 8rem;
+  width: 100%;
+}
+.data-body .week-days {
+  position: relative;
+  top: -1.5rem;
+  width: 100%;
+  margin: 1rem;
+  text-align: center;
+  word-spacing: 9px;
+  font-size: small;
+}/*# sourceMappingURL=styles.css.map */
