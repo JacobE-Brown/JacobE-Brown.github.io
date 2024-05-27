@@ -1,0 +1,204 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+/* Frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(200deg, #8a4495 10%, #fbd773 100%);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Variables */
+/* Social Thumbnail Card */
+.social-thumbnail-card {
+  width: 325px;
+  height: 325px;
+  background-color: #f8f6f0;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  /* Main Card Container */
+  /* Side Card Container */
+}
+.social-thumbnail-card .main-card-container {
+  flex: 2;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fbd773;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  /* Main Card Image Box */
+  /* Hover Effect for Semircles */
+  /* Main Card Text */
+  /* Main Card Buttons */
+}
+.social-thumbnail-card .main-card-container .main-card-image-box {
+  width: 7rem;
+  height: 7rem;
+  padding: 1rem;
+  margin-top: 0.75rem;
+  position: relative; /* Add position property */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /* Image Container */
+  /* Animated Semicircle */
+}
+.social-thumbnail-card .main-card-container .main-card-image-box .image-container {
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.social-thumbnail-card .main-card-container .main-card-image-box .image-container img {
+  max-width: 100%;
+  height: auto;
+}
+.social-thumbnail-card .main-card-container .main-card-image-box .animated-semicirlce-1,
+.social-thumbnail-card .main-card-container .main-card-image-box .animated-semicirlce-2 {
+  position: absolute;
+  box-sizing: border-box;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 50%;
+  transition: all 1.5s ease-in-out;
+}
+.social-thumbnail-card .main-card-container .main-card-image-box .animated-semicirlce-1 {
+  width: 7.75rem;
+  height: 7.75rem;
+  border-color: #7f9f8f #7f9f8f #7f9f8f transparent;
+}
+.social-thumbnail-card .main-card-container .main-card-image-box .animated-semicirlce-2 {
+  width: 8.25rem;
+  height: 8.25rem;
+  border-color: #7f9f8f transparent #7f9f8f #7f9f8f;
+}
+.social-thumbnail-card .main-card-container .main-card-image-box:hover .animated-semicirlce-1 {
+  transform: rotate(360deg);
+  border-color: #c85b8a #c85b8a #c85b8a transparent;
+}
+.social-thumbnail-card .main-card-container .main-card-image-box:hover .animated-semicirlce-2 {
+  transform: rotate(-360deg);
+  border-color: #c85b8a transparent #c85b8a #c85b8a;
+}
+.social-thumbnail-card .main-card-container .main-card-text {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.social-thumbnail-card .main-card-container .main-card-text p.profile-name {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.social-thumbnail-card .main-card-container .main-card-buttons {
+  flex: 1 0 auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.social-thumbnail-card .main-card-container .main-card-buttons .main-card-button {
+  background-color: #fbd773;
+  border: #333 2px solid;
+  color: #8a4495;
+  font-weight: bold;
+  width: 10rem;
+  padding: 0.5rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.75s ease-in-out;
+}
+.social-thumbnail-card .main-card-container .main-card-buttons .main-card-button:hover {
+  background-color: #c85b8a;
+}
+.social-thumbnail-card .side-card-container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fbd773;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+  /* Side Card */
+}
+.social-thumbnail-card .side-card-container .side-card {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  background: #f8a479;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: background-color 0.75s ease-in-out;
+}
+.social-thumbnail-card .side-card-container .side-card:hover {
+  background-color: #c85b8a;
+}
+
+/* Additional Styling */
+.number {
+  color: #8a4495;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.618rem;
+}
+
+.profile-name {
+  color: #8a4495;
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.618rem;
+}
+
+.words-small {
+  color: #8a4495;
+  margin: 0;
+  padding: 0;
+  margin-top: -0.5rem;
+  font-size: 1rem;
+}/*# sourceMappingURL=styles.css.map */

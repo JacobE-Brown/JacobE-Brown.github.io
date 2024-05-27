@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* Frame */
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(200deg, #8a4495 10%, #fbd773 100%);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Variables */
+$social-thumbnail-card-side: 325px;
+$golden-ratio: 1.618;
+$border-radius: 10px;
+$font-color-1: #8a4495;
+$background-color-1: #fbd773;
+$background-color-2: #f8a479;
+$background-hover-color-1: #c85b8a;
+
+/* Social Thumbnail Card */
+.social-thumbnail-card {
+    width: $social-thumbnail-card-side;
+    height: $social-thumbnail-card-side;
+    background-color: #f8f6f0;
+    display: flex;
+    border-radius: $border-radius;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+    /* Main Card Container */
+    .main-card-container {
+        flex: 2;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-color: $background-color-1;
+        border-radius: $border-radius 0 0 $border-radius;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        cursor: pointer;
+
+        /* Main Card Image Box */
+        .main-card-image-box {
+            width: 7rem; 
+            height: 7rem; 
+            padding: 1rem;
+            margin-top: .75rem;
+            position: relative; /* Add position property */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // border: #333 2px solid;
+
+            border-radius: 50%;
+
+            /* Image Container */
+            .image-container {
+                position: absolute;
+                width: 7rem;
+                height: 7rem;
+                border-radius: 50%;
+                overflow: hidden;
+                box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            /* Animated Semicircle */
+            .animated-semicirlce-1,
+            .animated-semicirlce-2 {
+                position: absolute;
+                box-sizing: border-box;
+                border-width: 3px;
+                border-style: solid;
+                border-radius: 50%;
+                transition: all 1.5s ease-in-out;
+            }
+
+            .animated-semicirlce-1 {
+                width: 7.75rem;
+                height: 7.75rem;
+                border-color: #7f9f8f #7f9f8f #7f9f8f transparent;
+            }
+
+            .animated-semicirlce-2 {
+                width: 8.25rem;
+                height: 8.25rem;
+                border-color: #7f9f8f transparent #7f9f8f #7f9f8f;
+            }
+        }
+
+        /* Hover Effect for Semircles */
+        .main-card-image-box:hover .animated-semicirlce-1 {
+            transform: rotate(360deg);
+            border-color: $background-hover-color-1 $background-hover-color-1
+                $background-hover-color-1 transparent;
+        }
+
+        .main-card-image-box:hover .animated-semicirlce-2 {
+            transform: rotate(-360deg);
+            border-color: $background-hover-color-1 transparent
+                $background-hover-color-1 $background-hover-color-1;
+        }
+
+        /* Main Card Text */
+        .main-card-text {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+
+            p.profile-name {
+                margin-top: 0.25rem;
+                margin-bottom: 0.25rem;
+            }
+        }
+
+        /* Main Card Buttons */
+        .main-card-buttons {
+            flex: 1 0 auto;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+
+            .main-card-button {
+                background-color: $background-color-1;
+                border: #333 2px solid;
+                color: $font-color-1;
+                font-weight: bold;
+                width: 10rem;
+                padding: 0.5rem 3rem;
+                text-align: center;
+                text-decoration: none;
+                margin: 0;
+                cursor: pointer;
+                border-radius: 30px;
+                transition: background-color 0.75s ease-in-out;
+
+                &:hover {
+                    background-color: $background-hover-color-1;
+                }
+            }
+        }
+    }
+
+    /* Side Card Container */
+    .side-card-container {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: $background-color-1;
+        border-radius: 0 $border-radius $border-radius 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1px;
+
+        /* Side Card */
+        .side-card {
+            flex: 1;
+            height: 100%;
+            width: 100%;
+            background: $background-color-2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+            transition: background-color 0.75s ease-in-out;
+
+            &:hover {
+                background-color: $background-hover-color-1;
+            }
+        }
+    }
+}
+
+/* Additional Styling */
+.number {
+    color: $font-color-1;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1rem * $golden-ratio;
+}
+
+.profile-name {
+    color: $font-color-1;
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1rem * $golden-ratio;
+}
+
+.words-small {
+    color: $font-color-1;
+    margin: 0;
+    padding: 0;
+    margin-top: -0.5rem;
+    font-size: 1rem;
+}
