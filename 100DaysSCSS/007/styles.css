@@ -1,0 +1,206 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+/* Frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin: -200px 0 0 -200px; /* Center the frame */
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Center content */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Colors */
+/* Main notification box */
+.main-notification-box {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  border-radius: 5px;
+  /* Header */
+  /* Notification box */
+}
+.main-notification-box .header {
+  flex: 0 0 10%;
+  position: relative;
+  margin: 0;
+  padding: 0.5px 0;
+  width: 100%;
+  background-color: #dda2b4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* Menu icon */
+}
+.main-notification-box .header .menu-icon,
+.main-notification-box .header .search-icon {
+  height: 2rem;
+  width: 2rem;
+  background-color: #fcf7ec;
+  cursor: pointer;
+}
+.main-notification-box .header .header-text {
+  font-weight: bold;
+}
+.main-notification-box .header .search-container {
+  margin: 10px;
+  position: absolute;
+  left: 1rem;
+}
+.main-notification-box .header .search-box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  box-sizing: border-box;
+}
+.main-notification-box .header .search-header {
+  opacity: 1;
+  transition: opacity 0.5s ease-out; /* Smoothly transition opacity over 0.3 seconds */
+}
+.main-notification-box .header .hidden {
+  opacity: 0;
+  z-index: -2;
+}
+.main-notification-box div.notification-box {
+  width: 100%;
+  height: 100%;
+  background-color: #fcf7ec;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* Notification list */
+}
+.main-notification-box div.notification-box ul.notification-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  /* Notification */
+}
+.main-notification-box div.notification-box ul.notification-list li.notification {
+  flex-grow: 1;
+  position: relative;
+  padding-left: 20px;
+  font-size: 12px;
+  background-color: #fcf7ec;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  /* Decorations */
+  /* Text */
+}
+.main-notification-box div.notification-box ul.notification-list li.notification .decorations {
+  position: relative;
+  flex: 0 0 3%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -0.8rem;
+  align-items: flex-start;
+  /* Circle */
+  /* Line */
+}
+.main-notification-box div.notification-box ul.notification-list li.notification .decorations .circle {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 2.5px solid #007cb6;
+  background-color: #fcf7ec;
+  z-index: 4;
+  top: 1rem;
+  position: relative;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+.main-notification-box div.notification-box ul.notification-list li.notification .decorations .line {
+  position: absolute;
+  z-index: 1;
+  width: 5px;
+  height: 100%;
+  background-color: rgba(221, 162, 180, 0.5);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+.main-notification-box div.notification-box ul.notification-list li.notification .text {
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: color 0.25s ease-in-out;
+}
+.main-notification-box div.notification-box ul.notification-list li.notification .text .time-date {
+  font-size: 0.75rem;
+  margin: 0%;
+  margin-top: 14px;
+}
+.main-notification-box div.notification-box ul.notification-list li.notification .text .post-style {
+  margin: 0%;
+  padding: 0%;
+}
+.main-notification-box div.notification-box ul.notification-list li.notification .text span.name-styles {
+  font-weight: bold;
+}
+.main-notification-box div.notification-box ul.notification-list li.notification .text:hover {
+  color: #007cb6;
+}
+
+.main-menu {
+  height: 300px;
+  width: 100%;
+  background-color: #007cb6;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding: 0%;
+  z-index: -1;
+}
+.main-menu ul.side-menu {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.main-menu ul.side-menu li {
+  flex: 1;
+  margin: 0%;
+  width: 100%;
+  background-color: #ffcfb4;
+}
+
+.main-notification-box.menu-acitive {
+  left: 150%;
+  display: none;
+}
+
+.main-menu.menu-acitive {
+  position: relative;
+  left: -120%;
+}/*# sourceMappingURL=styles.css.map */
