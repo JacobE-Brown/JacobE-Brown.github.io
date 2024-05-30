@@ -4,7 +4,7 @@ const searchIcon = document.querySelector(".search-icon");
 // Select all elements with the "search-header" class
 const searchHeaders = document.querySelectorAll(".search-header");
 
-const menuElements = document.querySelectorAll(".menu-active")
+const menuElements = document.querySelectorAll(".menu-element")
 
 // Iterate over each element found and toggle if it is hidden or not
 function toggleSearch() {
@@ -14,5 +14,7 @@ function toggleSearch() {
 }
 
 function toggleMenu() {
-
+    for (let i = 0; i < menuElements.length; i++) {
+        menuElements[i].classList.toggle("menu-active");
+    }
 }

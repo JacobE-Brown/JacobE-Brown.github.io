@@ -17,6 +17,8 @@
     font-family: "Open Sans", Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    background-color: #013766;
 }
 
 /* Center content */
@@ -55,6 +57,8 @@ $border-radius: 5px;
         rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
     border-radius: $border-radius;
 
+    transition: left 0.3s ease;
+
     /* Header */
     .header {
         flex: 0 0 10%;
@@ -71,22 +75,37 @@ $border-radius: 5px;
         /* Menu icon */
         .menu-icon,
         .search-icon {
+            img {
+                height: 2rem;
+                width: 2rem;
+            }
+
             height: 2rem;
             width: 2rem;
-            background-color: $seashell;
-
+            // background-color: $seashell;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
             cursor: pointer;
-        }
 
-        .header-text {
-            font-weight: bold;
-            // color: $background-color-1;
+            transition: box-shadow 0.5s ease; // Separate each property you want to transition
+
+            &:hover {
+                // background-color: #007cb6;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+                    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+                border-radius: $border-radius;
+            }
         }
 
         .search-container {
             margin: 10px;
             position: absolute;
             left: 1rem;
+        }
+
+        .header-text {
+            color: $seashell;
+            font-weight: bold;
+            font-size: 1.25rem;
         }
         .search-box {
             padding: 10px;
@@ -115,6 +134,8 @@ $border-radius: 5px;
         margin: 0;
         padding: 0;
         overflow: hidden;
+
+        transition: left 0.3s ease;
 
         /* Notification list */
         ul.notification-list {
@@ -213,42 +234,88 @@ $border-radius: 5px;
     }
 }
 
-// Side Menu
 .main-menu {
-    height: 300px;
-    width: 100%;
-    background-color: #007cb6;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding: 0%;
-
+    position: relative;
+    height: 265px;
+    width: 175px;
+    left: 0%;
+    background-color: $pale-chestnut;
     z-index: -1;
+    border-radius: $border-radius;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+        rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: left 0.3s ease;
 
     ul.side-menu {
-        text-decoration: none;
+        flex: 1;
         list-style-type: none;
-        padding: 0%;
         margin: 0%;
+        padding: 0%;
+
+        height: 80%;
+
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
 
-        // Apply styles to the li elements inside ul.side-menu
+        gap: 5px;
+
         li {
-            flex: 1; // Distribute remaining space equally among list items
-            margin: 0%;
-            width: 100%;
-            background-color: $apricot; // Assuming $apricot is a SCSS variable
+            flex: 1;
+            margin-left: 5px;
+            padding: 0%;
+            // background-color: $apricot;
+
+            border-radius: $border-radius;
+
+            transition: background-color ease-out 0.5s;
+
+            a {
+                text-decoration: none;
+
+                display: flex;
+                align-items: center;
+
+                height: 100%;
+
+                img {
+                    flex: 0 0 10%;
+
+                    width: 15px;
+                    height: 15px;
+                    margin: 0%;
+                    padding: 0.75rem;
+                }
+
+                p {
+                    flex: 0 0 90%;
+
+                    margin: 0%;
+                    padding: 0%;
+
+                    color: $seashell;
+
+                    font-weight: 600;
+                }
+            }
+        }
+
+        li:hover {
+            background-color: $star-command-blue;
         }
     }
 }
 
-.main-notification-box.menu-acitive {
-    left: 150%;
-    display: none;
+.main-notification-box.menu-active {
+    left: 12rem;
 }
 
-.main-menu.menu-acitive {
-    position: relative;
-    left: -120%;
+.main-menu.menu-active {
+    left: -7rem;
 }

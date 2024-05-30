@@ -3,12 +3,14 @@
 
 <div class="frame">
     <div class="center">
-        <div class="main-notification-box menu-acitive">
+        <div class="menu-element main-notification-box">
             <div class="header">
-                <div class="menu-icon search-header" onclick="toggleMenu()"></div>
+                <div class="menu-icon search-header" onclick="toggleMenu()">
+                    <img src="images/list(1).png" alt="menu" />
+                </div>
 
                 <p class="header-text search-header">Notifications</p>
-                
+
                 <div class="search-container search-header hidden">
                     <input
                         type="text"
@@ -17,7 +19,9 @@
                     />
                 </div>
 
-                <div class="search-icon" onclick="toggleSearch()"></div>
+                <div class="search-icon" onclick="toggleSearch()">
+                    <img src="images/search.png" />
+                </div>
             </div>
             <div class="notification-box">
                 <ul class="notification-list">
@@ -66,22 +70,37 @@
                 </ul>
             </div>
         </div>
-        <div class="main-menu menu-acitive">
+        <div class="menu-element main-menu">
             <ul class="side-menu">
                 <li>
-                    <a href=""><img src="" />Dashboard</a>
+                    <a href="">
+                        <img src="images/home.png" />
+                        <p>Dashboard</p>
+                    </a>
                 </li>
                 <li>
-                    <a href=""><img src="" />Profile</a>
+                    <a href="">
+                        <img src="images/user.png" />
+                        <p>Profile</p>
+                    </a>
                 </li>
                 <li>
-                    <a href=""><img src="" />Notifications</a>
+                    <a href="">
+                        <img src="images/notification.png" />
+                        <p>Notifications</p>
+                    </a>
                 </li>
                 <li>
-                    <a href=""><img src="" />Messages</a>
+                    <a href="">
+                        <img src="images/chatting.png" />
+                        <p>Messages</p>
+                    </a>
                 </li>
                 <li>
-                    <a href=""><img src="" />Dashboard</a>
+                    <a href="">
+                        <img src="images/settings.png" />
+                        <p>Setting</p>
+                    </a>
                 </li>
             </ul>
         </div>
