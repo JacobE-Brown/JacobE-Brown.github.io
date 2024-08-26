@@ -1,1 +1,122 @@
-// Color Scheme from https://www.canva.com/colors/color-palettes/lily-stem/
+// =========================== Importing fonts ===========================
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+
+// =========================== Variable Defnitions ===========================
+$main-frame-width: 80%;
+// =========================== Colors ===========================
+// Colors: from https://www.canva.com/colors/color-palettes/lily-stem/
+
+//defining the body element so as to make the page more uniform.
+// Making use of flex to make sure that the elements are aligned properly and neatly.
+body.main-frame-flex-box {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+    height: 100vh;
+
+    //defining the default values for the flexbox items
+    .main-frame-flex-item {
+        width: $main-frame-width;
+        margin: 0%;
+    }
+
+    //particular values for the three major sections in flexbox
+
+    header {
+        flex: 1;
+    }
+
+    main {
+        flex: 4;
+    }
+
+    footer {
+        flex: 1;
+    }
+}
+
+//definitions for the navigation
+header {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    div.header-elements {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+
+        img.header-image {
+            flex: 1 1 0;
+            border: solid black 1px;
+            position: relative;
+            max-width: 20rem;
+            height: auto;
+        }
+
+        div.header-text {
+            flex: 3 1 0;
+            border: solid black 1px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            #title {
+                font-family: "Niconne", cursive;
+                font-size: 6rem;
+                margin-bottom: 0%;
+                width: 100%;
+            }
+
+            #sub-title {
+                font-family: "Niconne", cursive;
+                font-size: 2rem;
+                position: relative;
+                left: 3rem;
+                top: -1rem;
+                margin: 0%;
+                padding: 0%;
+            }
+        }
+    }
+
+    nav {
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+
+        ul {
+            margin: 0%;
+            padding: 1rem 0%;
+            display: flex;
+            justify-content: center;
+
+            border: 1px solid;
+
+            //nav flex item is li tags
+            li {
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    border: 1px solid;
+                    padding: 1rem;
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.border {
+    border: 1px solid;
+}

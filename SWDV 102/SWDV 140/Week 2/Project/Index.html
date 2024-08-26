@@ -11,12 +11,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
     </head>
-    <body>
-        <header>
+    <body class="main-frame-flex-box">
+        <header class="border main-frame-flex-item">
+            
             <!-- Title Text -->
-            <h1>FizzCraft</h1>
+            <div class="header-elements">
+                <img class="header-image" src="./images/Filigree left.svg" />
+                <div class="header-text">
+                    <h1 id="title">FizzCraft</h1>
+                    <h3 id="sub-title">Create your own soda!</h3>
+                </div>
+                <img class="header-image" src="./images/Filigree right.svg" />
+            </div>
+
             <!-- Header Image -->
-            <a href="" target="_blank"><img src="" alt="" /></a>
             <!-- Navigation -->
             <nav>
                 <ul>
@@ -28,16 +36,18 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <section><h2>FizzCraft: Your gateway to bubbily</h2></section>
-            <section>
+        <main class="border main-frame-flex-item">
+            <section class="main-card">
+                <h2>FizzCraft: Your gateway to bubbily</h2>
+            </section>
+            <section class="main-card">
                 <h2>Craft your own brew now!</h2>
                 <p>
                     Check out our hand crafted tool to design
                     <span class="PopOutFormat"> YOUR BREW!</span>
                 </p>
             </section>
-            <section>
+            <section class="main-card">
                 <h2>Our Business</h2>
                 <p>
                     We make it our goal to provide only the best products for
@@ -46,10 +56,13 @@
                 <p>We source using only natural ingrediants.</p>
             </section>
         </main>
-        <footer>
+        <footer class="border main-frame-flex-item">
             <p>Some Location</p>
             <p>Some Email</p>
             <p>Some Phone #</p>
+            <a href="http://www.freepik.com"
+                >Filigree in header designed by rawpixel.com / Freepik</a
+            >
         </footer>
     </body>
 </html>
