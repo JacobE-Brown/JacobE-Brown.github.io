@@ -1,0 +1,148 @@
+14af953 (HEAD -> main, origin/main, origin/HEAD) Week 1 labs
+30b36ab Tidied up the Githup repository and put the old SWDV 105, 110, 115 files all into one folder called SWDV 101.
+205dd15 Finished 007 Project
+ffaf2f9 Added 007
+bf2f3a5 Changed numbers in 006
+7982fae Added 006 and fixed the BoilerPlate .index.html
+7523588 Added 005 The Graph Data Table Thing
+bb61e18 Added Day 004
+45098f1 Added  Image, maybe :P
+92ee401 Trying to add Preview to text
+733c2f3 Added animations to 003
+bb25478 Added Sun animation
+cae691b Made day 003. Made the z index work and started work on the Pyramid.
+36a81be Finished work on the Walle like menu icon
+a31cfa4 Maybe?
+5a26fe1 urg
+f17c3da Trying to fix errors
+fe5243b Adding the 100CSS Challenge to the main repository so that it will load HTML images
+5aaeeab Fixed Visited color
+c11e6d7 Fixed styleExp.css
+9f40dfb Moved @Import
+aa50bde fixed @media Querry
+c523f63 Modified Styles.cs
+569e3cf fixed THesis
+e84fe2d Fixed img alt
+95ac764 Re-Added Stylesheets
+e17f5ee Fixed HTML errors and Added project flexbox
+cda1aed Merging in order to add lab ch25-1
+0d199a3 Added HTML5 Canvus Project, Lab ch25-1
+5c20a2c (origin/WebsiteReformat) Revised the website to Use @media Querries and added a table to experience among other revisions.
+526f672 Working with flexbos for the nav Bar
+8b59a8f Used SASS to make a main.css file for CityFarmer
+5a22633 Added Tutor Sass with the preprosseced Css Compiler SASS
+1eb4a4f fixed index name
+aa191a3 Added Lab 19-1
+63b9aec Making The image more centered
+e5063ff Added Square To Circle Animation
+b8a9c89 Added Lab18-1:Image Resizing.
+3f2f621 Added Linear-Gradients, Contact form, and Costume Fonts
+362e563 Fixed font on p span tag
+03d0b8d This is hard
+68a47f8 Finally fixed the bullets
+c998819 Sigh
+590941d Bullet
+d74a858 Fixed the bullet points
+8011139 Fixed h1 issue
+dd4377f Reduced some CSS
+27d8713 Fixing Font-Style:bold error
+323d706 Fixing final errors
+1de0560 Trying to fix the css linking
+092aef9 Test
+95e526c Test
+a4a93ff Test
+a2083ab Fixing bugs
+31e13bf Update
+12744cf Testing the webpage for Pacific Resorts
+0e7df2e Step 1 of pacific trails
+f5398b3 Added Pacific Resort File to work on the team project for 4-9-24
+79e02d3 BugFixing
+bd8d43d Adding @Media Files
+a6f4a8c Fixed Header issue
+37ba249 Added Flexbox to Experience table
+c50a086 Formatting
+7891b58 Revision Complete
+761de72 Adding styleExp2.css
+b32a29a Added styleExp2.css
+bcdbc4b Added the div table data
+96e1e82 Fixed the footer and added Icons (needs some imporvement)
+6399706 Fixed the Header and Added MaxWell
+a17ae9b Trying to Add a logo image
+226d5e3 Fixed The Main and Body Tags
+22d2359 Inserted the Information into the Table
+a39fd63 Modified the experience.html
+526071c Test
+1d109d8 Updated CSS Website Files
+044089c Debugging
+de90d89 Fixing table <tr> error
+aafaa86 Fixing errors
+f37b76c Correcting errors
+1d525d7 Uploading Files for TeamProject Durango Jewelry Website
+e449b9c fixing errors
+ab9a078 Changed ProGit.png Image
+d32acff Jacob Brown Website Lab Assignment Addition
+f8ce2e4 Blocks Exersice following tutorial from typographicwebdesign.com
+164bdf0 runing a git commit and push test
+8bc0d45 Add files via upload
+a5ebe1d Create css.md
+184f290 Add files via upload
+4bcbbc1 Delete SWDV115/Gradients/gradientStyles.css
+c954258 Add files via upload
+f7d700a Create Gradients.md
+bbf64cc Add files via upload
+8b494db Create text-decoration.md
+8de098f Add files via upload
+d009121 Add files via upload
+e8155de Add files via upload
+db91134 Add files via upload
+9449e3b Add files via upload
+5c2a36f Create CustomFonts.md
+1bf99dc Add files via upload
+be1edbf Create GoogleFonst.md
+467471e Add files via upload
+2b90aba Add files via upload
+6bd8b1e Add files via upload
+33ced46 Create Form.md
+203b884 Add files via upload
+d1a2e6d Add files via upload
+fc0f421 Add files via upload
+5d78949 Add files via upload
+b54f5d0 Add files via upload
+edc2866 Update cf_index.html
+76d5736 Add files via upload
+64b7cfb Create CityFarmer.md
+bfa8e2c Add files via upload
+5c8af87 Add files via upload
+fe4fa5b Add files via upload
+e08fcf8 Add files via upload
+0833a2f Create groovy.md
+96a4691 Add files via upload
+d9e22ed Create Lab12-4.md
+09de81d Add files via upload
+0fc69a7 Create songtable.md
+82b1c29 Add files via upload
+00b9e16 Create BioPractice.md
+ffe2104 Add files via upload
+d450790 Create CSSPractise.md
+6bcab0a Add files via upload
+7085700 Create table.md
+a559222 Add files via upload
+5e44eb9 Create SVGPractice.md
+8457808 Add files via upload
+002f8f7 Update hg_index.html
+7111453 Update hg_index.html
+764ebbc Add files via upload
+1b483a6 Delete HarpeGaming/hg_index.html
+4787348 Delete HarpeGaming/hg_towers.html
+9f78e98 Add files via upload
+e0def63 Create HarpeGaming.md
+9a40981 Add files via upload
+d0673b6 Add files via upload
+aac6d60 Create MissionImpossible.md
+b31571e Update index.html
+b11ee90 Add files via upload
+321ed11 Create portfolio.md
+23b031a Delete portfolio
+d324138 Create portfolio
+962d3a1 Delete portfolio
+3b7c70a Create portfolio
