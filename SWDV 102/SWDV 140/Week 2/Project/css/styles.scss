@@ -8,7 +8,7 @@ $main-frame-width: 80%;
 
 //defining the body element so as to make the page more uniform.
 // Making use of flex to make sure that the elements are aligned properly and neatly.
-body.main-frame-flex-box {
+body.main-flex-box {
     width: 100%;
     padding: 0%;
     margin: 0%;
@@ -17,12 +17,12 @@ body.main-frame-flex-box {
     justify-content: space-evenly;
     align-items: center;
     gap: 5px;
-    height: 100vh;
 
     //defining the default values for the flexbox items
-    .main-frame-flex-item {
+    .main-flex-item {
         width: $main-frame-width;
         margin: 0%;
+        flex: 1;
     }
 
     //particular values for the three major sections in flexbox
@@ -37,6 +37,10 @@ body.main-frame-flex-box {
 
     footer {
         flex: 1;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 }
 
@@ -48,6 +52,7 @@ header {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    overflow: hidden;
 
     div.header-elements {
         display: flex;
@@ -64,7 +69,7 @@ header {
         }
 
         div.header-text {
-            flex: 3 1 0;
+            flex: 1 1 0;
             border: solid black 1px;
             display: flex;
             flex-direction: column;
@@ -123,7 +128,6 @@ main {
         flex: 1;
         border: 1px solid;
     }
-
 }
 
 .border {

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
-body.main-frame-flex-box {
+body.main-flex-box {
   width: 100%;
   padding: 0%;
   margin: 0%;
@@ -8,20 +8,23 @@ body.main-frame-flex-box {
   justify-content: space-evenly;
   align-items: center;
   gap: 5px;
-  height: 100vh;
 }
-body.main-frame-flex-box .main-frame-flex-item {
+body.main-flex-box .main-flex-item {
   width: 80%;
   margin: 0%;
-}
-body.main-frame-flex-box header {
   flex: 1;
 }
-body.main-frame-flex-box main {
+body.main-flex-box header {
+  flex: 1;
+}
+body.main-flex-box main {
   flex: 4;
 }
-body.main-frame-flex-box footer {
+body.main-flex-box footer {
   flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 header {
@@ -31,6 +34,7 @@ header {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  overflow: hidden;
 }
 header div.header-elements {
   display: flex;
@@ -46,7 +50,7 @@ header div.header-elements img.header-image {
   height: auto;
 }
 header div.header-elements div.header-text {
-  flex: 3 1 0;
+  flex: 1 1 0;
   border: solid black 1px;
   display: flex;
   flex-direction: column;
