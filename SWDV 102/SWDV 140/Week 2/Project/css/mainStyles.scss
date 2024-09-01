@@ -1,25 +1,32 @@
 // =========================== Importing fonts ===========================
 @import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
 
-
 // Color Scheme Definitions
 // https://www.canva.com/colors/color-palettes/lily-stem/
 
 $Blue-Green: #00b4d4;
 $Burnt-Orange: #d85e00;
 $Yellow-Green: #cade59;
-$Red-Orange: #9F2B00;
-$Pink-Strawberry: #FF5349;
+$Red-Orange: #9f2b00;
+$Pink-Strawberry: #ff5349;
 
-
-// Margin Scale Vairiables Definitions
-$margin-xxs: .25rem;
-$margin-xs: .5rem;
-$margin-s: .75rem;
+// Margin Scale Variables Definitions
+$margin-xxs: 0.25rem;
+$margin-xs: 0.5rem;
+$margin-s: 0.75rem;
 $margin-m: 1rem;
 $margin-l: 1.25rem;
 $margin-xl: 1.75rem;
 $margin-xxl: 2.5rem;
+
+// Font Scale Variables Definitions
+$font-xxs: 0.25rem;
+$font-xs: 0.5rem;
+$font-s: 0.75rem;
+$font-m: 1rem;
+$font-l: 1.25rem;
+$font-xl: 1.75rem;
+$font-xxl: 2.5rem;
 
 body {
     margin: 0;
@@ -27,6 +34,7 @@ body {
     font-size: 1.125rem;
     line-height: 1.5;
 }
+
 // The .wrapper ensures that all the elemnts will be aligned in the same format across the page
 // margin-inline: auto; allows all the elements to be centered automaticaly
 .wrapper {
@@ -34,10 +42,14 @@ body {
     margin-inline: auto;
     // border: 2px solid lime;
 }
-
+// Primary content related to the header
 .primary-header {
     overflow: hidden;
-    background-image: linear-gradient(45deg, $Burnt-Orange 10%, $Pink-Strawberry 100%);
+    background-image: linear-gradient(
+        45deg,
+        $Burnt-Orange 10%,
+        $Pink-Strawberry 100%
+    );
     color: #fff;
     margin: 0;
     display: flow-root;
@@ -49,7 +61,9 @@ body {
         margin: 1rem 1rem;
         img#menu-button {
             max-width: 3rem;
-
+            // Box Shadow from https://getcssscan.com/css-box-shadow-examples
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+                rgba(17, 17, 26, 0.05) 0px 8px 32px;
         }
         button {
             background-color: #111;
@@ -68,10 +82,9 @@ body {
         font-weight: 300;
         font-style: normal;
 
-
         // this is the container for allowing the animations to play in the header.
         // I needed to adjust their positioning so as to allow the text to be displayed over the canvas.
-        // 
+        //
         .canvas-container {
             position: relative;
             width: 100%;
@@ -134,6 +147,8 @@ body {
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
+                box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+                    rgba(17, 17, 26, 0.05) 0px 8px 32px;
             }
 
             /* Change the link color to $Red-Orange on hover */
@@ -144,12 +159,62 @@ body {
     }
 }
 
+// Main Page Content
 main {
+    .main-card {
+        border: 2px solid $Yellow-Green;
+        text-align: center;
+        margin-inline: auto;
+        width: min(800px, 95%);
+
+        .Main-Card-Flex-Container {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            gap: $margin-xxl;
+            border: 2px solid $Blue-Green;
+
+            .item {
+                padding: 0%;
+                margin: 0%;
+            }
+
+            .item1 svg {
+            }
+            // Button Element
+            .item2 {
+                position: relative;
+                // $button-box-height: min(15rem, 90%);
+                // $button-box-width: min(10rem, 70%);
+
+                $button-box-height: 200px;
+                $button-box-width: 100px;
+
+                width: $button-box-height;
+                height: $button-box-width;
+                padding: 0%;
+
+                // border: solid 2px $Blue-Green;
+            }
+        }
+    }
+
+    .second-card {
+        border: 2px solid $Yellow-Green;
+        text-align: center;
+        margin-inline: auto;
+        width: min(800px, 95%);
+    }
 }
 
 footer {
     color: #fff;
-    background-image: linear-gradient(45deg, $Burnt-Orange 10%, $Pink-Strawberry 100%);
+    background-image: linear-gradient(
+        45deg,
+        $Burnt-Orange 10%,
+        $Pink-Strawberry 100%
+    );
 
     div.wrapper {
         display: flex;
@@ -159,6 +224,23 @@ footer {
     }
 }
 
+// Random bits of CSS code
+
+// Followed this article on how to make text colored with a linear-gradiant: https://cssgradient.io/blog/css-gradient-text/
+span.Pop-Out-Format {
+    font-family: "Niconne", cursive;
+    font-size: $font-xl;
+    font-style: italic;
+
+    background: linear-gradient(
+        45deg,
+        $Burnt-Orange 10%,
+        $Pink-Strawberry 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
 
 // Media Querry notes
 // Navigation on 320 causes the screen to have overflow
