@@ -12,7 +12,7 @@ body {
 
 .primary-header {
   overflow: hidden;
-  background-color: #333;
+  background-image: linear-gradient(45deg, #d85e00 10%, #FF5349 100%);
   color: #fff;
   margin: 0;
   display: flow-root;
@@ -22,7 +22,7 @@ body {
   justify-content: space-between;
   margin: 1rem 1rem;
 }
-.primary-header .primary-header__tool-tips img {
+.primary-header .primary-header__tool-tips img#menu-button {
   max-width: 3rem;
 }
 .primary-header .primary-header__tool-tips button {
@@ -78,11 +78,11 @@ body {
 }
 .primary-header nav.primary-header__navigation ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /* Change the link color to #111 (black) on hover */
+  /* Change the link color to $Red-Orange on hover */
 }
 .primary-header nav.primary-header__navigation ul li a {
   display: block;
@@ -92,12 +92,12 @@ body {
   text-decoration: none;
 }
 .primary-header nav.primary-header__navigation ul li a:hover {
-  background-color: #111;
+  background-color: #9F2B00;
 }
 
 footer {
   color: #fff;
-  background-color: #333;
+  background-image: linear-gradient(45deg, #d85e00 10%, #FF5349 100%);
 }
 footer div.wrapper {
   display: flex;

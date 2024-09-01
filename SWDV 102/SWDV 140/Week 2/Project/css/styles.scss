@@ -1,6 +1,26 @@
 // =========================== Importing fonts ===========================
 @import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
 
+
+// Color Scheme Definitions
+// https://www.canva.com/colors/color-palettes/lily-stem/
+
+$Blue-Green: #00b4d4;
+$Burnt-Orange: #d85e00;
+$Yellow-Green: #cade59;
+$Red-Orange: #9F2B00;
+$Pink-Strawberry: #FF5349;
+
+
+// Margin Scale Vairiables Definitions
+$margin-xxs: .25rem;
+$margin-xs: .5rem;
+$margin-s: .75rem;
+$margin-m: 1rem;
+$margin-l: 1.25rem;
+$margin-xl: 1.75rem;
+$margin-xxl: 2.5rem;
+
 body {
     margin: 0;
 
@@ -17,7 +37,7 @@ body {
 
 .primary-header {
     overflow: hidden;
-    background-color: #333;
+    background-image: linear-gradient(45deg, $Burnt-Orange 10%, $Pink-Strawberry 100%);
     color: #fff;
     margin: 0;
     display: flow-root;
@@ -27,8 +47,9 @@ body {
         display: flex;
         justify-content: space-between;
         margin: 1rem 1rem;
-        img {
+        img#menu-button {
             max-width: 3rem;
+
         }
         button {
             background-color: #111;
@@ -98,9 +119,10 @@ body {
 
     nav.primary-header__navigation {
         overflow: hidden;
+
         ul {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
 
             list-style-type: none;
             margin: 0;
@@ -114,9 +136,9 @@ body {
                 text-decoration: none;
             }
 
-            /* Change the link color to #111 (black) on hover */
+            /* Change the link color to $Red-Orange on hover */
             li a:hover {
-                background-color: #111;
+                background-color: $Red-Orange;
             }
         }
     }
@@ -127,7 +149,7 @@ main {
 
 footer {
     color: #fff;
-    background-color: #333;
+    background-image: linear-gradient(45deg, $Burnt-Orange 10%, $Pink-Strawberry 100%);
 
     div.wrapper {
         display: flex;
