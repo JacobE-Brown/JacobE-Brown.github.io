@@ -11,66 +11,83 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
     </head>
     <!-- =========================== Document Begins =========================== -->
-    <body class="main-flex-box">
+    <body>
         <!--=========================== Title Box (Text and Filigree Images) =========================== -->
-        <header class="main-flex-item">
-            <!-- div element containing all the header information to make them fit neatly into a flex box. -->
-            <div class="header-elements">
-                <img class="header-image" src="./images/Filigree left.svg" />
-                <div class="header-text">
-                    <h1 id="title">FizzCraft</h1>
-                    <h3 id="sub-title">Create your own soda!</h3>
+        <header class="primary-header">
+            <!-- Elements for web first design. Menu button and extra button -->
+            <div class="wrapper">
+                <div class="primary-header__tool-tips">
+                    <img src="./images/menu-svgrepo-com.svg" />
+                    <button role="button">Buttons</button>
                 </div>
-                <img class="header-image" src="./images/Filigree right.svg" />
             </div>
 
-            <!-- =========================== Navigation =========================== -->
-            <nav>
-                <ul>
-                    <li><a href="Index.html" target="_blank">Home</a></li>
-                    <li></li>
-                    <li>
-                        <a href="Craft.html" target="_blank">Craft your Fizz</a>
-                    </li>
-                    <li>
-                        <a href="Articles.html" target="_blank"
-                            >Inspiration (Articles)</a
-                        >
-                    </li>
-                    <li><a href="AboutUs.html" target="_blank">About Us</a></li>
-                </ul>
-            </nav>
+            <!-- Elements for header text and js Canvas -->
+            <div class="wrapper">
+                <div class="primary-header__content">
+                    <div class="canvas-container">
+                        <div class="primary-header__text">
+                            <h1 id="page-title">FizzCraft</h1>
+                            <p id="sub-title">Your gateway to great bubbley!</p>
+                        </div>
+                        <!-- Canvas Element -->
+                        <canvas id="bubble-canvas"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Elements for Navigation  -->
+            <div class="wrapper">
+                <nav class="primary-header__navigation">
+                    <ul>
+                        <li><a href="Index.html" target="_blank">Home</a></li>
+                        <li>
+                            <a href="Craft.html" target="_blank"
+                                >Craft your Fizz</a
+                            >
+                        </li>
+                        <li>
+                            <a href="Articles.html" target="_blank"
+                                >Inspiration (Articles)</a
+                            >
+                        </li>
+                        <li>
+                            <a href="AboutUs.html" target="_blank">About Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <!-- =========================== Document Body =========================== -->
-        <main class="main-flex-item">
-            <section class="main-card">
-                <h2>FizzCraft: Your gateway to bubbily</h2>
-            </section>
-            <section class="main-card">
-                <h2>Craft your own brew now!</h2>
-                <p>
-                    Check out our hand crafted tool to design
-                    <span class="PopOutFormat"> YOUR BREW!</span>
-                </p>
-            </section>
-            <section class="main-card">
-                <h2>Our Business</h2>
-                <p>
-                    We make it our goal to provide only the best products for
-                    our customers.
-                </p>
-                <p>We source using only natural ingrediants.</p>
-            </section>
+        <main class="primary-body-content">
+            <div class="wrapper">
+                <section class="main-card">
+                    <h2>Craft your own brew now!</h2>
+                    <p>
+                        Check out our hand crafted tool to design
+                        <span class="PopOutFormat"> YOUR BREW!</span>
+                    </p>
+                </section>
+                <section class="main-card">
+                    <h3>Our Business</h3>
+                    <p>
+                        We make it our goal to provide only the best products
+                        for our customers.
+                    </p>
+                    <p>We source using only natural ingrediants.</p>
+                </section>
+            </div>
         </main>
 
         <!-- =========================== Footer Information =========================== -->
-        <footer class="border main-flex-item">
-            <p>Some Location</p>
-            <p>Some Email</p>
-            <p>Some Phone #</p>
-            <a href="http://www.freepik.com"
-                >Filigree in header designed by rawpixel.com / Freepik</a
-            >
+        <footer class="primary-footer">
+            <div class="wrapper">
+                <p>Some Location</p>
+                <p>Some Email</p>
+                <p>Some Phone #</p>
+            </div>
         </footer>
     </body>
 </html>
+
+<script src="./scripts/script.js"></script>

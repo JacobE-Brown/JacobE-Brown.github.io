@@ -1,135 +1,144 @@
 // =========================== Importing fonts ===========================
 @import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
 
-// =========================== Variable Defnitions ===========================
-$main-frame-width: 80%;
-// =========================== Colors ===========================
-// Colors: from https://www.canva.com/colors/color-palettes/lily-stem/
+body {
+    margin: 0;
 
-//defining the body element so as to make the page more uniform.
-// Making use of flex to make sure that the elements are aligned properly and neatly.
-body.main-flex-box {
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 5px;
-
-    //defining the default values for the flexbox items
-    .main-flex-item {
-        width: $main-frame-width;
-        margin: 0%;
-        flex: 1;
-    }
-
-    //particular values for the three major sections in flexbox
-
-    header {
-        flex: 1;
-    }
-
-    main {
-        flex: 4;
-    }
-
-    footer {
-        flex: 1;
-
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+// The .wrapper ensures that all the elemnts will be aligned in the same format across the page
+// margin-inline: auto; allows all the elements to be centered automaticaly
+.wrapper {
+    width: min(800px, 90%);
+    margin-inline: auto;
+    // border: 2px solid lime;
 }
 
-//definitions for the navigation
-header {
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
+.primary-header {
     overflow: hidden;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    display: flow-root;
 
-    div.header-elements {
+    // The menu botton and Extra Button in the top right
+    .primary-header__tool-tips {
         display: flex;
-        gap: 1rem;
-        align-items: center;
-        justify-content: center;
-
-        img.header-image {
-            flex: 1 1 0;
-            border: solid black 1px;
-            position: relative;
-            max-width: 20rem;
-            height: auto;
+        justify-content: space-between;
+        margin: 1rem 1rem;
+        img {
+            max-width: 3rem;
         }
+        button {
+            background-color: #111;
+            color: #fff;
+        }
+    }
 
-        div.header-text {
-            flex: 1 1 0;
-            border: solid black 1px;
-            display: flex;
-            flex-direction: column;
-            #title {
-                font-family: "Niconne", cursive;
-                font-size: 6rem;
-                margin-bottom: 0%;
-                width: 100%;
+    .primary-header__content {
+        text-align: center;
+        line-height: 0.5rem;
+        margin: 0%;
+        padding: 0%;
+        height: 10rem;
+
+        font-family: "Niconne", cursive;
+        font-weight: 300;
+        font-style: normal;
+
+
+        // this is the container for allowing the animations to play in the header.
+        // I needed to adjust their positioning so as to allow the text to be displayed over the canvas.
+        // 
+        .canvas-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            padding: 0%;
+            margin: 0%;
+
+            #bubble-canvas {
+                position: absolute;
+                width: 99%;
+                height: 100%;
+                display: block;
+
+                // border: lime 3px solid;
+                top: 0;
+                left: 0;
+                z-index: 1;
             }
 
-            #sub-title {
-                font-family: "Niconne", cursive;
-                font-size: 2rem;
-                position: relative;
-                left: 3rem;
-                top: -1rem;
-                margin: 0%;
-                padding: 0%;
+            .primary-header__text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -45%);
+                z-index: 2;
+
+                h1 {
+                    font-size: 5.5rem;
+                }
+
+                p {
+                    position: relative;
+                    // left: 6rem;
+                    top: -2rem;
+
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    margin-right: 0%;
+                    padding-right: 0%;
+                }
             }
         }
     }
 
-    nav {
-        margin: 0%;
-        padding: 0%;
-        width: 100%;
-
+    nav.primary-header__navigation {
+        overflow: hidden;
         ul {
-            margin: 0%;
-            padding: 1rem 0%;
             display: flex;
             justify-content: center;
 
-            border: 1px solid;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
 
-            //nav flex item is li tags
-            li {
-                list-style-type: none;
+            li a {
+                display: block;
+                color: #fff;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
 
-                a {
-                    text-decoration: none;
-                    border: 1px solid;
-                    padding: 1rem;
-                    margin: 1rem;
-                }
+            /* Change the link color to #111 (black) on hover */
+            li a:hover {
+                background-color: #111;
             }
         }
     }
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    section {
-        flex: 1;
-        border: 1px solid;
+}
+
+footer {
+    color: #fff;
+    background-color: #333;
+
+    div.wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
     }
 }
 
-.border {
-    border: 1px solid;
-}
+
+// Media Querry notes
+// Navigation on 320 causes the screen to have overflow
+// The header tends to cause overflow on smallest screen sizes
+// make subheading h1 go reletive left in higher resolutions
