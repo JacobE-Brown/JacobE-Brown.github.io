@@ -11,6 +11,7 @@ $Red-Orange: #9f2b00;
 // Random Colors
 $Pink-Strawberry: #ff5349;
 $Dark-Blue-Purpleish: #2d1674;
+$Burnt-Blue: #007AD8;
 
 
 // Margin Scale Variables Definitions
@@ -98,10 +99,12 @@ $font-xxl: 2.5rem;
 }
 
 #Main-Button:hover {
-    box-shadow: $Red-Orange 3px 3px 6px 0px inset,
+    box-shadow: $Burnt-Blue 3px 3px 6px 0px inset,
     $Red-Orange -3px -3px 6px 1px inset;
     // box-shadow: $Dark-Blue-Purpleish 3px 3px 6px 0px inset,
     //     $Dark-Blue-Purpleish -3px -3px 6px 1px inset;
+
+    transition: box-shadow 1s ease-out;
 }
 
 @keyframes spin {

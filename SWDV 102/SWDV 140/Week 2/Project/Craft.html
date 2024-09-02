@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!--Jacob Brown 
-	8-26-24-->
+<!--Jacob Brown 8-26-24-->
 <html lang="en">
     <head>
         <title>Project 1, FizzCraft</title>
@@ -9,42 +8,76 @@
         <meta name="description" content="Craft Your Own Brews And Bubblies" />
         <meta name="keywords" content="Soda Pop Custom Coke Pepsi" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="./css/mainStyles.css" />
     </head>
-    <body class="main-frame-flex-box">
-        <header class="border main-frame-flex-item">
-            
-            <!-- Title Text and Filigree -->
-            <div class="header-elements">
-                <img class="header-image" src="./images/Filigree left.svg" />
-                <div class="header-text">
-                    <h1 id="title">FizzCraft</h1>
-                    <h3 id="sub-title">Create your own soda!</h3>
+
+    <!-- =========================== Document Begins =========================== -->
+    <body>
+        <!--=========================== Title Box (Text and Filigree Images) =========================== -->
+        <header class="primary-header">
+            <!-- Elements for web first design. Menu button and extra button -->
+            <div class="wrapper">
+                <div class="primary-header__tool-tips">
+                    <img id="menu-button" src="./images/menu-svgrepo-com.svg" />
+                    <button role="button">Buttons</button>
                 </div>
-                <img class="header-image" src="./images/Filigree right.svg" />
             </div>
-            <!-- Navigation -->
-            <nav>
-                <ul>
-					<li><a href="Index.html" target="_blank">Home</a></li>
-                    <li>
-                    <li><a href="Craft.html" target="_blank">Craft your Fizz</a></li>
-                    <li>
-                        <a href="Articles.html" target="_blank">Inspiration (Articles)</a>
-                    </li>
-                    <li><a href="AboutUs.html" target="_blank">About Us</a></li>
-                </ul>
-            </nav>
+
+            <!-- Elements for header text and js Canvas -->
+            <div class="wrapper">
+                <div class="primary-header__content">
+                    <div class="canvas-container">
+                        <div class="primary-header__text">
+                            <h1 id="page-title">FizzCraft</h1>
+                            <p id="sub-title">Your gateway to great bubbley!</p>
+                        </div>
+                        <!-- Canvas Element -->
+                        <canvas id="bubble-canvas"></canvas>
+                        <script src="./scripts/bubblesScript.js"></script>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Elements for Navigation  -->
+            <div class="wrapper">
+                <nav
+                    id="primary-header__navigation"
+                    class="primary-header__navigation"
+                >
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li>
+                            <a href="Craft.html">Craft your Fizz</a>
+                        </li>
+                        <li>
+                            <a href="Articles.html">Inspiration (Articles)</a>
+                        </li>
+                        <li>
+                            <a href="AboutUs.html">About Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <script src="./scripts/navScript.js"></script>
         </header>
-        <main class="border main-frame-flex-item">
+        <!-- =========================== Document Body =========================== -->
+        <main class="primary-body-content">
+            <div class="wrapper">
+                <section class="main-card">
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ipsum sem morbi amet conubia proin dolor mauris nostra. Magnis inceptos sollicitudin placerat amet nulla augue semper netus. Tellus metus senectus nec pretium; ullamcorper duis quisque. Nostra varius vitae nostra mi montes. Suspendisse lectus urna mollis per urna magna. Himenaeos fames magna quam placerat morbi quisque adipiscing felis dignissim. Sed bibendum ipsum suspendisse, hendrerit per sociosqu morbi.
+
+                    Primis lectus lorem vulputate, nullam pharetra lacus. Netus eget hac pulvinar vestibulum curabitur id montes. Dis suspendisse tincidunt elit venenatis elementum massa. Vulputate magnis cras suscipit in fusce. Habitasse potenti facilisi imperdiet blandit metus neque fusce convallis aliquet. Nisl ex sit; tempus convallis consequat metus. Bibendum habitant aenean ac; quam magnis pellentesque taciti. Est accumsan nostra at, urna luctus quam. Scelerisque iaculis amet massa ut vitae tellus dictum. Inceptos varius duis quis nullam purus cras curae condimentum.</p>
+                </section>
+
         </main>
-        <footer class="border main-frame-flex-item">
-            <p>Some Location</p>
-            <p>Some Email</p>
-            <p>Some Phone #</p>
-            <a href="http://www.freepik.com"
-                >Filigree in header designed by rawpixel.com / Freepik</a
-            >
+
+        <!-- =========================== Footer Information =========================== -->
+        <footer class="primary-footer">
+            <div class="wrapper">
+                <p>Some Location</p>
+                <p>Some Email</p>
+                <p>Some Phone #</p>
+            </div>
         </footer>
     </body>
 </html>

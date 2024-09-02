@@ -45,7 +45,8 @@
 }
 
 #Main-Button:hover {
-  box-shadow: #9f2b00 3px 3px 6px 0px inset, #9f2b00 -3px -3px 6px 1px inset;
+  box-shadow: #007AD8 3px 3px 6px 0px inset, #9f2b00 -3px -3px 6px 1px inset;
+  transition: box-shadow 1s ease-out;
 }
 
 @keyframes spin {

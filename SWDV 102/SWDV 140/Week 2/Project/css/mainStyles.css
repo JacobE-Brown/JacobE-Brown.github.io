@@ -107,27 +107,38 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 8px;
 }
 .primary-header nav.primary-header__navigation ul li a:hover {
-  background-color: #9f2b00;
+  background-color: #007AD8;
 }
 .primary-header nav.primary-header__navigation ul li a:active {
-  background-color: #9f2b00;
+  background-color: #007AD8;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 main .main-card {
-  border: 2px solid #cade59;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   text-align: center;
   margin-inline: auto;
   width: min(800px, 95%);
+}
+main .main-card h2 {
+  font-family: "Niconne", cursive;
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: bold;
+  background: linear-gradient(45deg, #d85e00, #9f2b00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 main .main-card .Main-Card-Flex-Container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
-  border: 2px solid #00b4d4;
 }
 main .main-card .Main-Card-Flex-Container .item {
   padding: 0%;
@@ -140,10 +151,10 @@ main .main-card .Main-Card-Flex-Container .item2 {
   padding: 0%;
 }
 main .second-card {
-  border: 2px solid #cade59;
   text-align: center;
   margin-inline: auto;
   width: min(800px, 95%);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 footer {
@@ -176,10 +187,10 @@ span.Pop-Out-Format {
     display: none;
   }
   .primary-header nav.primary-header__navigation {
+    opacity: 1;
     display: block;
     overflow: hidden;
     position: static;
-    opacity: 1;
   }
   .primary-header nav.primary-header__navigation ul {
     background-color: transparent;

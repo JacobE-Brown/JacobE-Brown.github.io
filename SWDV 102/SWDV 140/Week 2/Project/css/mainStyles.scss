@@ -9,6 +9,7 @@ $Burnt-Orange: #d85e00;
 $Yellow-Green: #cade59;
 $Red-Orange: #9f2b00;
 $Pink-Strawberry: #ff5349;
+$Burnt-Blue: #007AD8;
 
 // Margin Scale Variables Definitions
 $margin-xxs: 0.25rem;
@@ -40,7 +41,6 @@ body {
 .wrapper {
     width: min(800px, 90%);
     margin-inline: auto;
-    // border: 2px solid lime;
 }
 // Primary content related to the header
 .primary-header {
@@ -112,7 +112,7 @@ body {
                 height: 100%;
                 display: block;
 
-                // border: lime 3px solid;
+
                 top: 0;
                 left: 0;
                 z-index: 1;
@@ -173,17 +173,20 @@ body {
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
-                box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
-                    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+                    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                border-radius: 8px;
             }
 
             /* Change the link color to $Red-Orange on hover and click */
             li a:hover {
-                background-color: $Red-Orange;
+                background-color: $Burnt-Blue;
             }
 
             li a:active {
-                background-color: $Red-Orange;
+                background-color: $Burnt-Blue;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+                rgba(0, 0, 0, 0.23) 0px 3px 6px;
             }
         }
     }
@@ -192,7 +195,24 @@ body {
 // Main Page Content
 main {
     .main-card {
-        border: 2px solid $Yellow-Green;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        h2 {
+            font-family: "Niconne", cursive;
+            font-size: $font-xxl;
+            font-style: italic;
+            font-weight: bold;
+        
+            background: linear-gradient(
+                45deg,
+                $Burnt-Orange,
+                $Red-Orange
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+
+        }
+
         text-align: center;
         margin-inline: auto;
         width: min(800px, 95%);
@@ -203,7 +223,6 @@ main {
             justify-content: center;
             align-items: center;
             gap: $margin-xxl;
-            border: 2px solid $Blue-Green;
 
             .item {
                 padding: 0%;
@@ -224,17 +243,15 @@ main {
                 width: $button-box-height;
                 height: $button-box-width;
                 padding: 0%;
-
-                // border: solid 2px $Blue-Green;
             }
         }
     }
 
     .second-card {
-        border: 2px solid $Yellow-Green;
         text-align: center;
         margin-inline: auto;
         width: min(800px, 95%);
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     }
 }
 
@@ -281,8 +298,7 @@ span.Pop-Out-Format {
 // The header tends to cause overflow on smallest screen sizes
 // make subheading h1 go reletive left in higher resolutions
 
-
-// When the screen is larger than 426px, 
+// When the screen is larger than 426px,
 // the menu tooltips disapears and the naviagation
 // menu changes to be a horizontal always visible element.
 @media (min-width: 426px) {
@@ -293,10 +309,11 @@ span.Pop-Out-Format {
         }
         // adding the navigation menu when the display is above 426px
         nav.primary-header__navigation {
+            opacity: 1;
             display: block;
             overflow: hidden;
             position: static;
-            opacity: 1;
+
 
             ul {
                 background-color: transparent;
