@@ -28,21 +28,20 @@ $font-l: 1.25rem;
 $font-xl: 1.75rem;
 $font-xxl: 2.5rem;
 
+#svg1 {
+    height: 20rem;
+    width: auto;
+}
+
 .Bottle-Cap {
-    display: inline;
-    fill: #000000;
+
 }
 .Bottle-Top {
-    display: inline;
-    fill: #000000;
+
 }
 .Bottle-Middle {
-    display: inline;
-    fill: #000000;
+
 }
 .Bottle-Bottom {
-    display: inline;
-    fill: $Burnt-Orange; /* Yellow color */
 
-    height: 100px;
 }

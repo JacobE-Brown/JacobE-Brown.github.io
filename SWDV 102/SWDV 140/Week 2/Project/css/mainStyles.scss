@@ -59,18 +59,31 @@ body {
         display: flex;
         justify-content: space-between;
         margin: 1rem 1rem;
+        top: 0;
+
         img#menu-button {
             max-width: 3rem;
             // Box Shadow from https://getcssscan.com/css-box-shadow-examples
             box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
                 rgba(17, 17, 26, 0.05) 0px 8px 32px;
         }
+
+        img#menu-button:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+
+        img#menu-button:active {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+
         button {
             background-color: #111;
             color: #fff;
         }
     }
-
+    // Text and Canvas
     .primary-header__content {
         text-align: center;
         line-height: 0.5rem;
@@ -129,17 +142,30 @@ body {
             }
         }
     }
-
+    // Primary Navigation
     nav.primary-header__navigation {
         overflow: hidden;
+        opacity: 0;
+
+        position: absolute;
+        z-index: 5;
+        top: 3rem;
+
+        transition: opacity 0.5s ease;
 
         ul {
+            background-color: $Blue-Green;
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
+            // justify-content: space-around;
 
             list-style-type: none;
             margin: 0;
             padding: 0;
+
+            border: $Red-Orange solid 3px;
+            border-radius: 8px;
+            margin: $margin-m;
 
             li a {
                 display: block;
@@ -151,8 +177,12 @@ body {
                     rgba(17, 17, 26, 0.05) 0px 8px 32px;
             }
 
-            /* Change the link color to $Red-Orange on hover */
+            /* Change the link color to $Red-Orange on hover and click */
             li a:hover {
+                background-color: $Red-Orange;
+            }
+
+            li a:active {
                 background-color: $Red-Orange;
             }
         }
@@ -180,7 +210,7 @@ main {
                 margin: 0%;
             }
 
-            .item1 svg {
+            .item1 {
             }
             // Button Element
             .item2 {
@@ -242,7 +272,62 @@ span.Pop-Out-Format {
     color: transparent;
 }
 
+.hidden {
+    display: none;
+}
+
 // Media Querry notes
 // Navigation on 320 causes the screen to have overflow
 // The header tends to cause overflow on smallest screen sizes
 // make subheading h1 go reletive left in higher resolutions
+
+
+// When the screen is larger than 426px, 
+// the menu tooltips disapears and the naviagation
+// menu changes to be a horizontal always visible element.
+@media (min-width: 426px) {
+    .primary-header {
+        // Removing menu botton when the display is above 426px
+        .primary-header__tool-tips * {
+            display: none;
+        }
+        // adding the navigation menu when the display is above 426px
+        nav.primary-header__navigation {
+            display: block;
+            overflow: hidden;
+            position: static;
+            opacity: 1;
+
+            ul {
+                background-color: transparent;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                border: 0;
+                border-radius: 0;
+                margin: 0;
+
+                li a {
+                    display: block;
+                    color: #fff;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+                        rgba(17, 17, 26, 0.05) 0px 8px 32px;
+                    border-radius: 8px;
+                }
+
+                /* Change the link color to $Red-Orange on hover */
+                li a:hover {
+                    background-color: $Red-Orange;
+                }
+            }
+        }
+    }
+}

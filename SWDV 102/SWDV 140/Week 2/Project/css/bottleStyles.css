@@ -1,21 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
-.Bottle-Cap {
-  display: inline;
-  fill: #000000;
-}
-
-.Bottle-Top {
-  display: inline;
-  fill: #000000;
-}
-
-.Bottle-Middle {
-  display: inline;
-  fill: #000000;
-}
-
-.Bottle-Bottom {
-  display: inline;
-  fill: #d85e00; /* Yellow color */
-  height: 100px;
+#svg1 {
+  height: 20rem;
+  width: auto;
 }/*# sourceMappingURL=bottleStyles.css.map */
