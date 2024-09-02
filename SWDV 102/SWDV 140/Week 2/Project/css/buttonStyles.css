@@ -4,7 +4,7 @@
   height: 100%;
   background-image: linear-gradient(45deg, #d85e00 10%, #ff5349 100%);
   border-radius: 8px;
-  border-style: none;
+  border: none;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
@@ -12,10 +12,10 @@
   font-family: "Niconne", cursive;
   font-size: 1.75rem;
   font-weight: 500;
-  height: 100%;
   text-align: center;
   text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
   touch-action: manipulation;
+  position: relative;
 }
 
 @property --angle {

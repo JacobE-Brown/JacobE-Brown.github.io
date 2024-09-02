@@ -1,9 +1,7 @@
-// =========================== Importing fonts ===========================
+// =========================== Importing Fonts ===========================
 @import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
 
-// Color Scheme Definitions
-// https://www.canva.com/colors/color-palettes/lily-stem/
-
+// =========================== Color Scheme Definitions ===========================
 $Blue-Green: #00b4d4;
 $Burnt-Orange: #d85e00;
 $Yellow-Green: #cade59;
@@ -11,7 +9,7 @@ $Red-Orange: #9f2b00;
 $Pink-Strawberry: #ff5349;
 $Burnt-Blue: #007AD8;
 
-// Margin Scale Variables Definitions
+// =========================== Margin Scale Variables ===========================
 $margin-xxs: 0.25rem;
 $margin-xs: 0.5rem;
 $margin-s: 0.75rem;
@@ -20,7 +18,7 @@ $margin-l: 1.25rem;
 $margin-xl: 1.75rem;
 $margin-xxl: 2.5rem;
 
-// Font Scale Variables Definitions
+// =========================== Font Scale Variables ===========================
 $font-xxs: 0.25rem;
 $font-xs: 0.5rem;
 $font-s: 0.75rem;
@@ -29,53 +27,41 @@ $font-l: 1.25rem;
 $font-xl: 1.75rem;
 $font-xxl: 2.5rem;
 
+// =========================== Base Styles ===========================
 body {
     margin: 0;
-
     font-size: 1.125rem;
     line-height: 1.5;
 }
 
-// The .wrapper ensures that all the elemnts will be aligned in the same format across the page
-// margin-inline: auto; allows all the elements to be centered automaticaly
+// =========================== Wrapper ===========================
 .wrapper {
     width: min(800px, 90%);
     margin-inline: auto;
 }
-// Primary content related to the header
+
+// =========================== Primary Header ===========================
 .primary-header {
     overflow: hidden;
-    background-image: linear-gradient(
-        45deg,
-        $Burnt-Orange 10%,
-        $Pink-Strawberry 100%
-    );
+    background-image: linear-gradient(45deg, $Burnt-Orange 10%, $Pink-Strawberry 100%);
     color: #fff;
     margin: 0;
     display: flow-root;
 
-    // The menu botton and Extra Button in the top right
+    // Tooltips and Menu Button
     .primary-header__tool-tips {
         display: flex;
         justify-content: space-between;
-        margin: 1rem 1rem;
-        top: 0;
+        margin: 1rem;
 
         img#menu-button {
             max-width: 3rem;
-            // Box Shadow from https://getcssscan.com/css-box-shadow-examples
-            box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
-                rgba(17, 17, 26, 0.05) 0px 8px 32px;
-        }
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 
-        img#menu-button:hover {
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-        }
-
-        img#menu-button:active {
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            &:hover,
+            &:active {
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            }
         }
 
         button {
@@ -83,36 +69,30 @@ body {
             color: #fff;
         }
     }
-    // Text and Canvas
+
+    // Header Content
     .primary-header__content {
         text-align: center;
         line-height: 0.5rem;
-        margin: 0%;
-        padding: 0%;
+        margin: 0;
+        padding: 0;
         height: 10rem;
-
         font-family: "Niconne", cursive;
         font-weight: 300;
         font-style: normal;
 
-        // this is the container for allowing the animations to play in the header.
-        // I needed to adjust their positioning so as to allow the text to be displayed over the canvas.
-        //
         .canvas-container {
             position: relative;
             width: 100%;
             height: 100%;
-
-            padding: 0%;
-            margin: 0%;
+            padding: 0;
+            margin: 0;
 
             #bubble-canvas {
                 position: absolute;
                 width: 99%;
                 height: 100%;
                 display: block;
-
-
                 top: 0;
                 left: 0;
                 z-index: 1;
@@ -131,41 +111,34 @@ body {
 
                 p {
                     position: relative;
-                    // left: 6rem;
                     top: -2rem;
-
                     font-size: 2rem;
                     line-height: 2rem;
-                    margin-right: 0%;
-                    padding-right: 0%;
+                    margin-right: 0;
+                    padding-right: 0;
                 }
             }
         }
     }
+
     // Primary Navigation
     nav.primary-header__navigation {
         overflow: hidden;
         opacity: 0;
-
         position: absolute;
         z-index: 5;
         top: 3rem;
-
         transition: opacity 0.5s ease;
 
         ul {
             background-color: $Blue-Green;
             display: flex;
             flex-direction: column;
-            // justify-content: space-around;
-
             list-style-type: none;
-            margin: 0;
+            margin: $margin-m;
             padding: 0;
-
             border: $Red-Orange solid 3px;
             border-radius: 8px;
-            margin: $margin-m;
 
             li a {
                 display: block;
@@ -173,76 +146,59 @@ body {
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
-                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
-                    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
                 border-radius: 8px;
-            }
 
-            /* Change the link color to $Red-Orange on hover and click */
-            li a:hover {
-                background-color: $Burnt-Blue;
-            }
+                &:hover {
+                    background-color: $Burnt-Blue;
+                }
 
-            li a:active {
-                background-color: $Burnt-Blue;
-                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
-                rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                &:active {
+                    background-color: $Burnt-Blue;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                }
             }
         }
     }
 }
 
-// Main Page Content
+// =========================== Main Page Content ===========================
 main {
     .main-card {
         box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        text-align: center;
+        margin-inline: auto;
+        width: min(800px, 95%);
+
         h2 {
             font-family: "Niconne", cursive;
             font-size: $font-xxl;
             font-style: italic;
             font-weight: bold;
-        
-            background: linear-gradient(
-                45deg,
-                $Burnt-Orange,
-                $Red-Orange
-            );
+            background: linear-gradient(45deg, $Burnt-Orange, $Red-Orange);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-
         }
-
-        text-align: center;
-        margin-inline: auto;
-        width: min(800px, 95%);
 
         .Main-Card-Flex-Container {
             display: flex;
-
             justify-content: center;
             align-items: center;
             gap: $margin-xxl;
 
             .item {
-                padding: 0%;
-                margin: 0%;
+                padding: 0;
+                margin: 0;
             }
 
-            .item1 {
-            }
-            // Button Element
             .item2 {
                 position: relative;
-                // $button-box-height: min(15rem, 90%);
-                // $button-box-width: min(10rem, 70%);
-
                 $button-box-height: 200px;
                 $button-box-width: 100px;
-
                 width: $button-box-height;
                 height: $button-box-width;
-                padding: 0%;
+                padding: 0;
             }
         }
     }
@@ -255,15 +211,12 @@ main {
     }
 }
 
+// =========================== Footer ===========================
 footer {
     color: #fff;
-    background-image: linear-gradient(
-        45deg,
-        $Burnt-Orange 10%,
-        $Pink-Strawberry 100%
-    );
+    background-image: linear-gradient(45deg, $Burnt-Orange 10%, $Pink-Strawberry 100%);
 
-    div.wrapper {
+    .wrapper {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -271,19 +224,12 @@ footer {
     }
 }
 
-// Random bits of CSS code
-
-// Followed this article on how to make text colored with a linear-gradiant: https://cssgradient.io/blog/css-gradient-text/
+// =========================== Miscellaneous ===========================
 span.Pop-Out-Format {
     font-family: "Niconne", cursive;
     font-size: $font-xl;
     font-style: italic;
-
-    background: linear-gradient(
-        45deg,
-        $Burnt-Orange 10%,
-        $Pink-Strawberry 100%
-    );
+    background: linear-gradient(45deg, $Burnt-Orange 10%, $Pink-Strawberry 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -293,41 +239,29 @@ span.Pop-Out-Format {
     display: none;
 }
 
-// Media Querry notes
-// Navigation on 320 causes the screen to have overflow
-// The header tends to cause overflow on smallest screen sizes
-// make subheading h1 go reletive left in higher resolutions
-
-// When the screen is larger than 426px,
-// the menu tooltips disapears and the naviagation
-// menu changes to be a horizontal always visible element.
+// =========================== Media Queries ===========================
 @media (min-width: 426px) {
     .primary-header {
-        // Removing menu botton when the display is above 426px
         .primary-header__tool-tips * {
             display: none;
         }
-        // adding the navigation menu when the display is above 426px
+
         nav.primary-header__navigation {
             opacity: 1;
             display: block;
-            overflow: hidden;
             position: static;
-
+            overflow: hidden;
 
             ul {
                 background-color: transparent;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
-
                 border: 0;
                 border-radius: 0;
-                margin: 0;
 
                 li a {
                     display: block;
@@ -335,14 +269,12 @@ span.Pop-Out-Format {
                     text-align: center;
                     padding: 14px 16px;
                     text-decoration: none;
-                    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
-                        rgba(17, 17, 26, 0.05) 0px 8px 32px;
+                    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
                     border-radius: 8px;
-                }
 
-                /* Change the link color to $Red-Orange on hover */
-                li a:hover {
-                    background-color: $Red-Orange;
+                    &:hover {
+                        background-color: $Red-Orange;
+                    }
                 }
             }
         }

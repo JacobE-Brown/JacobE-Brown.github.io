@@ -1,79 +1,64 @@
 <!DOCTYPE html>
-<!--Jacob Brown 8-26-24-->
 <html lang="en">
-    <head>
-        <title>Project 1, FizzCraft</title>
-        <meta name="author" content="Jacob Brown" />
-        <meta charset="UTF-8" />
-        <meta name="description" content="Craft Your Own Brews And Bubblies" />
-        <meta name="keywords" content="Soda Pop Custom Coke Pepsi" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="./css/mainStyles.css" />
-        <link rel="stylesheet" type="text/css" href="./css/buttonStyles.css" />
-        <link rel="stylesheet" type="text/css" href="./css/bottleStyles.css" />
-    </head>
-
-    <!-- =========================== Document Begins =========================== -->
-    <body>
-        <!--=========================== Title Box (Text and Filigree Images) =========================== -->
-        <header class="primary-header">
-            <!-- Elements for web first design. Menu button and extra button -->
-            <div class="wrapper">
-                <div class="primary-header__tool-tips">
-                    <img id="menu-button" src="./images/menu-svgrepo-com.svg" />
-                    <button role="button">Buttons</button>
-                </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jacob Brown" />
+    <meta name="description" content="Craft Your Own Brews And Bubblies" />
+    <meta name="keywords" content="Soda Pop Custom Coke Pepsi" />
+    <title>Project 1, FizzCraft</title>
+    <link rel="stylesheet" href="./css/mainStyles.css" />
+    <link rel="stylesheet" href="./css/buttonStyles.css" />
+    <link rel="stylesheet" href="./css/bottleStyles.css" />
+</head>
+<body>
+    <!-- =========================== Header =========================== -->
+    <header class="primary-header">
+        <!-- Menu button and extra button -->
+        <div class="wrapper">
+            <div class="primary-header__tool-tips">
+                <img id="menu-button" src="./images/menu-svgrepo-com.svg" alt="Menu Button" />
+                <button role="button">Buttons</button>
             </div>
+        </div>
 
-            <!-- Elements for header text and js Canvas -->
-            <div class="wrapper">
-                <div class="primary-header__content">
-                    <div class="canvas-container">
-                        <div class="primary-header__text">
-                            <h1 id="page-title">FizzCraft</h1>
-                            <p id="sub-title">Your gateway to great bubbly!</p>
-                        </div>
-                        <!-- Canvas Element -->
-                        <canvas id="bubble-canvas"></canvas>
-                        <script src="./scripts/bubblesScript.js"></script>
+        <!-- Header text and JS Canvas -->
+        <div class="wrapper">
+            <div class="primary-header__content">
+                <div class="canvas-container">
+                    <canvas id="bubble-canvas"></canvas>
+                    <div class="primary-header__text">
+                        <h1 id="page-title">FizzCraft</h1>
+                        <p id="sub-title">Your gateway to great bubbly!</p>
                     </div>
                 </div>
+                <script src="./scripts/bubblesScript.js"></script>
             </div>
+        </div>
 
-            <!-- Elements for Navigation  -->
-            <div class="wrapper">
-                <nav
-                    id="primary-header__navigation"
-                    class="primary-header__navigation"
-                >
-                    <ul>
-                        <li><a href="Index.html">Home</a></li>
-                        <li>
-                            <a href="Craft.html">Craft your Fizz</a>
-                        </li>
-                        <li>
-                            <a href="Articles.html">Inspiration (Articles)</a>
-                        </li>
-                        <li>
-                            <a href="AboutUs.html">About Us</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <script src="./scripts/navScript.js"></script>
-        </header>
-        <!-- =========================== Document Body =========================== -->
-        <main class="primary-body-content">
-            <div class="wrapper">
-                <section class="main-card">
-                    <h2>Craft Your Own Brew Now!</h2>
+        <!-- Navigation menu -->
+        <div class="wrapper">
+            <nav id="primary-header__navigation" class="primary-header__navigation">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Craft.html">Craft your Fizz</a></li>
+                    <li><a href="Articles.html">Inspiration (Articles)</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <script src="./scripts/navScript.js"></script>
+    </header>
 
-                    <div class="Main-Card-Flex-Container">
-                        <div class="item1 item">
-                            <!-- SVG Information embedded into the HTML so that it can be animated -->
-                            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-                            <!-- Created with Inkscape (http://www.inkscape.org/) -->
-                            <svg
+    <!-- =========================== Main Content =========================== -->
+    <main class="primary-body-content">
+        <div class="wrapper">
+            <!-- Main Card -->
+            <section class="main-card">
+                <h2>Craft Your Own Brew Now!</h2>
+                <div class="Main-Card-Flex-Container">
+                    <div class="item item1">
+                        <svg
                                 viewBox="0 0 9.398 29.819"
                                 version="1.1"
                                 id="svg1"
@@ -110,35 +95,31 @@
                                     />
                                 </g>
                             </svg>
-                        </div>
-
-                        <div class="item2 item">
-                            <a href="./Craft.html"
-                                ><button id="Main-Button">
-                                    Craft <br />Your Brew!
-                                </button></a
-                            >
-                        </div>
                     </div>
-                </section>
-                <section class="second-card">
-                    <h3>Our Business</h3>
-                    <p>
-                        We make it our goal to provide only the best products
-                        for our customers.
-                    </p>
-                    <p>We source using only natural ingredients.</p>
-                </section>
-            </div>
-        </main>
+                    <div class="item item2">
+                        <a href="./Craft.html">
+                            <button id="Main-Button">Craft <br />Your Brew!</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
 
-        <!-- =========================== Footer Information =========================== -->
-        <footer class="primary-footer">
-            <div class="wrapper">
-                <p>Some Location</p>
-                <p>Some Email</p>
-                <p>Some Phone #</p>
-            </div>
-        </footer>
-    </body>
+            <!-- Second Card -->
+            <section class="second-card">
+                <h3>Our Business</h3>
+                <p>We make it our goal to provide only the best products for our customers.</p>
+                <p>We source using only natural ingredients.</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- =========================== Footer Information =========================== -->
+    <footer class="primary-footer">
+        <div class="wrapper">
+            <p>Some Location</p>
+            <p>Some Email</p>
+            <p>Some Phone #</p>
+        </div>
+    </footer>
+</body>
 </html>

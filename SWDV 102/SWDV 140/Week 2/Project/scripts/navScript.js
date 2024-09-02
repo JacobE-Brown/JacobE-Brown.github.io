@@ -8,6 +8,8 @@
 // the menu disapears and the naviagation menu changes to be a horizontal
 // always visible element.
 
+alert("Welcome to my Week 1-2 Project! The main javascript I did was to make a navigation menu in chrome web tools for when there was a screen size under 426px to make it so that a menu would appear and disapear when clicking the hamburger button. In the header I made the header text over a canvas with some ChatGPT code as a placeholder for my own in the future. I hope that fulfills the Javascript Requirement.")
+
 document.getElementById('menu-button').onclick = showHideNavigation;
 
 function showHideNavigation() {
