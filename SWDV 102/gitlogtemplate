@@ -1,0 +1,1 @@
+git log --since="2024-08-23" --pretty=format:"%h - %an, %ad : %s" --date=iso > log.txt
