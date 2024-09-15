@@ -63,20 +63,59 @@
         </header>
         <!-- =========================== Document Body =========================== -->
         <main class="primary-body-content">
-            <div class="wrapper" >
+            <div class="wrapper">
                 <section class="main-card carousel-container" id="carousel1">
-                    <ul class="carousel carousel-images">
-                        <li><img src="./images/FlavorIcons/orange-svgrepo-com.svg"><figcaption>Orange</figcaption></li>
-                        
-
-                    </ul>
-                    <ul class="carousel carousel-body">
-                        <li>Lorem ipsum odor amet, consectetuer adipiscing elit. Ut montes dui hendrerit lobortis habitasse semper aliquam sed. Suscipit nisi in quam aenean habitant imperdiet lectus accumsan. Nostra adipiscing ridiculus aptent dapibus pellentesque molestie diam. Porttitor pulvinar lacinia augue mauris accumsan pharetra; aenean dolor.</li>
-
-                    </ul>
+                    <div class="left-zone">
+                        <ul class="carousel carousel-selector-images">
+                            <li data-flavor="Orange" class="flavor visible">
+                                <img
+                                    src="./images/FlavorIcons/orange-svgrepo-com.svg"
+                                />
+                                <figcaption>Orange</figcaption>
+                            </li>
+                            <li data-flavor="Cherry" class="flavor visible">
+                                <img
+                                    src="./images/FlavorIcons/cherry-svgrepo-com.svg"
+                                />
+                                <figcaption>Cherry</figcaption>
+                            </li>
+                            <li data-flavor="Ginger" class="flavor hidden">
+                                <img
+                                    src="./images/FlavorIcons/ginger-svgrepo-com.svg"
+                                />
+                                <figcaption>Ginger</figcaption>
+                            </li>
+                            <li data-flavor="Root-Beer" class="flavor visible">
+                                <img
+                                    src="./images/FlavorIcons/mushroom-svgrepo-com.svg"
+                                />
+                                <figcaption>Root-Beer</figcaption>
+                            </li>
+                            <li data-flavor="Lemon-Lime" class="flavor visible">
+                                <img
+                                    src="./images/FlavorIcons/lemon-svgrepo-com(1).svg"
+                                />
+                                <figcaption>Lemon-Lime</figcaption>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-zone">
+                        <ul class="carousel carousel-body">
+                            <li>
+                                Lorem ipsum odor amet, consectetuer adipiscing
+                                elit. Ut montes dui hendrerit lobortis habitasse
+                                semper aliquam sed. Suscipit nisi in quam aenean
+                                habitant imperdiet lectus accumsan. Nostra
+                                adipiscing ridiculus aptent dapibus pellentesque
+                                molestie diam. Porttitor pulvinar lacinia augue
+                                mauris accumsan pharetra; aenean dolor.
+                            </li>
+                        </ul>
+                    </div>
                 </section>
-                <script src="./scripts/carousel.js"></script>
+            </div>
 
+            <script src="./scripts/carousel.js"></script>
         </main>
         <!-- =========================== Footer Information =========================== -->
         <footer class="primary-footer">

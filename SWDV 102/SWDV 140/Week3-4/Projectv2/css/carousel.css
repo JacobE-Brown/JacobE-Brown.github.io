@@ -4,19 +4,83 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  border: lime solid 1px;
 }
-.carousel-container .carousel {
-  border: lime solid 1px;
+.carousel-container ul.carousel {
   text-align: left;
   padding: 0;
   margin: 0;
 }
-.carousel-container li {
+.carousel-container ul.carousel li {
   list-style-type: none;
-  padding: 0;
   margin: 0;
 }
-.carousel-container li img {
-  width: 3rem;
+.carousel-container ul.carousel li img {
+  width: 2.7rem;
+  padding: 0.3rem;
+}
+.carousel-container div.left-zone {
+  flex: 1;
+  position: relative;
+}
+.carousel-container div.left-zone ul.carousel-selector-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  position: relative;
+}
+.carousel-container div.left-zone ul.carousel-selector-images li {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  gap: 0.25rem;
+  position: relative;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  border-radius: 0.75rem;
+}
+.carousel-container div.left-zone ul.carousel-selector-images li:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  cursor: pointer;
+}
+.carousel-container div.left-zone ul.carousel-selector-images li.visible::after {
+  content: "";
+  width: 3px;
+  height: 90%;
+  background-color: gray;
+  position: absolute;
+  top: 5%;
+  right: -0.25rem;
+}
+.carousel-container div.left-zone ul.carousel-selector-images::after {
+  content: "";
+  width: 2px;
+  height: 75%;
+  background-color: #eee;
+  border-radius: 0.25rem;
+  position: absolute;
+  top: 0%;
+  right: -0.5rem;
+  transform: translateY(12.5%);
+}
+.carousel-container div.right-zone {
+  flex: 2;
+}
+@media (min-width: 426px) {
+  .carousel-container div.left-zone ul.carousel-selector-images {
+    padding: 1rem 0 1rem 1rem;
+  }
+  .carousel-container div.left-zone ul.carousel-selector-images li {
+    flex-direction: row;
+    justify-content: left;
+    gap: 1.75rem;
+  }
+  .carousel-container div.left-zone ul.carousel-selector-images li::after {
+    content: "";
+  }
+  .carousel-container div.right-zone {
+    flex: 2;
+  }
+  .carousel-container div.right-zone ul.carousel-body {
+    flex: 2;
+  }
 }/*# sourceMappingURL=carousel.css.map */
