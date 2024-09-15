@@ -1,45 +1,40 @@
 <!DOCTYPE html>
-<!--Jacob Brown 8-26-24-->
 <html lang="en">
     <head>
-        <title>Project 1, FizzCraft</title>
-        <meta name="author" content="Jacob Brown" />
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Jacob Brown" />
         <meta name="description" content="Craft Your Own Brews And Bubblies" />
         <meta name="keywords" content="Soda Pop Custom Coke Pepsi" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project 1, FizzCraft</title>
         <link rel="stylesheet" type="text/css" href="./css/mainStyles.css" />
         <link rel="stylesheet" type="text/css" href="./css/carousel.css" />
     </head>
-
-    <!-- =========================== Document Begins =========================== -->
     <body>
-        <!--=========================== Title Box (Text and Filigree Images) =========================== -->
         <header class="primary-header">
-            <!-- Elements for web first design. Menu button and extra button -->
             <div class="wrapper">
                 <div class="primary-header__tool-tips">
-                    <img id="menu-button" src="./images/menu-svgrepo-com.svg" />
+                    <img
+                        id="menu-button"
+                        src="./images/menu-svgrepo-com.svg"
+                        alt="Menu Button"
+                    />
                     <button role="button">Buttons</button>
                 </div>
             </div>
 
-            <!-- Elements for header text and js Canvas -->
             <div class="wrapper">
                 <div class="primary-header__content">
                     <div class="canvas-container">
                         <div class="primary-header__text">
                             <h1 id="page-title">FizzCraft</h1>
-                            <p id="sub-title">Your gateway to great bubbley!</p>
+                            <p id="sub-title">Your gateway to great bubbly!</p>
                         </div>
-                        <!-- Canvas Element -->
                         <canvas id="bubble-canvas"></canvas>
-                        <script src="./scripts/bubblesScript.js"></script>
                     </div>
                 </div>
             </div>
 
-            <!-- Elements for Navigation  -->
             <div class="wrapper">
                 <nav
                     id="primary-header__navigation"
@@ -47,21 +42,17 @@
                 >
                     <ul>
                         <li><a href="Index.html">Home</a></li>
-                        <li>
-                            <a href="Craft.html">Craft your Fizz</a>
-                        </li>
-                        <li>
-                            <a href="Articles.html">Inspiration (Articles)</a>
-                        </li>
-                        <li>
-                            <a href="AboutUs.html">About Us</a>
-                        </li>
+                        <li><a href="Craft.html">Craft your Fizz</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="ContactUs.html">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
+            <script src="./scripts/bubblesScript.js"></script>
             <script src="./scripts/navScript.js"></script>
         </header>
-        <!-- =========================== Document Body =========================== -->
+
         <main class="primary-body-content">
             <div class="wrapper">
                 <section class="main-card carousel-container" id="carousel1">
@@ -70,54 +61,134 @@
                             <li data-flavor="Orange" class="flavor visible">
                                 <img
                                     src="./images/FlavorIcons/orange-svgrepo-com.svg"
+                                    alt="Orange Flavor Icon"
                                 />
                                 <figcaption>Orange</figcaption>
                             </li>
-                            <li data-flavor="Cherry" class="flavor visible">
+                            <li data-flavor="Cherry" class="flavor hidden">
                                 <img
                                     src="./images/FlavorIcons/cherry-svgrepo-com.svg"
+                                    alt="Cherry Flavor Icon"
                                 />
                                 <figcaption>Cherry</figcaption>
                             </li>
                             <li data-flavor="Ginger" class="flavor hidden">
                                 <img
                                     src="./images/FlavorIcons/ginger-svgrepo-com.svg"
+                                    alt="Ginger Flavor Icon"
                                 />
                                 <figcaption>Ginger</figcaption>
                             </li>
-                            <li data-flavor="Root-Beer" class="flavor visible">
+                            <li data-flavor="Root-Beer" class="flavor hidden">
                                 <img
                                     src="./images/FlavorIcons/mushroom-svgrepo-com.svg"
+                                    alt="Root Beer Flavor Icon"
                                 />
                                 <figcaption>Root-Beer</figcaption>
                             </li>
-                            <li data-flavor="Lemon-Lime" class="flavor visible">
+                            <li data-flavor="Lemon-Lime" class="flavor hidden">
                                 <img
                                     src="./images/FlavorIcons/lemon-svgrepo-com(1).svg"
+                                    alt="Lemon Lime Flavor Icon"
                                 />
                                 <figcaption>Lemon-Lime</figcaption>
                             </li>
                         </ul>
                     </div>
+
                     <div class="right-zone">
                         <ul class="carousel carousel-body">
-                            <li>
-                                Lorem ipsum odor amet, consectetuer adipiscing
-                                elit. Ut montes dui hendrerit lobortis habitasse
-                                semper aliquam sed. Suscipit nisi in quam aenean
-                                habitant imperdiet lectus accumsan. Nostra
-                                adipiscing ridiculus aptent dapibus pellentesque
-                                molestie diam. Porttitor pulvinar lacinia augue
-                                mauris accumsan pharetra; aenean dolor.
+                            <li
+                                data-flavor="Orange"
+                                class="flavor-card visible"
+                            >
+                                <img
+                                    src="./images/FlavorImages/Orange_Grove.jpg"
+                                    alt="Orange Grove image"
+                                />
+                                <figcaption>Oranges</figcaption>
+                                <p class="image-description">
+                                    Lorem ipsum odor amet, consectetuer
+                                    adipiscing elit. In magnis accumsan felis
+                                    suspendisse gravida aptent felis. Facilisi
+                                    quisque facilisi bibendum consectetur taciti
+                                    torquent litora aptent. Tristique dictum nec
+                                    aptent sapien, metus nostra mattis molestie.
+                                </p>
+                            </li>
+                            <li data-flavor="Cherry" class="flavor-card hidden">
+                                <img
+                                    src="./images/FlavorImages/Cheeries_in_love.jpg"
+                                    alt="Cheeries in love"
+                                />
+                                <figcaption>Cherry</figcaption>
+                                <p class="image-description">
+                                    Lorem ipsum odor amet, consectetuer
+                                    adipiscing elit. In magnis accumsan felis
+                                    suspendisse gravida aptent felis. Facilisi
+                                    quisque facilisi bibendum consectetur taciti
+                                    torquent litora aptent. Tristique dictum nec
+                                    aptent sapien, metus nostra mattis molestie.
+                                </p>
+                            </li>
+                            <li data-flavor="Ginger" class="flavor-card hidden">
+                                <img
+                                    src="./images/FlavorImages/Ginger.jpg"
+                                    alt="Pile of Ginger"
+                                />
+                                <figcaption>Ginger</figcaption>
+                                <p class="image-description">
+                                    Lorem ipsum odor amet, consectetuer
+                                    adipiscing elit. In magnis accumsan felis
+                                    suspendisse gravida aptent felis. Facilisi
+                                    quisque facilisi bibendum consectetur taciti
+                                    torquent litora aptent. Tristique dictum nec
+                                    aptent sapien, metus nostra mattis molestie.
+                                </p>
+                            </li>
+                            <li
+                                data-flavor="Root-Beer"
+                                class="flavor-card hidden"
+                            >
+                                <img
+                                    src="./images/FlavorImages/Roots.jpg"
+                                    alt="Mixed Roots"
+                                />
+                                <figcaption>Various Roots</figcaption>
+                                <p class="image-description">
+                                    Lorem ipsum odor amet, consectetuer
+                                    adipiscing elit. In magnis accumsan felis
+                                    suspendisse gravida aptent felis. Facilisi
+                                    quisque facilisi bibendum consectetur taciti
+                                    torquent litora aptent. Tristique dictum nec
+                                    aptent sapien, metus nostra mattis molestie.
+                                </p>
+                            </li>
+                            <li
+                                data-flavor="Lemon-Lime"
+                                class="flavor-card hidden"
+                            >
+                                <img
+                                    src="./images/FlavorImages/Lemons-limes.jpg"
+                                    alt="Lemon Lime"
+                                />
+                                <figcaption>Lemon-Lime</figcaption>
+                                <p class="image-description">
+                                    Lorem ipsum odor amet, consectetuer
+                                    adipiscing elit. In magnis accumsan felis
+                                    suspendisse gravida aptent felis. Facilisi
+                                    quisque facilisi bibendum consectetur taciti
+                                    torquent litora aptent. Tristique dictum nec
+                                    aptent sapien, metus nostra mattis molestie.
+                                </p>
                             </li>
                         </ul>
                     </div>
                 </section>
             </div>
-
             <script src="./scripts/carousel.js"></script>
         </main>
-        <!-- =========================== Footer Information =========================== -->
+
         <footer class="primary-footer">
             <div class="wrapper">
                 <p>Some Location</p>

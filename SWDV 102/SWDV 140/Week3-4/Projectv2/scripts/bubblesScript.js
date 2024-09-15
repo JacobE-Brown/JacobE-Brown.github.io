@@ -7,6 +7,7 @@
 // when the screen resolution is below 436px with the media query.
 
 // script.js
+"use strict";
 
 const canvas = document.getElementById('bubble-canvas');
 const ctx = canvas.getContext('2d');

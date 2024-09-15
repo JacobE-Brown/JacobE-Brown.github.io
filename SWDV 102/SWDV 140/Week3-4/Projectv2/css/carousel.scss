@@ -32,7 +32,9 @@ $font-xxl: 2.5rem;
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: $font-xs;
+
+    border: #00b4d4 1px solid;
 
     ul.carousel {
         text-align: left;
@@ -45,7 +47,7 @@ $font-xxl: 2.5rem;
 
             img {
                 width: 2.7rem;
-                padding: .3rem;
+                padding: 0.3rem;
             }
         }
     }
@@ -58,6 +60,7 @@ $font-xxl: 2.5rem;
             flex-direction: column;
             justify-content: left;
             position: relative;
+            margin: $margin-s;
 
             li {
                 display: flex;
@@ -79,11 +82,21 @@ $font-xxl: 2.5rem;
             }
 
             // After element used to create the line on the right when the class is set to vissible.
+            li.hidden::after {
+                content: "";
+                width: 3px;
+                height: 90%;
+                background-color: transparent;
+
+                position: absolute;
+                top: 5%;
+                right: -$margin-xxs;
+            }
             li.visible::after {
                 content: "";
                 width: 3px;
                 height: 90%;
-                background-color: gray;
+                background-color: $Red-Orange;
 
                 position: absolute;
                 top: 5%;
@@ -105,10 +118,53 @@ $font-xxl: 2.5rem;
             transform: translateY(12.5%);
         }
     }
-
+    // The list of flavors on the carousel in the left zone.
     div.right-zone {
         flex: 2;
+        overflow: hidden;
+
         ul.carousel-body {
+            position: relative;
+
+            li.flavor-card {
+                position: relative;
+                
+
+                text-align: center;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+                    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                border-radius: $margin-m;
+                margin: $margin-s;
+
+                img {
+                    width: 80%;
+                    height: min(100%, 2rem);
+
+                    padding: 0%;
+                    margin: 0%;
+                    border-radius: $margin-s;
+                }
+
+                figcaption {
+                    padding: 0%;
+                    margin: 0%;
+                }
+
+                p {
+                    padding: 0%;
+                    margin: 0%;
+                }
+            }
+
+            li.flavor-card.visible {
+                top: 0;
+                transition: top .3s ease-in-out;
+            }
+
+            li.flavor-card.hidden {
+                top: 100%;
+                transition: top .3s ease-in-out;
+            }
         }
     }
 }

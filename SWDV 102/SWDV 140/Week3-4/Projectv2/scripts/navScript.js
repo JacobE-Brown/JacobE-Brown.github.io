@@ -8,6 +8,8 @@
 // the menu disapears and the naviagation menu changes to be a horizontal
 // always visible element.
 
+"use strict";
+
 document.getElementById('menu-button').onclick = showHideNavigation;
 
 function showHideNavigation() {

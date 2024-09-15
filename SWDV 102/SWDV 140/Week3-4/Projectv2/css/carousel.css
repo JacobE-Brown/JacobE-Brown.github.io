@@ -3,7 +3,8 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 0.5rem;
+  border: #00b4d4 1px solid;
 }
 .carousel-container ul.carousel {
   text-align: left;
@@ -27,6 +28,7 @@
   flex-direction: column;
   justify-content: left;
   position: relative;
+  margin: 0.75rem;
 }
 .carousel-container div.left-zone ul.carousel-selector-images li {
   display: flex;
@@ -42,11 +44,20 @@
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   cursor: pointer;
 }
+.carousel-container div.left-zone ul.carousel-selector-images li.hidden::after {
+  content: "";
+  width: 3px;
+  height: 90%;
+  background-color: transparent;
+  position: absolute;
+  top: 5%;
+  right: -0.25rem;
+}
 .carousel-container div.left-zone ul.carousel-selector-images li.visible::after {
   content: "";
   width: 3px;
   height: 90%;
-  background-color: gray;
+  background-color: #9f2b00;
   position: absolute;
   top: 5%;
   right: -0.25rem;
@@ -64,7 +75,42 @@
 }
 .carousel-container div.right-zone {
   flex: 2;
+  overflow: hidden;
 }
+.carousel-container div.right-zone ul.carousel-body {
+  position: relative;
+}
+.carousel-container div.right-zone ul.carousel-body li.flavor-card {
+  position: relative;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 1rem;
+  margin: 0.75rem;
+}
+.carousel-container div.right-zone ul.carousel-body li.flavor-card img {
+  width: 80%;
+  height: min(100%, 2rem);
+  padding: 0%;
+  margin: 0%;
+  border-radius: 0.75rem;
+}
+.carousel-container div.right-zone ul.carousel-body li.flavor-card figcaption {
+  padding: 0%;
+  margin: 0%;
+}
+.carousel-container div.right-zone ul.carousel-body li.flavor-card p {
+  padding: 0%;
+  margin: 0%;
+}
+.carousel-container div.right-zone ul.carousel-body li.flavor-card.visible {
+  top: 0;
+  transition: top 0.3s ease-in-out;
+}
+.carousel-container div.right-zone ul.carousel-body li.flavor-card.hidden {
+  top: 100%;
+  transition: top 0.3s ease-in-out;
+}
+
 @media (min-width: 426px) {
   .carousel-container div.left-zone ul.carousel-selector-images {
     padding: 1rem 0 1rem 1rem;
