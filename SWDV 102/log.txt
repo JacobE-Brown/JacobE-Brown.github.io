@@ -1,0 +1,10 @@
+fe156d3 - Jacob Brown, 2024-09-15 19:42:23 -0600 : Added a Thank you on the contact form
+c077e47 - Jacob Brown, 2024-09-15 19:40:46 -0600 : Fixing Errors for Firefox that should work.
+b30d82c - Jacob Brown, 2024-09-15 19:34:37 -0600 : Fixed Color
+861b447 - Jacob Brown, 2024-09-15 19:32:46 -0600 : Fixed the JS not launching and fixed some Firefox formatting Issues.
+d1c1a08 - Jacob Brown, 2024-09-15 19:24:56 -0600 : Testing JS on Form
+eb86659 - Jacob Brown, 2024-09-15 19:17:12 -0600 : Added JavaScript to the form to correct for missing values in the fields.
+0d001c9 - Jacob Brown, 2024-09-15 18:56:57 -0600 : Added the basic Contact Form HTML and CSS
+3204cde - Jacob Brown, 2024-09-15 16:45:44 -0600 : Finished work on JavaScript for the Gallery page and for the Carousel.
+f309f20 - Jacob Brown, 2024-09-15 14:09:00 -0600 : Added the HTML and SCSS to the Gallery page to make the carousel. There are two regions, a left and a right. The left region will be the selector and the right will be for images and text. THe next steps will be to add the JavaScript.
+01f93ec - Jacob Brown, 2024-09-12 16:12:24 -0600 : Set up the beginings of my Gallery Webpage.
