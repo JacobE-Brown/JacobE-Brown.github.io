@@ -46,25 +46,21 @@ h2 {
     margin-bottom: $margin-m;
 
     form {
+        width: 80%;
         .form-group {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-evenly;
             text-align: center;
-            gap: $margin-xs;
+            gap: $margin-m;
 
             // border: solid lime 1px;
 
             width: 100%;
 
-            label {
-                // flex: 1;
-                // border: solid lime 1px;
-            }
-
             input {
                 position: relative;
-                width: max(90%, 20rem);
+                width: 100%;
                 outline: none;
                 font-size: $font-m;
                 padding: $margin-xs 0;
@@ -78,7 +74,7 @@ h2 {
 
             textarea {
                 position: relative;
-                width: max(90%, 20rem);
+                width: 100%;
                 outline: none;
                 font-size: $font-m;
                 padding: $margin-xs 0;

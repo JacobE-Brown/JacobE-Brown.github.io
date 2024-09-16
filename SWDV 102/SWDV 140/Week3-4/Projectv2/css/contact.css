@@ -14,17 +14,20 @@ h2 {
   padding: 1rem;
   margin-bottom: 1rem;
 }
+.form-container form {
+  width: 80%;
+}
 .form-container form .form-group {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
-  gap: 0.5rem;
+  gap: 1rem;
   width: 100%;
 }
 .form-container form .form-group input {
   position: relative;
-  width: max(90%, 20rem);
+  width: 100%;
   outline: none;
   font-size: 1rem;
   padding: 0.5rem 0;
@@ -37,7 +40,7 @@ h2 {
 }
 .form-container form .form-group textarea {
   position: relative;
-  width: max(90%, 20rem);
+  width: 100%;
   outline: none;
   font-size: 1rem;
   padding: 0.5rem 0;
