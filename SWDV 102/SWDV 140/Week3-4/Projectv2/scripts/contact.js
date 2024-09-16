@@ -1,53 +1,33 @@
 "use strict";
 
-document.getElementById('contactForm').addEventListener('submit', function (event) {
-    // Prevent form from submitting
-    event.preventDefault();
+const form = document.querySelector('#contact-form');
+const submitButton = document.querySelector('#submit-button');
 
-    // Clear previous error messages
-    let errors = document.querySelectorAll('.error-message');
-    errors.forEach(error => error.textContent = '');
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-    // Form validation
-    let valid = true;
+    let name = document.querySelector('#name');
+    let email = document.querySelector('#email');
+    let subject = document.querySelector('#subject');
+    let message = document.querySelector('#message');
 
-    // Check each required field
-    let name = document.getElementById('name').value.trim();
-    let email = document.getElementById('email').value.trim();
-    let subject = document.getElementById('subject').value.trim();
-    let message = document.getElementById('message').value.trim();
-
-    if (name === '') {
-        document.getElementById('nameError').textContent = 'Name is required.';
-        valid = false;
+    if (name.value == "") {
+        alert("Please Enter A Name!");
     }
-
-    if (email === '') {
-        document.getElementById('emailError').textContent = 'Email is required.';
-        valid = false;
-    } else if (!validateEmail(email)) {
-        document.getElementById('emailError').textContent = 'Please enter a valid email address.';
-        valid = false;
+    else if (email.value == "") {
+        alert("Please Enter An Email!");
     }
-
-    if (subject === '') {
-        document.getElementById('subjectError').textContent = 'Subject is required.';
-        valid = false;
+    else if (subject.value == "") {
+        alert("Please Enter Subject!");
     }
-
-    if (message === '') {
-        document.getElementById('messageError').textContent = 'Message is required.';
-        valid = false;
+    else if (MessageChannel.value == "") {
+        alert("Please Enter A Message!");
     }
-
-    // If all fields are valid, submit the form
-    if (valid) {
-        document.getElementById('contactForm').submit();
+    else {
+        alert("This form has been successfully submitted!");
+        name.value = "";
+        email.value = "";
+        subject.value = "";
+        message.value = "";
     }
 });
-
-// Function to validate email format
-function validateEmail(email) {
-    let re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
