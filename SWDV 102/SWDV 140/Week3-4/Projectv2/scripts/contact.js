@@ -1,6 +1,6 @@
 "use strict";
 
-const form = document.querySelector('#contact-form');
+let form = document.querySelector('#contact-form');
 const submitButton = document.querySelector('#submit-button');
 
 form.addEventListener("submit", (e) => {
@@ -11,19 +11,15 @@ form.addEventListener("submit", (e) => {
     let subject = document.querySelector('#subject');
     let message = document.querySelector('#message');
 
-    if (name.value == "") {
+    if (name.value.trim() === "") {
         alert("Please Enter A Name!");
-    }
-    else if (email.value == "") {
+    } else if (email.value.trim() === "") {
         alert("Please Enter An Email!");
-    }
-    else if (subject.value == "") {
+    } else if (subject.value.trim() === "") {
         alert("Please Enter Subject!");
-    }
-    else if (MessageChannel.value == "") {
+    } else if (message.value.trim() === "") {
         alert("Please Enter A Message!");
-    }
-    else {
+    } else {
         alert("This form has been successfully submitted!");
         name.value = "";
         email.value = "";
