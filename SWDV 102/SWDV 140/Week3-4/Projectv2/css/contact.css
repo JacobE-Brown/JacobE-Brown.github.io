@@ -52,5 +52,17 @@ h2 {
   border: 2px solid #00b4d4;
 }
 .form-container form .form-group #submit-button {
-  margin: 0.75rem 0;
+  position: relative;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  line-height: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #eeeeee;
+  margin-inline: auto;
+  transition: 0.1s ease;
+  z-index: 10;
+  border: 2px solid #00b4d4;
+  margin-top: 1rem;
 }/*# sourceMappingURL=contact.css.map */
