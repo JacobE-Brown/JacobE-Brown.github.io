@@ -20,7 +20,7 @@ form.addEventListener("submit", (e) => {
     } else if (message.value.trim() === "") {
         alert("Please Enter A Message!");
     } else {
-        alert("This form has been successfully submitted!");
+        alert("This form has been successfully submitted! \nThank you!");
         name.value = "";
         email.value = "";
         subject.value = "";
