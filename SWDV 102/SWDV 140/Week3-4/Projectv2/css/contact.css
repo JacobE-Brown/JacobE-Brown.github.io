@@ -37,6 +37,7 @@ h2 {
   margin-inline: auto;
   transition: 0.1s ease;
   z-index: 10;
+  border: 2px solid #00b4d4;
 }
 .form-container form .form-group textarea {
   position: relative;
@@ -48,18 +49,7 @@ h2 {
   border-radius: 0.5rem;
   border: 2px solid #eeeeee;
   margin-inline: auto;
-}
-.form-container form .form-group input:focus,
-.form-container form .form-group textarea:focus,
-.form-container form .form-group input:valid,
-.form-container form .form-group textarea:valid {
   border: 2px solid #00b4d4;
-  transition: border 0.3s ease;
-}
-.form-container form .form-group input:valid,
-.form-container form .form-group textarea:valid {
-  border: 1px solid #ff5349;
-  transition: border 0.3s ease;
 }
 .form-container form .form-group #submit-button {
   margin: 0.75rem 0;
