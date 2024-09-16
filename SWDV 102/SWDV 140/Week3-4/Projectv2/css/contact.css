@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+h2 {
+  margin-bottom: 0.25rem;
+}
+
+.form-container {
+  border: #eee 2px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: min(80%, 680px);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.form-container form .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+.form-container form .form-group input {
+  position: relative;
+  width: max(90%, 20rem);
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  line-height: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #eeeeee;
+  margin-inline: auto;
+  transition: 0.1s ease;
+  z-index: 10;
+}
+.form-container form .form-group textarea {
+  position: relative;
+  width: max(90%, 20rem);
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  line-height: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #eeeeee;
+  margin-inline: auto;
+}
+.form-container form .form-group input:focus,
+.form-container form .form-group textarea:focus,
+.form-container form .form-group input:valid,
+.form-container form .form-group textarea:valid {
+  border: 2px solid #00b4d4;
+  transition: border 0.3s ease;
+}
+.form-container form .form-group input:valid,
+.form-container form .form-group textarea:valid {
+  border: 1px solid #ff5349;
+  transition: border 0.3s ease;
+}
+.form-container form .form-group #submit-button {
+  margin: 0.75rem 0;
+}/*# sourceMappingURL=contact.css.map */

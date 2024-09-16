@@ -3,7 +3,6 @@
 // Get all the <li> items in the carousel-selector-images
 const carouselItems = document.querySelectorAll('.carousel-selector-images li');
 const flavorCardItems = document.querySelectorAll('.flavor-card');
-const images = document.querySelectorAll('img');
 
 // Add click event listeners to carousel items
 for (let i = 0; i < carouselItems.length; i++) {
@@ -15,16 +14,6 @@ for (let i = 0; i < carouselItems.length; i++) {
         toggleFlavorCard(this);
     });
 }
-
-// Preload all images
-function preloadImages() {
-    for (let i = 0; i < images.length; i++) {
-        const img = new Image();
-        img.src = images[i].src;
-    }
-}
-
-document.addEventListener("DOMContentLoaded", preloadImages);
 
 // Turn off all the indicators that the flavor is selected
 function turnFlavorInvisible(items) {

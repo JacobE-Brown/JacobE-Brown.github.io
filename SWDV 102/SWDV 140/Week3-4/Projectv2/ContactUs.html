@@ -8,6 +8,7 @@
         <meta name="keywords" content="Soda Pop Custom Coke Pepsi" />
         <title>Project 1, FizzCraft</title>
         <link rel="stylesheet" type="text/css" href="./css/mainStyles.css" />
+        <link rel="stylesheet" type="text/css" href="./css/contact.css" />
     </head>
     <body>
         <header class="primary-header">
@@ -55,30 +56,62 @@
         <main class="primary-body-content">
             <div class="wrapper">
                 <section class="main-card">
-                    <p>
-                        Lorem ipsum odor amet, consectetuer adipiscing elit.
-                        Ipsum sem morbi amet conubia proin dolor mauris nostra.
-                        Magnis inceptos sollicitudin placerat amet nulla augue
-                        semper netus. Tellus metus senectus nec pretium;
-                        ullamcorper duis quisque. Nostra varius vitae nostra mi
-                        montes. Suspendisse lectus urna mollis per urna magna.
-                        Himenaeos fames magna quam placerat morbi quisque
-                        adipiscing felis dignissim. Sed bibendum ipsum
-                        suspendisse, hendrerit per sociosqu morbi.
-                    </p>
-                    <p>
-                        Primis lectus lorem vulputate, nullam pharetra lacus.
-                        Netus eget hac pulvinar vestibulum curabitur id montes.
-                        Dis suspendisse tincidunt elit venenatis elementum
-                        massa. Vulputate magnis cras suscipit in fusce.
-                        Habitasse potenti facilisi imperdiet blandit metus neque
-                        fusce convallis aliquet. Nisl ex sit; tempus convallis
-                        consequat metus. Bibendum habitant aenean ac; quam
-                        magnis pellentesque taciti. Est accumsan nostra at, urna
-                        luctus quam. Scelerisque iaculis amet massa ut vitae
-                        tellus dictum. Inceptos varius duis quis nullam purus
-                        cras curae condimentum.
-                    </p>
+                    <h2>Contact us!</h2>
+                    <div class="form-container wrapper">
+                        <form
+                            action="mailto:jacobbrown4@my.cwi.edu"
+                            method="post"
+                            enctype="text/plain"
+                        >
+                            <div class="form-group">
+                                <label for="name">First & Last Name:</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your Name"
+                                    required
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address:</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Your Email"
+                                    required
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject:</label>
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    placeholder="Subject"
+                                    required
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    placeholder="Your Message"
+                                    rows="5"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <input id="submit-button" type="submit" value="Submit" />
+                            </div>
+                        </form>
+                    </div>
                 </section>
             </div>
         </main>
@@ -91,4 +124,5 @@
             </div>
         </footer>
     </body>
+    <script src="./scripts/contact.js"></script>
 </html>
