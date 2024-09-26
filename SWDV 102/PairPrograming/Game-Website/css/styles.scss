@@ -1,0 +1,87 @@
+$Columbia-blue: #cae5ff;
+$Non-Photo-Blue: #acedff;
+$Jordy-Blue: #89bbfe;
+$Glaucous: #648ab7;
+$Davys-Gray: #615d6c;
+
+body {
+    background-image: url("../images/Pattern.webp");
+    background-repeat: repeat;
+    background-size: 300px 300px;
+
+    header {
+        width: 80%;
+        margin-inline: auto;
+
+        display: flex;
+
+        h1 {
+            flex: 1;
+            padding: 1.5rem;
+            border-radius: 2rem;
+
+            background-color: $Glaucous;
+            border: 5px solid $Columbia-blue;
+        }
+
+        nav {
+            flex: 3;
+            ul {
+                display: flex;
+                // flex-direction: row-reverse;
+                align-items: center;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                height: 75%;
+                li {
+                    text-decoration: none;
+                    list-style-type: none;
+                    a {
+                        text-wrap: nowrap;
+                        color: black;
+                        font-weight: 300;
+
+
+                        border-radius: 2rem;
+
+                        margin: 1rem;
+                        border: 5px solid $Columbia-blue;
+
+                        background-color: $Glaucous;
+
+                        padding: 1rem;
+
+                    }
+
+                    a:hover {
+                        background-color: $Davys-Gray;
+                    }
+                }
+            }
+
+
+        }
+    }
+    main {
+        margin-inline: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 2rem;
+        .game-box {
+            width: 80%;
+            margin-inline: auto;
+
+            height: auto;
+
+            background-color: $Glaucous;
+            border: 5px solid $Columbia-blue;
+
+            border-radius: 2rem;
+
+            padding: 2rem;
+        }
+    }
+}

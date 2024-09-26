@@ -1,0 +1,64 @@
+.TTT-Board {
+    width: 25rem;
+    height: 25rem;
+    margin-inline: auto;
+    text-align: center;
+
+    $border-width: 5px;
+    .TTT-Squares {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: $border-width;
+
+        border: 1px solid lime;
+
+        height: 25rem;
+        width: 25rem;
+
+        .TTT-Box {
+            border: 1px red solid;
+        }
+        .TTT-Box:hover {
+            background-color: #eee;
+            cursor: pointer;
+        }
+    }
+
+    .TTT-Lines-Border {
+        position: absolute;
+        height: 25rem;
+        width: 25rem;
+
+        .line {
+            width: $border-width;
+            height: 20rem;
+            background-color: #615d6c;
+
+            // border: .5px solid blue;
+
+            position: absolute;
+        }
+
+        // .line-1 {
+        //     top: 2.5rem;
+        //     left: 8rem;
+        // }
+        // .line-2 {
+        //     // top: 2.5rem;
+        //     // left: 16.5rem;
+        // }
+        // // first horizontal line
+        // .line-3 {
+        //     // top: -8rem;
+        //     // left: 16.5rem;
+        //     rotate: 90deg;
+        // }
+        // // second horizontal line
+        // .line-4 {
+        //     // top: 8rem;
+        //     // left: 16.5rem;
+        //     rotate: 90deg;
+        // }
+    }
+}
