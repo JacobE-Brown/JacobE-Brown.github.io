@@ -1,49 +1,46 @@
-#bottle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: auto;
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+#svg1 {
+  height: 20rem;
+  width: auto;
 }
 
 .bottle-liquid {
-  fill: orange;
   fill-opacity: 1;
   fill-rule: nonzero;
   stroke: none;
   stroke-width: 0.133333;
 }
 .bottle-liquid .left-side {
-  animation: scaleY 3s 1 ease-out, change-color-left 2s infinite ease-in-out 3s;
+  animation: scaleY 3s 1 ease-out, change-color-left 5s infinite ease-in-out 3s;
   transform-origin: 50% 95% 0;
+  fill: #d85e00;
 }
 .bottle-liquid .right-side {
-  animation: scaleY 3s 1 ease-out, change-color-right 2s infinite ease-in-out 3s;
+  animation: scaleY 3s 1 ease-out, change-color-right 5s infinite ease-in-out 3s;
   transform-origin: 50% 95% 0;
-  fill: rgb(170, 129, 53);
+  fill: #ff5349;
 }
 
 @keyframes change-color-left {
   0% {
-    fill: orange;
+    fill: #d85e00;
   }
   50% {
-    fill: red;
+    fill: #007AD8;
   }
   100% {
-    fill: orange;
+    fill: #d85e00;
   }
 }
 @keyframes change-color-right {
   0% {
-    fill: rgb(170, 129, 53);
+    fill: #ff5349;
   }
   50% {
-    fill: rgb(151, 36, 36);
+    fill: #00b4d4;
   }
   100% {
-    fill: rgb(170, 129, 53);
+    fill: #ff5349;
   }
 }
 @keyframes scaleY {
@@ -53,4 +50,4 @@
   100% {
     transform: scaleY(1); /* Optionally return to 0% */
   }
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=bottleStyles.css.map */

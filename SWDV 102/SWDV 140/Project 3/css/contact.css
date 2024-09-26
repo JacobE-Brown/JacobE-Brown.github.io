@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+h2 {
+  margin-bottom: 0.25rem;
+}
+
+.form-container {
+  border: #eee 2px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: min(80%, 680px);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.form-container form {
+  width: 80%;
+}
+.form-container form .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 1rem;
+  width: 100%;
+}
+.form-container form .form-group input {
+  position: relative;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  line-height: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #eeeeee;
+  margin-inline: auto;
+  transition: 0.1s ease;
+  z-index: 10;
+  border: 2px solid #00b4d4;
+}
+.form-container form .form-group textarea {
+  position: relative;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  line-height: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #eeeeee;
+  margin-inline: auto;
+  border: 2px solid #00b4d4;
+}
+.form-container form .form-group #submit-button {
+  position: relative;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  line-height: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #eeeeee;
+  margin-inline: auto;
+  transition: 0.1s ease;
+  z-index: 10;
+  border: 2px solid #00b4d4;
+  margin-top: 1rem;
+}/*# sourceMappingURL=contact.css.map */

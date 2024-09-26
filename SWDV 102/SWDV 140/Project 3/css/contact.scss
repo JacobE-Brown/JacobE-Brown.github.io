@@ -1,0 +1,121 @@
+// =========================== Importing Fonts ===========================
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+
+// =========================== Color Scheme Definitions ===========================
+$Blue-Green: #00b4d4;
+$Burnt-Orange: #d85e00;
+$Yellow-Green: #cade59;
+$Red-Orange: #9f2b00;
+$Pink-Strawberry: #ff5349;
+$Burnt-Blue: #007ad8;
+
+// =========================== Margin Scale Variables ===========================
+$margin-xxs: 0.25rem;
+$margin-xs: 0.5rem;
+$margin-s: 0.75rem;
+$margin-m: 1rem;
+$margin-l: 1.25rem;
+$margin-xl: 1.75rem;
+$margin-xxl: 2.5rem;
+
+// =========================== Font Scale Variables ===========================
+$font-xxs: 0.25rem;
+$font-xs: 0.5rem;
+$font-s: 0.75rem;
+$font-m: 1rem;
+$font-l: 1.25rem;
+$font-xl: 1.75rem;
+$font-xxl: 2.5rem;
+
+// Start of main Code
+
+h2 {
+    margin-bottom: $margin-xxs;
+}
+
+.form-container {
+    border: #eee 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $font-s;
+    width: min(80%, 680px);
+
+    padding: $margin-m;
+    margin-bottom: $margin-m;
+
+    form {
+        width: 80%;
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+            gap: $margin-m;
+
+            // border: solid lime 1px;
+
+            width: 100%;
+
+            input {
+                position: relative;
+                width: 100%;
+                outline: none;
+                font-size: $font-m;
+                padding: $margin-xs 0;
+                line-height: $font-m;
+                border-radius: $margin-xs;
+                border: 2px solid #eeeeee;
+                margin-inline: auto;
+                transition: 0.1s ease;
+                z-index: 10;
+                border: 2px solid $Blue-Green;
+            }
+
+            textarea {
+                position: relative;
+                width: 100%;
+                outline: none;
+                font-size: $font-m;
+                padding: $margin-xs 0;
+                line-height: $font-m;
+                border-radius: $margin-xs;
+                border: 2px solid #eeeeee;
+                margin-inline: auto;
+                border: 2px solid $Blue-Green;
+            }
+
+            // input:focus,
+            // textarea:focus,
+            // input:valid,
+            // textarea:valid {
+            //     border: 2px solid $Blue-Green;
+            //     transition: border 0.3s ease;
+            // }
+
+            // input:valid,
+            // textarea:valid {
+            //     border: 1px solid $Pink-Strawberry;
+            //     transition: border 0.3s ease;
+            // }
+
+            #submit-button {
+                position: relative;
+                width: 100%;
+                outline: none;
+                font-size: $font-m;
+                padding: $margin-xs 0;
+                line-height: $font-m;
+                border-radius: $margin-xs;
+                border: 2px solid #eeeeee;
+                margin-inline: auto;
+                transition: 0.1s ease;
+                z-index: 10;
+                border: 2px solid $Blue-Green;
+
+                margin-top: $font-m;
+            }
+        }
+    }
+}

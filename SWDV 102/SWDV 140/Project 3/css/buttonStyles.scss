@@ -1,0 +1,102 @@
+// =========================== Importing Fonts ===========================
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+
+// =========================== Color Scheme Definitions ===========================
+$Blue-Green: #00b4d4;
+$Burnt-Orange: #d85e00;
+$Yellow-Green: #cade59;
+$Red-Orange: #9f2b00;
+$Pink-Strawberry: #ff5349;
+$Dark-Blue-Purpleish: #2d1674;
+$Burnt-Blue: #007AD8;
+
+// =========================== Margin Scale Variables ===========================
+$margin-xxs: 0.25rem;
+$margin-xs: 0.5rem;
+$margin-s: 0.75rem;
+$margin-m: 1rem;
+$margin-l: 1.25rem;
+$margin-xl: 1.75rem;
+$margin-xxl: 2.5rem;
+
+// =========================== Font Scale Variables ===========================
+$font-xxs: 0.25rem;
+$font-xs: 0.5rem;
+$font-s: 0.75rem;
+$font-m: 1rem;
+$font-l: 1.25rem;
+$font-xl: 1.75rem;
+$font-xxl: 2.5rem;
+
+// =========================== Main Styles ===========================
+#Main-Button {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, $Burnt-Orange 10%, $Pink-Strawberry 100%);
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Niconne", cursive;
+    font-size: $font-xl;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    touch-action: manipulation;
+    position: relative;
+}
+
+// Animation for the button's conic gradient
+// I shamelesly took the idea from this youtube tutorial: https://www.youtube.com/watch?v=ezP4kbOvs_E
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+#Main-Button::after,
+#Main-Button::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 3px;
+    border-radius: 8px;
+    z-index: -1;
+    $angle: 0deg;
+
+    background-image: conic-gradient(
+        from var(--angle),
+        $Blue-Green,
+        $Yellow-Green,
+        $Red-Orange,
+        $Blue-Green
+    );
+    animation: 2s spin linear infinite;
+}
+
+#Main-Button::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+#Main-Button:hover {
+    box-shadow: $Burnt-Blue 3px 3px 6px 0px inset,
+                $Red-Orange -3px -3px 6px 1px inset;
+    transition: box-shadow 1s ease-out;
+}
+
+// Keyframes for spin animation
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}

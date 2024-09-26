@@ -1,54 +1,51 @@
-#bottle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: auto;
+@import "variables";
+
+#svg1 {
+    height: 20rem;
+    width: auto;
 }
 
 .bottle-liquid {
-    fill: orange;
     fill-opacity: 1;
     fill-rule: nonzero;
     stroke: none;
     stroke-width: 0.133333;
 
     .left-side {
-
-        animation: scaleY 3s 1 ease-out, change-color-left 2s infinite ease-in-out 3s;
+        animation: scaleY 3s 1 ease-out,
+            change-color-left 5s infinite ease-in-out 3s;
         transform-origin: 50% 95% 0;
+        fill: $Burnt-Orange;
     }
-
     .right-side {
-        animation: scaleY 3s 1 ease-out, change-color-right 2s infinite ease-in-out 3s;
+        animation: scaleY 3s 1 ease-out,
+            change-color-right 5s infinite ease-in-out 3s;
         transform-origin: 50% 95% 0;
-        fill: rgb(170, 129, 53);
+        fill: $Pink-Strawberry;
     }
-
 }
 
 @keyframes change-color-left {
     0% {
-        fill: orange;
+        fill: $Burnt-Orange;
     }
     50% {
-        fill: red;
+        fill: $Burnt-Blue;
     }
     100% {
-        fill: orange;
+        fill: $Burnt-Orange;
     }
 }
 
 @keyframes change-color-right {
     0% {
-        fill: rgb(170, 129, 53);
+        fill: $Pink-Strawberry;
     }
     50% {
-        fill: rgb(151, 36, 36);
+        fill: $Blue-Green;
     }
     100% {
-        fill: rgb(170, 129, 53);
+        fill: $Pink-Strawberry;
     }
 }
 

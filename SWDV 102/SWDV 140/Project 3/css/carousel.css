@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+.carousel-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.carousel-container ul.carousel {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.carousel-container ul.carousel li {
+  list-style-type: none;
+  margin: 0;
+}
+.carousel-container ul.carousel li img {
+  width: 2.7rem;
+  padding: 0.3rem;
+}
+.carousel-container div.left-zone {
+  flex: 1;
+  position: relative;
+}
+.carousel-container div.left-zone ul.carousel-selector-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  position: relative;
+  margin: 0.75rem;
+}
+.carousel-container div.left-zone ul.carousel-selector-images li {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  gap: 0.25rem;
+  position: relative;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  border-radius: 0.75rem;
+}
+.carousel-container div.left-zone ul.carousel-selector-images li:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  cursor: pointer;
+}
+.carousel-container div.left-zone ul.carousel-selector-images li.hidden::after {
+  content: "";
+  width: 3px;
+  height: 90%;
+  background-color: transparent;
+  position: absolute;
+  top: 5%;
+  right: -0.25rem;
+}
+.carousel-container div.left-zone ul.carousel-selector-images li.visible::after {
+  content: "";
+  width: 3px;
+  height: 90%;
+  background-color: #9f2b00;
+  position: absolute;
+  top: 5%;
+  right: -0.25rem;
+}
+.carousel-container div.left-zone ul.carousel-selector-images::after {
+  content: "";
+  width: 2px;
+  height: 75%;
+  background-color: #eee;
+  border-radius: 0.25rem;
+  position: absolute;
+  top: 0%;
+  right: -0.5rem;
+  transform: translateY(12.5%);
+}
+.carousel-container div.right-zone {
+  flex: 2;
+  overflow: hidden;
+}
+.carousel-container div.right-zone ul.carousel-body {
+  position: relative;
+}
+.carousel-container div.right-zone ul.carousel-body li.flavor-card {
+  position: relative;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 1rem;
+  margin: 0.75rem;
+}
+.carousel-container div.right-zone ul.carousel-body li.flavor-card img {
+  width: 80%;
+  height: min(100%, 2rem);
+  padding: 0%;
+  margin: 0%;
+  border-radius: 0.75rem;
+}
+.carousel-container div.right-zone ul.carousel-body li.flavor-card figcaption {
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
+}
+.carousel-container div.right-zone ul.carousel-body li.flavor-card p {
+  margin: 0%;
+  text-align: left;
+  padding: 0.75rem;
+}
+.carousel-container div.right-zone ul.carousel-body li.flavor-card.visible {
+  top: 0;
+  transition: top 0.3s ease-in-out;
+}
+.carousel-container div.right-zone ul.carousel-body li.flavor-card.hidden {
+  top: 100%;
+  transition: top 0.3s ease-in-out;
+}
+
+@media (min-width: 426px) {
+  .carousel-container div.left-zone ul.carousel-selector-images {
+    padding: 1rem 0 1rem 1rem;
+  }
+  .carousel-container div.left-zone ul.carousel-selector-images li {
+    flex-direction: row;
+    justify-content: left;
+    gap: 1.75rem;
+  }
+  .carousel-container div.left-zone ul.carousel-selector-images li::after {
+    content: "";
+  }
+  .carousel-container div.right-zone {
+    flex: 2;
+  }
+  .carousel-container div.right-zone ul.carousel-body {
+    flex: 2;
+  }
+}/*# sourceMappingURL=carousel.css.map */

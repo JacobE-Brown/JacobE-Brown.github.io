@@ -1,0 +1,196 @@
+// =========================== Importing Fonts ===========================
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+
+// =========================== Color Scheme Definitions ===========================
+$Blue-Green: #00b4d4;
+$Burnt-Orange: #d85e00;
+$Yellow-Green: #cade59;
+$Red-Orange: #9f2b00;
+$Pink-Strawberry: #ff5349;
+$Burnt-Blue: #007ad8;
+
+// =========================== Margin Scale Variables ===========================
+$margin-xxs: 0.25rem;
+$margin-xs: 0.5rem;
+$margin-s: 0.75rem;
+$margin-m: 1rem;
+$margin-l: 1.25rem;
+$margin-xl: 1.75rem;
+$margin-xxl: 2.5rem;
+
+// =========================== Font Scale Variables ===========================
+$font-xxs: 0.25rem;
+$font-xs: 0.5rem;
+$font-s: 0.75rem;
+$font-m: 1rem;
+$font-l: 1.25rem;
+$font-xl: 1.75rem;
+$font-xxl: 2.5rem;
+
+// =========================== Carousel CSS ===========================
+.carousel-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: $font-xs;
+
+    ul.carousel {
+        text-align: left;
+        padding: 0;
+        margin: 0;
+
+        li {
+            list-style-type: none;
+            margin: 0;
+
+            img {
+                width: 2.7rem;
+                padding: 0.3rem;
+            }
+        }
+    }
+    // The list of flavors on the carousel in the left zone.
+    div.left-zone {
+        flex: 1;
+        position: relative;
+        ul.carousel-selector-images {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            position: relative;
+            margin: $margin-s;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                align-items: center;
+                gap: $font-xxs;
+                position: relative;
+
+                box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+                border-radius: $margin-s;
+            }
+
+            li:hover {
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+                    rgba(17, 17, 26, 0.1) 0px 16px 56px,
+                    rgba(17, 17, 26, 0.1) 0px 24px 80px;
+                cursor: pointer;
+            }
+
+            // After element used to create the line on the right when the class is set to vissible.
+            li.hidden::after {
+                content: "";
+                width: 3px;
+                height: 90%;
+                background-color: transparent;
+
+                position: absolute;
+                top: 5%;
+                right: -$margin-xxs;
+            }
+            li.visible::after {
+                content: "";
+                width: 3px;
+                height: 90%;
+                background-color: $Red-Orange;
+
+                position: absolute;
+                top: 5%;
+                right: -$margin-xxs;
+            }
+        }
+
+        // Adds a sepperator bar bewtween the left and right zones.
+        ul.carousel-selector-images::after {
+            content: "";
+            width: 2px;
+            height: 75%;
+            background-color: #eee;
+            border-radius: $margin-xxs;
+
+            position: absolute;
+            top: 0%;
+            right: -$margin-xs;
+            transform: translateY(12.5%);
+        }
+    }
+    // The list of flavors on the carousel in the left zone.
+    div.right-zone {
+        flex: 2;
+        overflow: hidden;
+
+        ul.carousel-body {
+            position: relative;
+
+            li.flavor-card {
+                position: relative;
+                text-align: center;
+
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+                    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                border-radius: $margin-m;
+                margin: $margin-s;
+
+                img {
+
+                    width: 80%;
+                    height: min(100%, 2rem);
+
+                    padding: 0%;
+                    margin: 0%;
+                    border-radius: $margin-s;
+                }
+
+                figcaption {
+                    padding: 0%;
+                    margin: 0%;
+                    text-align: center;
+                }
+
+                p {
+                    margin: 0%;
+
+                    text-align: left;
+                    padding: $margin-s;
+                }
+            }
+
+            li.flavor-card.visible {
+                top: 0;
+                transition: top 0.3s ease-in-out;
+            }
+
+            li.flavor-card.hidden {
+                top: 100%;
+                transition: top 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+@media (min-width: 426px) {
+    .carousel-container {
+        div.left-zone {
+            ul.carousel-selector-images {
+                padding: $margin-m 0 $margin-m $margin-m;
+                li {
+                    flex-direction: row;
+                    justify-content: left;
+                    gap: $margin-xl;
+                }
+
+                li::after {
+                    content: "";
+                }
+            }
+        }
+        div.right-zone {
+            flex: 2;
+            ul.carousel-body {
+                flex: 2;
+            }
+        }
+    }
+}
