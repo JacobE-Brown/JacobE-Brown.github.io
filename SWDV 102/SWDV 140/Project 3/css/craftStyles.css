@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+section.main-card.craft-menu-container {
+  padding: 1.25rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+section.main-card.craft-menu-container div.left-zone {
+  flex: 1;
+}
+section.main-card.craft-menu-container div.left-zone .bottles {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: sticky;
+  top: 25%;
+}
+section.main-card.craft-menu-container div.left-zone .bottles svg {
+  height: 20rem;
+  width: auto;
+}
+section.main-card.craft-menu-container div.left-zone .bottles .bottle1 .bottle-liquid.orange .left-side {
+  fill: #d85e00;
+}
+section.main-card.craft-menu-container div.left-zone .bottles .bottle1 .bottle-liquid.orange .right-side {
+  fill: #ff5349;
+}
+section.main-card.craft-menu-container div.right-zone {
+  flex: 2;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form {
+  display: grid;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .craft-form-element {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0.75rem;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .craft-form-element h3 {
+  margin: 0%;
+  padding: 0%;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .flavor-selector img {
+  width: 2.7rem;
+  padding: 0.3rem;
+}
+
+@media (min-width: 426px) {
+  section.main-card.craft-menu-container div.right-zone .craft-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}/*# sourceMappingURL=craftStyles.css.map */
