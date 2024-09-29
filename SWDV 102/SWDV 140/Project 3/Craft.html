@@ -70,7 +70,7 @@
                 <section class="main-card craft-menu-container">
                     <div class="left-zone">
                         <div class="bottles">
-                            <div class="bottle1">
+                            <div class="bottle bottle1">
                                 <svg
                                     id="svg1"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -177,13 +177,48 @@
                                     </g>
                                 </svg>
                             </div>
-                            <div class="bottle2"></div>
-                            <div class="bottle3"></div>
+                            <div class="bottle bottle2"></div>
+                            <div class="bottle bottle3"></div>
                         </div>
                     </div>
                     <div class="right-zone">
                         <form class="craft-form">
                             <div class="craft-form-element bottles">
+                                <h3>Bottles</h3>
+                                <label>
+                                    <img
+                                        src="./images/bottles/Bottle 2liter.svg"
+                                    />
+                                    <input
+                                        type="radio"
+                                        name="bottle"
+                                        value="Bottle"
+                                        checked
+                                    />
+                                    <span>Two Liters</span>
+                                </label>
+                                <label>
+                                    <img
+                                        src="./images/bottles/Bottle Can.svg"
+                                    />
+                                    <input
+                                        type="radio"
+                                        name="bottle"
+                                        value="Can"
+                                    />
+                                    <span>Cans</span>
+                                </label>
+                                <label>
+                                    <img
+                                        src="./images/bottles/Bottle Glass.svg"
+                                    />
+                                    <input
+                                        type="radio"
+                                        name="bottle"
+                                        value="Glass"
+                                    />
+                                    <span>Glass</span>
+                                </label>
                             </div>
                             <div class="craft-form-element flavor-selector">
                                 <h3>Flavors</h3>
@@ -249,10 +284,74 @@
                                     <span>Lemon-Lime</span>
                                 </label>
                             </div>
-                            <div class="craft-form-element collors"></div>
-                            <div class="craft-form-element tittle"></div>
-                            <div class="craft-form-element amount"></div>
-                            <div class="craft-form-element submit-button"></div>
+                            <div class="craft-form-element colors">
+                                <h3>Color</h3>
+                                <label>
+                                    <div
+                                        class="color-pallet color-Orange"
+                                    ></div>
+                                    <input
+                                        type="radio"
+                                        name="color"
+                                        value="Orange"
+                                        checked
+                                    />
+                                    <span>Orange</span>
+                                </label>
+                                <label>
+                                    <div class="color-pallet color-Blue"></div>
+                                    <input
+                                        type="radio"
+                                        name="color"
+                                        value="Blue"
+                                    />
+                                    <span>Blue</span>
+                                </label>
+                                <label>
+                                    <div
+                                        class="color-pallet color-Yellow"
+                                    ></div>
+                                    <input
+                                        type="radio"
+                                        name="color"
+                                        value="Yellow"
+                                    />
+                                    <span>Yellow</span>
+                                </label>
+                                <label>
+                                    <div class="color-pallet color-Green"></div>
+                                    <input
+                                        type="radio"
+                                        name="color"
+                                        value="Green"
+                                    />
+                                    <span>Green</span>
+                                </label>
+                                <label>
+                                    <div class="color-pallet color-Brown"></div>
+                                    <input
+                                        type="radio"
+                                        name="color"
+                                        value="Brown"
+                                    />
+                                    <span>Brown</span>
+                                </label>
+                            </div>
+                            <div class="craft-form-element tittle">
+                                <h3>Bottle-Label</h3>
+                                <input
+                                    value="FizzCraft!"
+                                    name="label-text"
+                                    value="label-text"
+                                />
+                            </div>
+                            <div class="craft-form-element amount">
+                                <h3>Amount</h3>
+                                <input type="text" name="number-box" value="1";>
+                            </div>
+                            <div class="craft-form-element submit-button">
+                                <button class="Craft-Form-Button">Submit</button>
+                            </div>
                         </form>
                     </div>
                 </section>

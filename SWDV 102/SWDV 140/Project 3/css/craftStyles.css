@@ -37,15 +37,43 @@ section.main-card.craft-menu-container div.right-zone .craft-form .craft-form-el
   align-items: start;
   padding: 0.75rem;
 }
+section.main-card.craft-menu-container div.right-zone .craft-form .craft-form-element img {
+  width: 2.7rem;
+  padding: 0.3rem;
+}
 section.main-card.craft-menu-container div.right-zone .craft-form .craft-form-element h3 {
   margin: 0%;
   padding: 0%;
 }
-section.main-card.craft-menu-container div.right-zone .craft-form .flavor-selector img {
-  width: 2.7rem;
-  padding: 0.3rem;
+section.main-card.craft-menu-container div.right-zone .craft-form .craft-form-element label {
+  display: flex;
+  align-items: center;
 }
-
+section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector {
+  gap: 0.25rem;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-pallet {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border: solid 0.5px black;
+  border-radius: 0.25rem;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-Orange {
+  background-color: #d85e00;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-Blue {
+  background-color: #007AD8;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-Yellow {
+  background-color: yellow;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-Green {
+  background-color: limegreen;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-Brown {
+  background-color: brown;
+}
 @media (min-width: 426px) {
   section.main-card.craft-menu-container div.right-zone .craft-form {
     display: grid;
