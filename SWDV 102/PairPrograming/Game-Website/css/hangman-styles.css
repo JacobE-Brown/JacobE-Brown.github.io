@@ -1,0 +1,31 @@
+#hangman-guesses-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+#hangman-guesses-box p {
+  position: relative;
+  text-align: center;
+  width: 5px;
+  padding: 0.5rem;
+}
+#hangman-guesses-box .hidden {
+  color: transparent;
+}
+#hangman-guesses-box .visible {
+  color: #615d6c;
+}
+#hangman-guesses-box p::after {
+  content: "";
+  position: absolute;
+  margin-inline: auto;
+  top: 110%;
+  height: 3px;
+  width: 2rem;
+  background-color: whitesmoke;
+  transform: translateX(-40%);
+}
+#hangman-guesses-box .letters-and-misses {
+  display: flex;
+}/*# sourceMappingURL=hangman-styles.css.map */

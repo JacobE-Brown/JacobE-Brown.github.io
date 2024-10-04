@@ -9,6 +9,8 @@ body {
     background-repeat: repeat;
     background-size: 300px 300px;
 
+    color: $Columbia-blue;
+
     header {
         width: 80%;
         margin-inline: auto;
@@ -38,9 +40,8 @@ body {
                     list-style-type: none;
                     a {
                         text-wrap: nowrap;
-                        color: black;
                         font-weight: 300;
-
+                        text-decoration: none;
 
                         border-radius: 2rem;
 

@@ -1,0 +1,45 @@
+$Columbia-blue: #cae5ff;
+$Non-Photo-Blue: #acedff;
+$Jordy-Blue: #89bbfe;
+$Glaucous: #648ab7;
+$Davys-Gray: #615d6c;
+
+#hangman-guesses-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    p {
+        position: relative;
+        text-align: center;
+        width: 5px;
+        padding: .5rem;
+    }
+
+    .hidden {
+        color: transparent;
+    }
+
+    .visible {
+        color: $Davys-Gray;
+    }
+
+    p::after {
+        content: '';
+        position: absolute;
+        margin-inline: auto;
+        top: 110%;
+        height: 3px;
+        width: 2rem;
+        background-color: whitesmoke;
+
+        transform: translateX(-40%);
+    }
+
+    .letters-and-misses {
+        display: flex;
+    }
+}
+
+

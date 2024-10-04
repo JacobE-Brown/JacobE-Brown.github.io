@@ -2,6 +2,7 @@ body {
   background-image: url("../images/Pattern.webp");
   background-repeat: repeat;
   background-size: 300px 300px;
+  color: #cae5ff;
 }
 body header {
   width: 80%;
@@ -31,8 +32,8 @@ body header nav ul li {
 }
 body header nav ul li a {
   text-wrap: nowrap;
-  color: black;
   font-weight: 300;
+  text-decoration: none;
   border-radius: 2rem;
   margin: 1rem;
   border: 5px solid #cae5ff;

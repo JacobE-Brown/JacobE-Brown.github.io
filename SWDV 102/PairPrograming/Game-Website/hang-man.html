@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Untitled Games</title>
+        <title>Hangman</title>
         <meta name="author" content="Jacob Brown" />
         <meta charset="UTF-8" />
         <meta
@@ -10,54 +10,244 @@
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/hangman-styles.css" />
     </head>
     <body>
         <header>
-            <h1>Untitled Games</h1>
+            <h1>Hangman</h1>
             <nav>
                 <ul>
                     <li>
-                        <a href="./rock-paper-scissors.html"
-                            >Rock-Paper-Scissors</a
+                        <a href="./index.html"
+                            >Home</a
                         >
                     </li>
                     <li>
                         <a href="./hang-man.html">Hang-Man</a>
                     </li>
                     <li>
-                        <a href="./tic-tac-toe.html">Tic-Tac-Toe</a>
+                        <a href="./about.html">About</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
             <section class="game-box">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse nisl magna, viverra in tellus vitae, imperdiet
-                    mollis lorem. Nullam sem tortor, vulputate non eros at,
-                    bibendum suscipit velit. Sed feugiat pellentesque lobortis.
-                    Donec mattis magna ut dolor dapibus gravida. Sed mollis,
-                    ante ac vehicula sodales, justo neque volutpat massa, sed
-                    pellentesque risus nisl id augue. Proin non nisi tincidunt,
-                    tristique nunc vitae, iaculis diam. Sed dolor erat, lobortis
-                    eget sem et, volutpat facilisis velit. Maecenas vitae mi non
-                    augue porttitor efficitur. Donec sed tortor et erat viverra
-                    iaculis id at lectus. Suspendisse sagittis nunc eu lectus
-                    accumsan, ac porttitor ligula porttitor. Suspendisse vel
-                    scelerisque magna. Aliquam sed urna ligula. Quisque eu
-                    maximus tortor, eu pellentesque erat. Praesent ac purus non
-                    mi egestas venenatis in in quam. Vivamus dignissim, libero
-                    id sodales mattis, risus magna rhoncus turpis, vel elementum
-                    erat massa vitae magna. Suspendisse potenti. Phasellus nec
-                    mi tellus. Donec porttitor consequat enim. Duis efficitur
-                    sapien quis massa scelerisque, sed consequat magna auctor.
-                    Fusce blandit convallis nulla, vel sodales lacus. Quisque
-                    non nulla sem. Vestibulum ac vehicula enim. Aliquam
-                    ultricies rhoncus volutpat. Duis nec semper massa. Integer
-                    ullamcorper purus aliquam ornare egestas.
-                </p>
+                <h3 id="message"></h3>
+                <input
+                    type="password"
+                    id="hangman-initial-word-input"
+                    value="dog"
+                />
+                <button onclick="submitword()">Submit Word</button>
+                <div class="letters-and-misses">
+                    <div id="hangman-guesses-box">
+                        <!-- Blank Character &#8203; -->
+                        <p class="visible">A</p>
+                        <p class="visible">N</p>
+                        <p class="visible">I</p>
+                        <p class="visible">M</p>
+                        <p class="visible">A</p>
+                        <p class="visible">L</p>
+                    </div>
+                    <div id="misses">
+                        <div id="hangman-SVG-Image">
+                            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                            <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+                            <svg
+                                width="11.60679mm"
+                                height="23.47859mm"
+                                viewBox="0 0 11.60679 23.47859"
+                                version="1.1"
+                                id="svg1"
+                                inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+                                sodipodi:docname="hangman.svg"
+                                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:svg="http://www.w3.org/2000/svg"
+                            >
+                                <sodipodi:namedview
+                                    id="namedview1"
+                                    pagecolor="#ffffff"
+                                    bordercolor="#eeeeee"
+                                    borderopacity="1"
+                                    inkscape:showpageshadow="0"
+                                    inkscape:pageopacity="0"
+                                    inkscape:pagecheckerboard="0"
+                                    inkscape:deskcolor="#505050"
+                                    inkscape:document-units="px"
+                                    inkscape:zoom="5.74422"
+                                    inkscape:cx="2.2631445"
+                                    inkscape:cy="45.088802"
+                                    inkscape:window-width="1920"
+                                    inkscape:window-height="1052"
+                                    inkscape:window-x="0"
+                                    inkscape:window-y="0"
+                                    inkscape:window-maximized="1"
+                                    inkscape:current-layer="layer1"
+                                />
+                                <defs id="defs1">
+                                    <linearGradient
+                                        id="swatch1"
+                                        inkscape:swatch="solid"
+                                    >
+                                        <stop
+                                            style="
+                                                stop-color: #fb0e18;
+                                                stop-opacity: 1;
+                                            "
+                                            offset="0"
+                                            id="stop1"
+                                        />
+                                    </linearGradient>
+                                    <linearGradient
+                                        id="swatch8"
+                                        inkscape:swatch="solid"
+                                    >
+                                        <stop
+                                            style="
+                                                stop-color: #e10e18;
+                                                stop-opacity: 1;
+                                            "
+                                            offset="0"
+                                            id="stop8"
+                                        />
+                                    </linearGradient>
+                                    <linearGradient
+                                        id="swatch2"
+                                        inkscape:swatch="solid"
+                                    >
+                                        <stop
+                                            style="
+                                                stop-color: #000000;
+                                                stop-opacity: 1;
+                                            "
+                                            offset="0"
+                                            id="stop2"
+                                        />
+                                    </linearGradient>
+                                </defs>
+                                <g
+                                    inkscape:label="Layer 1"
+                                    inkscape:groupmode="layer"
+                                    id="layer1"
+                                    transform="translate(-3.8174872,-4.5130093)"
+                                >
+                                    <g
+                                        id="g6"
+                                        inkscape:label="Man"
+                                        style="
+                                            stroke: #e10e18;
+                                            stroke-width: 0.79375;
+                                            stroke-dasharray: none;
+                                            stroke-opacity: 1;
+                                        "
+                                        transform="translate(2.4601142,0.39745427)"
+                                    >
+                                        <circle
+                                            style="
+                                                opacity: 1;
+                                                fill: none;
+                                                stroke: #3284f6;
+                                                stroke-opacity: 1;
+                                            "
+                                            id="head"
+                                            class="hidden"
+                                            cx="4.9892297"
+                                            cy="10.116732"
+                                            r="2.6052232"
+                                        />
+                                        <path
+                                            style="
+                                                opacity: 1;
+                                                fill: none;
+                                                stroke: #3284f6;
+                                                stroke-opacity: 1;
+                                            "
+                                            d="M 4.7867241,12.763158 4.7757492,19.23398"
+                                            id="body"
+                                            class="hidden"
+                                        />
+                                        <path
+                                            style="
+                                                opacity: 1;
+                                                fill: none;
+                                                stroke: #3284f6;
+                                                stroke-opacity: 1;
+                                            "
+                                            d="m 4.6793089,19.181442 2.9890936,5.742305"
+                                            id="rightLeg"
+                                            class="hidden"
+                                        />
+                                        <path
+                                            style="
+                                                opacity: 1;
+                                                fill: none;
+                                                stroke: #3284f6;
+                                                stroke-opacity: 1;
+                                            "
+                                            d="m 4.7014397,19.249633 -2.9160442,5.85242"
+                                            id="leftLeg"
+                                            class="hidden"
+                                        />
+                                        <path
+                                            style="
+                                                opacity: 1;
+                                                fill: none;
+                                                stroke: #3284f6;
+                                                stroke-opacity: 1;
+                                            "
+                                            d="M 4.7089964,15.528605 7.9118409,13.86232"
+                                            id="rightArm"
+                                            class="hidden"
+                                        />
+                                        <path
+                                            style="
+                                                opacity: 1;
+                                                fill: none;
+                                                stroke: #3284f6;
+                                                stroke-opacity: 1;
+                                            "
+                                            d="M 4.5578596,15.430906 1.5367392,13.900284"
+                                            id="leftArm"
+                                            class="hidden"
+                                        />
+                                    </g>
+                                    <path
+                                        style="
+                                            display: inline;
+                                            opacity: 1;
+                                            fill: none;
+                                            stroke: #3287f6;
+                                            stroke-width: 0.79375;
+                                            stroke-dasharray: none;
+                                            stroke-opacity: 1;
+                                        "
+                                        d="m 4.9454178,4.9195087 8.1828082,-0.00918 0.05326,22.6428383 -3.09381,0.04156 5.335315,-0.01728"
+                                        id="Noose"
+                                        inkscape:label="Noose"
+                                    />
+                                </g>
+                            </svg>
+                        </div>
+                        <div id="missed-guesses-box">
+                            <h4>
+                                Missed Letters:
+                                <span id="number-of-misses">0</span>
+                                Total misses allowed: 6;
+                            </h4>
+                            <p id="missed-guesses"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="text" id="hangman-letter-guess" maxlength="1" />
+                <button onclick="submitguess()">Submit</button>
+                <button onclick="resetgame()">Reset</button>
             </section>
         </main>
     </body>
+    <script src="./scripts/hang-man.js"></script>
 </html>
