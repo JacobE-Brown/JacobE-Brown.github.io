@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Jacob Brown" />
+        <meta name="description" content="Craft Your Own Brews And Bubblies" />
+        <meta name="keywords" content="Soda Pop Custom Coke Pepsi" />
+        <title>Project 1, FizzCraft</title>
+        <link rel="stylesheet" type="text/css" href="./css/mainStyles.css" />
+        <link rel="stylesheet" type="text/css" href="./css/carousel.css" />
+
+        <!-- Added Jquery -->
+        <link
+            rel="stylesheet"
+            href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css"
+        />
+        <link rel="stylesheet" href="/resources/demos/style.css" />
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+        <script>
+            $(function () {
+                $("#resizable").resizable();
+            });
+        </script>
+    </head>
+    <body>
+        <header class="primary-header">
+            <div class="wrapper">
+                <div class="primary-header__tool-tips">
+                    <img
+                        id="menu-button"
+                        src="./images/menu-svgrepo-com.svg"
+                        alt="Menu Button"
+                    />
+                    <button role="button">Buttons</button>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="primary-header__content">
+                    <div class="canvas-container">
+                        <div class="primary-header__text">
+                            <h1 id="page-title">FizzCraft</h1>
+                            <p id="sub-title">Your gateway to great bubbly!</p>
+                        </div>
+                        <canvas id="bubble-canvas"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <nav
+                    id="primary-header__navigation"
+                    class="primary-header__navigation"
+                >
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="Craft.html">Craft your Fizz</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <script src="./scripts/bubblesScript.js"></script>
+            <script src="./scripts/navScript.js"></script>
+        </header>
+
+        <main class="primary-body-content">
+            <div class="wrapper ui-widget-content" id="resizable">
+                <section class="main-card carousel-container">
+                    <div class="left-zone">
+                        <ul class="carousel carousel-selector-images">
+                            <li data-flavor="Orange" class="flavor visible">
+                                <img
+                                    src="./images/FlavorIcons/orange-svgrepo-com.svg"
+                                    alt="Orange Flavor Icon"
+                                />
+                                <figcaption>Orange</figcaption>
+                            </li>
+                            <li data-flavor="Cherry" class="flavor hidden">
+                                <img
+                                    src="./images/FlavorIcons/cherry-svgrepo-com.svg"
+                                    alt="Cherry Flavor Icon"
+                                />
+                                <figcaption>Cherry</figcaption>
+                            </li>
+                            <li data-flavor="Ginger" class="flavor hidden">
+                                <img
+                                    src="./images/FlavorIcons/ginger-svgrepo-com.svg"
+                                    alt="Ginger Flavor Icon"
+                                />
+                                <figcaption>Ginger</figcaption>
+                            </li>
+                            <li data-flavor="Root-Beer" class="flavor hidden">
+                                <img
+                                    src="./images/FlavorIcons/mushroom-svgrepo-com.svg"
+                                    alt="Root Beer Flavor Icon"
+                                />
+                                <figcaption>Root-Beer</figcaption>
+                            </li>
+                            <li data-flavor="Lemon-Lime" class="flavor hidden">
+                                <img
+                                    src="./images/FlavorIcons/lemon-svgrepo-com(1).svg"
+                                    alt="Lemon Lime Flavor Icon"
+                                />
+                                <figcaption>Lemon-Lime</figcaption>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="right-zone">
+                        <ul class="carousel carousel-body">
+                            <li
+                                data-flavor="Orange"
+                                class="flavor-card visible"
+                            >
+                                <img
+                                    src="./images/FlavorImages/Orange_Grove.jpg"
+                                    alt="Orange Grove image"
+                                />
+                                <figcaption>Oranges</figcaption>
+
+                                <p class="image-description">
+                                    A fun fact about oranges is that no other
+                                    English word rhymes with orange. Well, not a
+                                    well-known word anyway. There is a mountain
+                                    range in Wales, Blorenge, that rhymes with
+                                    orange!
+                                </p>
+                                <p>
+                                    Source:
+                                    https://www.coolkidfacts.com/facts-about-oranges/
+                                </p>
+                            </li>
+                            <li data-flavor="Cherry" class="flavor-card hidden">
+                                <img
+                                    src="./images/FlavorImages/Cheeries_in_love.jpg"
+                                    alt="Cheeries in love"
+                                />
+                                <figcaption>Cherry</figcaption>
+                                <p class="image-description">
+                                    Thanks to the introduction of mechanical
+                                    tree shakers, the laborious process of
+                                    hand-picking cherries now takes a mere seven
+                                    seconds per tree. Efficiency has its price,
+                                    though. Because the machine is so intense,
+                                    it shortens a tree’s life by seven years.
+                                </p>
+                                <p>
+                                    Source:
+                                    https://www.tasteofhome.com/article/10-absolutely-delightful-facts-about-cherries/
+                                </p>
+                            </li>
+                            <li data-flavor="Ginger" class="flavor-card hidden">
+                                <img
+                                    src="./images/FlavorImages/Ginger.jpg"
+                                    alt="Pile of Ginger"
+                                />
+                                <figcaption>Ginger</figcaption>
+                                <p class="image-description">
+                                    The word “ginger” comes from the Sanskrit
+                                    word “srngaveram,” which means “horn root”
+                                    because of its shape.
+                                </p>
+                                <p>
+                                    Source: https://mentalbomb.com/ginger-facts/
+                                </p>
+                            </li>
+                            <li
+                                data-flavor="Root-Beer"
+                                class="flavor-card hidden"
+                            >
+                                <img
+                                    src="./images/FlavorImages/Roots.jpg"
+                                    alt="Mixed Roots"
+                                />
+                                <figcaption>Various Roots</figcaption>
+                                <p class="image-description">
+                                    Root beer is a sweet North American soft
+                                    drink traditionally made using the root bark
+                                    of the sassafras tree Sassafras albidum or
+                                    the vine of Smilax ornata as the primary
+                                    flavor.
+                                </p>
+                                <p>
+                                    Source:
+                                    https://www.factsnippet.com/site/facts-about-root-beer.html
+                                </p>
+                            </li>
+                            <li
+                                data-flavor="Lemon-Lime"
+                                class="flavor-card hidden"
+                            >
+                                <img
+                                    src="./images/FlavorImages/Lemons-limes.jpg"
+                                    alt="Lemon Lime"
+                                />
+                                <figcaption>Lemon-Lime</figcaption>
+                                <p class="image-description">
+                                    Today, the British Navy requires all ships
+                                    to carry enough lemons so that every sailor
+                                    can have an ounce of juice a day.
+                                </p>
+                                <p>
+                                    Source:
+                                    https://www.thefactsite.com/juicy-lemon-facts/
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <script src="./scripts/carousel.js"></script>
+        </main>
+
+        <footer class="primary-footer">
+            <p><strong>Fizzy Pop Co.</strong></p>
+            <p>
+                <strong>Location:</strong><br />
+                123 Sparkling Ave,<br />
+                Bubbly Town,<br />
+                ID 90210,<br />
+                USA
+            </p>
+            <div>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:contact@fizzypopco.com"
+                        >contact@fizzypopco.com</a
+                    >
+                </p>
+                <p>
+                    <strong>Phone:</strong>
+                    <a href="tel:+15551234567">(555) 123-4567</a>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

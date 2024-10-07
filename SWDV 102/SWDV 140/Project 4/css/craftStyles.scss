@@ -1,0 +1,162 @@
+@import "variables";
+
+section.main-card.craft-menu-container {
+    padding: $margin-l 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: $font-xs;
+
+    div.left-zone {
+        flex: 1;
+
+        .bottles {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            position: sticky;
+            top: 25%;
+
+            svg {
+                height: 20rem;
+                width: auto;
+            }
+
+            .bottle1 {
+                // Defining the color styles for flavor radio buttons
+                .bottle-liquid.orange {
+                    .left-side {
+                        fill: $Burnt-Orange;
+                    }
+                    .right-side {
+                        fill: $Pink-Strawberry;
+                    }
+                }
+            }
+            .bottle2 {
+            }
+            .bottle3 {
+            }
+        }
+    }
+
+    div.right-zone {
+        flex: 2;
+
+        .craft-form {
+            display: grid;
+
+            .craft-form-element {
+                img {
+                    width: 2.7rem;
+                    padding: 0.3rem;
+                }
+
+                h3 {
+                    margin: 0%;
+                    padding: 0%;
+                }
+
+                // making the radui itmems be center in the label element
+                label {
+                    display: flex;
+                    align-items: center;
+                }
+
+                // change this later, for now it is to show where the elements are
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                padding: $margin-s;
+            }
+
+            .bottles-selector {
+            }
+
+            .flavor-selector {
+            }
+
+            .colors-selector {
+                gap: $margin-xxs;
+                .color-pallet {
+                    width: 2rem;
+                    height: 2rem;
+                    padding: 0.5rem;
+                    border: solid 0.5px black;
+                    border-radius: $margin-xxs;
+                }
+                .color-Orange {
+                    background-color: $Burnt-Orange;
+                }
+
+                .color-Blue {
+                    background-color: $Burnt-Blue;
+                }
+
+                .color-Yellow {
+                    background-color: yellow;
+                }
+
+                .color-Green {
+                    background-color: limegreen;
+                }
+
+                .color-Brown {
+                    background-color: brown;
+                }
+            }
+
+            .tittle-field {
+            }
+
+            .submit-button {
+                .Craft-Form-Button {
+                    background-color: initial;
+                    background-image: linear-gradient(
+                        -180deg,
+                        #ff7e31,
+                        #e62c03
+                    );
+                    border-radius: 6px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+                    color: #ffffff;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-family: Inter, -apple-system, system-ui, Roboto,
+                        "Helvetica Neue", Arial, sans-serif;
+                    height: 40px;
+                    line-height: 40px;
+                    outline: 0;
+                    overflow: hidden;
+                    padding: 0 20px;
+                    pointer-events: auto;
+                    position: relative;
+                    text-align: center;
+                    touch-action: manipulation;
+                    user-select: none;
+                    -webkit-user-select: none;
+                    vertical-align: top;
+                    white-space: nowrap;
+                    width: 100%;
+                    z-index: 9;
+                    border: 0;
+                    transition: box-shadow 0.2s;
+                }
+
+                .button-42:hover {
+                    box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 426px) {
+    section.main-card.craft-menu-container {
+        div.right-zone {
+            .craft-form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
