@@ -38,7 +38,26 @@ function showHideNavigation() {
     // I don't know if it is best practice but it works.
     if (menuOpenVariable == "0") {
         navigationMenu!.style.opacity = "1";
+        navigationMenu!.style.zIndex = "5";
     } else {
         navigationMenu!.style.opacity = "0";
+        navigationMenu!.style.zIndex = "-5";
     }
 }
+
+
+// Making it possible to have the active page be colored.
+
+// Get the current page URL
+const currentLocation: string = window.location.pathname;
+
+// Select all the navigation links
+const navLinks: NodeListOf<HTMLAnchorElement> = document.querySelectorAll('nav a');
+
+// Loop through the links
+navLinks.forEach((link: HTMLAnchorElement) => {
+    // Check if the link's href matches the current location
+    if (link.href === window.location.href) {
+        link.classList.add('active'); // Add 'active' class to the current page link
+    }
+});

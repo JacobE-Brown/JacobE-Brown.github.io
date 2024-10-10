@@ -11,36 +11,72 @@
   stroke-width: 0.133333;
 }
 .bottle-liquid .left-side {
-  animation: scaleY 3s 1 ease-out, change-color-left 5s infinite ease-in-out 3s;
+  animation: scaleY 3s 1 ease-out, change-color-left 10s infinite ease-in-out 3s;
   transform-origin: 50% 95% 0;
   fill: #d85e00;
 }
 .bottle-liquid .right-side {
-  animation: scaleY 3s 1 ease-out, change-color-right 5s infinite ease-in-out 3s;
+  animation: scaleY 3s 1 ease-out, change-color-right 10s infinite ease-in-out 3s;
   transform-origin: 50% 95% 0;
   fill: #ff5349;
 }
 
 @keyframes change-color-left {
   0% {
-    fill: #d85e00;
+    fill: #d85e00; /* #d85e00 */
+  }
+  10% {
+    fill: #ff8c00; /* Light Orange */
+  }
+  25% {
+    fill: #9f2b00; /* #9f2b00 */
+  }
+  40% {
+    fill: #ff5e99; /* Coral Pink (complementary to Light Blue) */
   }
   50% {
-    fill: #007AD8;
+    fill: #cade59; /* Yellow-Green */
+  }
+  60% {
+    fill: #a2d600; /* Lime Green */
+  }
+  75% {
+    fill: #9f2b00; /* #9f2b00 */
+  }
+  90% {
+    fill: #ff8c00; /* Light Orange */
   }
   100% {
-    fill: #d85e00;
+    fill: #d85e00; /* #d85e00 */
   }
 }
 @keyframes change-color-right {
   0% {
-    fill: #ff5349;
+    fill: #ff5349; /* #ff5349 */
+  }
+  10% {
+    fill: #ff8c8c; /* Light Pink */
+  }
+  25% {
+    fill: #ff5e99; /* Coral Pink */
+  }
+  40% {
+    fill: #00b4d4; /* Soft Aqua (complementary to Coral Pink) */
   }
   50% {
-    fill: #00b4d4;
+    fill: #6dc5ff; /* Light Blue */
+  }
+  60% {
+    fill: #a7d6b4; /* Soft Green */
+  }
+  75% {
+    fill: #007AD8; /* #007AD8 */
+  }
+  90% {
+    fill: #ff5e99; /* Coral Pink */
   }
   100% {
-    fill: #ff5349;
+    fill: #ff5349; /* #ff5349 */
   }
 }
 @keyframes scaleY {

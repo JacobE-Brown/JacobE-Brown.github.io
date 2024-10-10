@@ -20,7 +20,11 @@ body {
 // =========================== Primary Header ===========================
 .primary-header {
     // overflow: hidden;
-    background-image: linear-gradient(45deg, $Burnt-Orange 10%, $Pink-Strawberry 100%);
+    background-image: linear-gradient(
+        45deg,
+        $Burnt-Orange 10%,
+        $Pink-Strawberry 100%
+    );
     color: #fff;
     margin: 0;
     display: flow-root;
@@ -33,11 +37,13 @@ body {
 
         img#menu-button {
             max-width: 3rem;
-            box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+                rgba(17, 17, 26, 0.05) 0px 8px 32px;
 
             &:hover,
             &:active {
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+                    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
             }
         }
 
@@ -123,16 +129,22 @@ body {
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
-                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+                    rgba(0, 0, 0, 0.23) 0px 3px 6px;
                 border-radius: 8px;
 
                 &:hover {
-                    background-color: $Burnt-Blue;
+                    background: $Burnt-Blue;
                 }
 
-                &:active {
-                    background-color: $Burnt-Blue;
-                    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                &.active {
+                    background: linear-gradient(
+                        45deg,
+                        $Burnt-Blue 10%,
+                        $Soft-Aqua 100%
+                    );
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+                        rgba(0, 0, 0, 0.23) 0px 3px 6px;
                 }
             }
         }
@@ -146,6 +158,7 @@ main {
         text-align: center;
         margin-inline: auto;
         width: min(800px, 95%);
+        border-radius: $margin-xl;
 
         h2 {
             font-family: "Niconne", cursive;
@@ -185,26 +198,56 @@ main {
         margin-inline: auto;
         width: min(800px, 95%);
         box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        border-radius: $margin-xl;
+        padding: $margin-xl;
+
+        h3 {
+            font-size: $font-xxl;
+            padding: $margin-xl;
+            margin: 0%;
+        }
+
+        p {
+            padding: 0%;
+            margin: 0%;
+        }
     }
 }
 
 // =========================== Footer ===========================
 footer {
     color: #fff;
-    background-image: linear-gradient(45deg, $Burnt-Orange 10%, $Pink-Strawberry 100%);
+    background-image: linear-gradient(
+        45deg,
+        $Burnt-Orange 10%,
+        $Pink-Strawberry 100%
+    );
+    font-size: $font-s;
+    .primary-footer__Content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2rem;
+        padding-top: $margin-m;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2rem;
+        h4 {
+            font-size: $font-m;
+            padding: 0%;
+            margin: 0%;
+        }
+    }
 }
 
 // =========================== Miscellaneous ===========================
-span.Pop-Out-Format {
+.Pop-Out-Format {
     font-family: "Niconne", cursive;
     font-size: $font-xl;
     font-style: italic;
-    background: linear-gradient(45deg, $Burnt-Orange 10%, $Pink-Strawberry 100%);
+    background: linear-gradient(
+        45deg,
+        $Burnt-Orange 10%,
+        $Pink-Strawberry 100%
+    );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -244,11 +287,20 @@ span.Pop-Out-Format {
                     text-align: center;
                     padding: 14px 16px;
                     text-decoration: none;
-                    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+                    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+                        rgba(17, 17, 26, 0.05) 0px 8px 32px;
                     border-radius: 8px;
 
                     &:hover {
                         background-color: $Red-Orange;
+                    }
+
+                    &.active {
+                        background: linear-gradient(
+                            45deg,
+                            $Burnt-Blue 10%,
+                            $Soft-Aqua 100%
+                        );
                     }
                 }
             }
