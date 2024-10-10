@@ -18,18 +18,17 @@
                         src="./images/menu-svgrepo-com.svg"
                         alt="Menu Button"
                     />
-                    <button role="button">Buttons</button>
                 </div>
             </div>
 
             <div class="wrapper">
                 <div class="primary-header__content">
                     <div class="canvas-container">
+                        <canvas id="bubble-canvas"></canvas>
                         <div class="primary-header__text">
                             <h1 id="page-title">FizzCraft</h1>
                             <p id="sub-title">Your gateway to great bubbly!</p>
                         </div>
-                        <canvas id="bubble-canvas"></canvas>
                     </div>
                 </div>
             </div>
@@ -37,14 +36,18 @@
             <div class="wrapper">
                 <nav
                     id="primary-header__navigation"
-                    class="primary-header__navigation"
+                    class="primary-header__navigation hidden"
                 >
                     <ul>
                         <li><a href="Index.html">Home</a></li>
-                        <li><a href="Craft.html">Craft your Fizz</a></li>
-                        <li><a href="Gallery.html">Gallery</a></li>
-                        <li><a href="AboutUs.html">About Us</a></li>
-                        <li><a href="ContactUs.html">Contact Us</a></li>
+                        <li><a href="Craft.html">Craft!</a></li>
+                        <li>
+                            <a href="Gallery.html">Gallery</a>
+                        </li>
+                        <li><a href="AboutUs.html">About</a></li>
+                        <li>
+                            <a href="ContactUs.html">Contact</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -56,9 +59,10 @@
             <div class="wrapper">
                 <section class="main-card">
                     <p>
-                        FizzCraft is a website that places complete control of
-                        your fizz into your hands. From the flavor and bottle
-                        type, everything is placed at your finger tips.
+                        <span class="Pop-Out-Format">FizzCraft</span> is a
+                        website that places complete control of your fizz into
+                        your hands. From the flavor and bottle type, everything
+                        is placed at your finger tips.
                     </p>
                     <p>
                         We are a small business in Boise Idaho aiming to make
@@ -72,26 +76,33 @@
             </div>
         </main>
 
-        <footer class="primary-footer">
-            <p><strong>Fizzy Pop Co.</strong></p>
-            <p>
-                <strong>Location:</strong><br />
-                123 Sparkling Ave,<br />
-                Bubbly Town,<br />
-                ID 90210,<br />
-                USA
-            </p>
-            <div>
-                <p>
-                    <strong>Email:</strong>
-                    <a href="mailto:contact@fizzypopco.com"
-                        >contact@fizzypopco.com</a
-                    >
-                </p>
-                <p>
-                    <strong>Phone:</strong>
-                    <a href="tel:+15551234567">(555) 123-4567</a>
-                </p>
+        <footer>
+            <div class="wrapper">
+                <div class="primary-footer__Content">
+                    <div class="primary-footer__location-box">
+                        <h4><strong>Fizzy Pop Co. LLC</strong></h4>
+                        <p>
+                            <strong>Location:</strong><br />
+                            123 Sparkling Ave,<br />
+                            Bubbly Town,<br />
+                            ID 90210,<br />
+                            USA
+                        </p>
+                    </div>
+                    <div class="primary-footer__contact-box">
+                        <h4><strong>Contact Information</strong></h4>
+                        <p>
+                            <strong>Email:</strong>
+                            <a href="mailto:contact@fizzypopco.com"
+                                >contact@fizzypopco.com</a
+                            >
+                        </p>
+                        <p>
+                            <strong>Phone:</strong>
+                            <a href="tel:+15551234567">(555) 123-4567</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </footer>
     </body>

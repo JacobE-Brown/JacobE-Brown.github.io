@@ -25,18 +25,7 @@ function showHideNavigation() {
     // Creating a variable to hold the navigation object by means of its id
     let navigationMenu = document.getElementById("primary-header__navigation");
     // Getting the current status of the opacity levels
-    let menuOpenVariable = window.getComputedStyle(navigationMenu).opacity;
-    // If the opacity of the menu is 0, then the opacity is change to one. Else it is reversed.
-    // Apparently adding an '!' to navigationMenu tells TS that this variable will never be null. 
-    // I don't know if it is best practice but it works.
-    if (menuOpenVariable == "0") {
-        navigationMenu.style.opacity = "1";
-        navigationMenu.style.zIndex = "5";
-    }
-    else {
-        navigationMenu.style.opacity = "0";
-        navigationMenu.style.zIndex = "-5";
-    }
+    navigationMenu.classList.toggle('hidden');
 }
 // Making it possible to have the active page be colored.
 // Get the current page URL
