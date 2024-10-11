@@ -18,11 +18,16 @@ if (!canvas) {
     throw new Error('Canvas not found or context not available');
 }
 let bubbles = [];
-const numBubbles = 50;
+const numBubbles = 30;
 // Resize canvas to fill window
 function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    const container = document.querySelector('.canvas-container');
+    if (container) {
+        const width = container.clientWidth; // Get the container's width
+        const height = container.clientHeight; // Get the container's height
+        canvas.width = width; // Set actual pixel width
+        canvas.height = height; // Set actual pixel height
+    }
 }
 window.addEventListener('resize', resizeCanvas);
 resizeCanvas();
@@ -58,7 +63,7 @@ class Bubble {
 // Create bubbles
 function createBubbles() {
     for (let i = 0; i < numBubbles; i++) {
-        const radius = Math.random() * 20 + 10;
+        const radius = Math.random() * 10 + 5;
         const x = Math.random() * (canvas.width - radius * 2) + radius;
         const y = Math.random() * (canvas.height - radius * 2) + radius;
         const dx = Math.random() * 2 - 1;
