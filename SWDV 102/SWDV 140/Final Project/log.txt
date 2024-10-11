@@ -1,0 +1,32 @@
+928e7e6 - Jacob Brown, 2024-10-06 20:12:11 -0600 : Added RegEx, A jquery widgit to my Gallery,put text into the About us page fixed the footer so that it contains non lorem ipsum and added Grid to the body element so that the footer is always on the bottom of the page.
+f0b2bcd - Jacob Brown, 2024-09-29 13:13:53 -0600 : Finished the Form on the Craft Menu.
+ffebdb7 - Jacob Brown, 2024-09-28 21:44:49 -0600 : Refactored all the JS code into TS code.
+9533a1d - Jacob Brown, 2024-09-28 19:04:07 -0600 : Finished setting up the main craft menu items.
+77b0983 - Jacob Brown, 2024-09-28 11:06:51 -0600 : Created the Basic Layout of Craft.html and begin creation of the from elements. Also added the bottle from index with the position sticky to allow it to move down on smaller screens.
+6f2c63d - Jacob Brown, 2024-09-26 16:16:54 -0600 : Created the basline CSS and HTML
+f2338f6 - Jacob Brown, 2024-09-25 18:20:29 -0600 : Create new project Folder. Created a new animated SVG image for the Main page.
+d1ee223 - Jacob Brown, 2024-09-15 20:06:28 -0600 : Added Actual text under imaged in Gallery and attributed the sourece.
+fe156d3 - Jacob Brown, 2024-09-15 19:42:23 -0600 : Added a Thank you on the contact form
+c077e47 - Jacob Brown, 2024-09-15 19:40:46 -0600 : Fixing Errors for Firefox that should work.
+b30d82c - Jacob Brown, 2024-09-15 19:34:37 -0600 : Fixed Color
+861b447 - Jacob Brown, 2024-09-15 19:32:46 -0600 : Fixed the JS not launching and fixed some Firefox formatting Issues.
+d1c1a08 - Jacob Brown, 2024-09-15 19:24:56 -0600 : Testing JS on Form
+eb86659 - Jacob Brown, 2024-09-15 19:17:12 -0600 : Added JavaScript to the form to correct for missing values in the fields.
+0d001c9 - Jacob Brown, 2024-09-15 18:56:57 -0600 : Added the basic Contact Form HTML and CSS
+3204cde - Jacob Brown, 2024-09-15 16:45:44 -0600 : Finished work on JavaScript for the Gallery page and for the Carousel.
+f309f20 - Jacob Brown, 2024-09-15 14:09:00 -0600 : Added the HTML and SCSS to the Gallery page to make the carousel. There are two regions, a left and a right. The left region will be the selector and the right will be for images and text. THe next steps will be to add the JavaScript.
+01f93ec - Jacob Brown, 2024-09-12 16:12:24 -0600 : Set up the beginings of my Gallery Webpage.
+9840c5c - Jacob Brown, 2024-09-01 21:32:48 -0600 : Fixed the Double Alert
+785820a - Jacob Brown, 2024-09-01 21:12:54 -0600 : Grammer Corrections
+0ec5a1c - Jacob Brown, 2024-09-01 21:10:14 -0600 : Added Alert to landing page
+eff8578 - Jacob Brown, 2024-09-01 21:07:57 -0600 : Did last minute formatting of the code and fixed a few grammatical issues.
+ae10908 - Jacob Brown, 2024-09-01 20:53:27 -0600 : Checked Grammer and made the button actually link to craft.html
+b0e4315 - Jacob Brown, 2024-09-01 20:37:51 -0600 : Added some finishing touches for Project 1 and made all the pages conform to the new standard css file.
+7f5b281 - Jacob Brown, 2024-09-01 20:03:40 -0600 : Added the JavaScript and CSS to make the menu appear and disapear when the screen size is bellow 426px. The tooltips section also vanishes when the screen is 426px.
+7049f93 - Jacob Brown, 2024-09-01 17:20:37 -0600 : Made a big glowing Button. Also added an SVG of a bottle that is editable by CSS.
+094ebff - Jacob Brown, 2024-09-01 14:06:01 -0600 : Changed Header Colors and added Variabls for colors and margins.
+e75bcb9 - Jacob Brown, 2024-09-01 13:21:01 -0600 : Reworked the Website Landing Page to not be so reliant upon flexboxes. Made use of the "margin-inline: auto" function to make the elements centered without the need for flexbox wisardry.
+52ec570 - Jacob Brown, 2024-08-31 08:01:46 -0600 : Updating branch to latest version.
+8f34547 - Jacob Brown, 2024-08-27 12:42:34 -0600 : Orginized files in the Github Repository into a neater hierarchical structure
+00bfd83 - Jacob Brown, 2024-08-26 17:39:24 -0600 : Worked to on the scss to make the general layout of the website. I used chatGPT to help me navigate the general confusion that I encountered when using flexbox values. I also added in some Filigree SVG images into the header.
+cb0d3bc - Jacob Brown, 2024-08-26 14:38:23 -0600 : Created the General Structure of the Website FizzCraft. Added css, images, and scripts folders. Started the index.html general layout and put in some starter text.

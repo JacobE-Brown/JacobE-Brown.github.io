@@ -1,0 +1,119 @@
+@import "variables";
+
+#svg1 {
+    height: 20rem;
+    width: auto;
+}
+
+.bottle-liquid {
+    fill-opacity: 1;
+    fill-rule: nonzero;
+    stroke: none;
+    stroke-width: 0.133333;
+
+    .left-side {
+        animation: scaleY 3s 1 ease-out,
+            change-color-left 10s infinite ease-in-out 3s;
+        transform-origin: 50% 95% 0;
+        fill: $Burnt-Orange;
+    }
+    .right-side {
+        animation: scaleY 3s 1 ease-out,
+            change-color-right 10s infinite ease-in-out 3s;
+        transform-origin: 50% 95% 0;
+        fill: $Pink-Strawberry;
+    }
+}
+
+// @keyframes change-color-left {
+//     0% {
+//         fill: $Burnt-Orange;
+//     }
+//     50% {
+//         fill: $Burnt-Blue;
+//     }
+//     100% {
+//         fill: $Burnt-Orange;
+//     }
+// }
+
+// @keyframes change-color-right {
+//     0% {
+//         fill: $Pink-Strawberry;
+//     }
+//     50% {
+//         fill: $Blue-Green;
+//     }
+//     100% {
+//         fill: $Pink-Strawberry;
+//     }
+// }
+
+@keyframes change-color-left {
+    0% {
+        fill: $Burnt-Orange; /* #d85e00 */
+    }
+    10% {
+        fill: $Light-Orange; /* #ff8c00 */
+    }
+    25% {
+        fill: $Red-Orange; /* #9f2b00 */
+    }
+    40% {
+        fill: $Coral-Pink; /* #ff5e99 */
+    }
+    50% {
+        fill: $Yellow-Green; /* #cade59 */
+    }
+    60% {
+        fill: $Burnt-Blue; /* #a2d600 */
+    }
+    75% {
+        fill: $Red-Orange; /* #9f2b00 */
+    }
+    90% {
+        fill: $Light-Orange; /* #ff8c00 */
+    }
+    100% {
+        fill: $Burnt-Orange; /* #d85e00 */
+    }
+}
+
+@keyframes change-color-right {
+    0% {
+        fill: $Pink-Strawberry; /* #6dc5ff */
+    }
+    10% {
+        fill: $Soft-Aqua; /* #00b4d4 */
+    }
+    25% {
+        fill: $Pink-Strawberry; /* #ff5349 */
+    }
+    40% {
+        fill: $Coral-Pink; /* #ff5e99 */
+    }
+    50% {
+        fill: $Soft-Green; /* #a7d6b4 */
+    }
+    60% {
+        fill: $Blue-Green; /* #00b4d4 */
+    }
+    75% {
+        fill: $Light-Blue; /* #6dc5ff */
+    }
+    90% {
+        fill: $Coral-Pink; /* #ff5e99 */
+    }
+    100% {
+        fill: $Pink-Strawberry; /* #ff5349 */
+    }
+}
+
+@keyframes scaleY {
+    0% {
+        transform: scaleY(0); /* Start at 0% */
+    }
+    100% {
+        transform: scaleY(1); /* Optionally return to 0% */
+    }
+}

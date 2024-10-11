@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+#svg1 {
+  height: 20rem;
+  width: auto;
+}
+
+.bottle-liquid {
+  fill-opacity: 1;
+  fill-rule: nonzero;
+  stroke: none;
+  stroke-width: 0.133333;
+}
+.bottle-liquid .left-side {
+  animation: scaleY 3s 1 ease-out, change-color-left 10s infinite ease-in-out 3s;
+  transform-origin: 50% 95% 0;
+  fill: #d85e00;
+}
+.bottle-liquid .right-side {
+  animation: scaleY 3s 1 ease-out, change-color-right 10s infinite ease-in-out 3s;
+  transform-origin: 50% 95% 0;
+  fill: #ff5349;
+}
+
+@keyframes change-color-left {
+  0% {
+    fill: #d85e00; /* #d85e00 */
+  }
+  10% {
+    fill: #ff8c00; /* #ff8c00 */
+  }
+  25% {
+    fill: #9f2b00; /* #9f2b00 */
+  }
+  40% {
+    fill: #ff5e99; /* #ff5e99 */
+  }
+  50% {
+    fill: #cade59; /* #cade59 */
+  }
+  60% {
+    fill: #007AD8; /* #a2d600 */
+  }
+  75% {
+    fill: #9f2b00; /* #9f2b00 */
+  }
+  90% {
+    fill: #ff8c00; /* #ff8c00 */
+  }
+  100% {
+    fill: #d85e00; /* #d85e00 */
+  }
+}
+@keyframes change-color-right {
+  0% {
+    fill: #ff5349; /* #6dc5ff */
+  }
+  10% {
+    fill: #00b4d4; /* #00b4d4 */
+  }
+  25% {
+    fill: #ff5349; /* #ff5349 */
+  }
+  40% {
+    fill: #ff5e99; /* #ff5e99 */
+  }
+  50% {
+    fill: #a7d6b4; /* #a7d6b4 */
+  }
+  60% {
+    fill: #00b4d4; /* #00b4d4 */
+  }
+  75% {
+    fill: #6dc5ff; /* #6dc5ff */
+  }
+  90% {
+    fill: #ff5e99; /* #ff5e99 */
+  }
+  100% {
+    fill: #ff5349; /* #ff5349 */
+  }
+}
+@keyframes scaleY {
+  0% {
+    transform: scaleY(0); /* Start at 0% */
+  }
+  100% {
+    transform: scaleY(1); /* Optionally return to 0% */
+  }
+}/*# sourceMappingURL=bottleStyles.css.map */

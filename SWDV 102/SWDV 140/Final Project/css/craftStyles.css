@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+section.main-card.craft-menu-container {
+  padding: 1.25rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+section.main-card.craft-menu-container div.left-zone {
+  flex: 1;
+}
+section.main-card.craft-menu-container div.left-zone .bottles {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: sticky;
+  top: 25%;
+}
+section.main-card.craft-menu-container div.left-zone .bottles svg {
+  height: 20rem;
+  width: auto;
+}
+section.main-card.craft-menu-container div.left-zone .bottles .bottle1 .bottle-liquid.orange .left-side {
+  fill: #d85e00;
+}
+section.main-card.craft-menu-container div.left-zone .bottles .bottle1 .bottle-liquid.orange .right-side {
+  fill: #ff5349;
+}
+section.main-card.craft-menu-container div.right-zone {
+  flex: 2;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .craft-form-element {
+  border-radius: 1.75rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0.75rem;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .craft-form-element img {
+  width: 2.7rem;
+  padding: 0.3rem;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .craft-form-element h3 {
+  margin: 0%;
+  padding: 0%;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .craft-form-element label {
+  display: flex;
+  align-items: center;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector {
+  gap: 0.25rem;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-pallet {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border: solid 0.5px black;
+  border-radius: 0.25rem;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-Orange {
+  background: linear-gradient(45deg, #bf4f00, #7a3b1a);
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-Blue {
+  background: linear-gradient(45deg, #0033cc, #001f8e);
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-Yellow {
+  background: linear-gradient(45deg, yellow, #ffa500);
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-Green {
+  background: linear-gradient(45deg, limegreen, #005a1f);
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-Brown {
+  background: linear-gradient(45deg, brown, #4e2e2e);
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .submit-button .Craft-Form-Button {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #ff7e31, #e62c03);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
+  border: 0;
+  transition: box-shadow 0.2s;
+}
+section.main-card.craft-menu-container div.right-zone .craft-form .submit-button .button-42:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+
+@media (min-width: 426px) {
+  section.main-card.craft-menu-container div.right-zone .craft-form {
+    -moz-columns: 2;
+         columns: 2;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+  }
+  section.main-card.craft-menu-container div.right-zone .craft-form .craft-form-element {
+    -moz-column-break-inside: avoid;
+         break-inside: avoid;
+    margin-bottom: 0.5rem;
+  }
+}/*# sourceMappingURL=craftStyles.css.map */
