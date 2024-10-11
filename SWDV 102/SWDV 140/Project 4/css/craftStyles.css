@@ -27,10 +27,8 @@ section.main-card.craft-menu-container div.left-zone .bottles .bottle1 .bottle-l
 section.main-card.craft-menu-container div.right-zone {
   flex: 2;
 }
-section.main-card.craft-menu-container div.right-zone .craft-form {
-  display: grid;
-}
 section.main-card.craft-menu-container div.right-zone .craft-form .craft-form-element {
+  border-radius: 1.75rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   flex-direction: column;
@@ -60,19 +58,19 @@ section.main-card.craft-menu-container div.right-zone .craft-form .colors-select
   border-radius: 0.25rem;
 }
 section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-Orange {
-  background-color: #d85e00;
+  background: linear-gradient(45deg, #bf4f00, #7a3b1a);
 }
 section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-Blue {
-  background-color: #007AD8;
+  background: linear-gradient(45deg, #0033cc, #001f8e);
 }
 section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-Yellow {
-  background-color: yellow;
+  background: linear-gradient(45deg, yellow, #ffa500);
 }
 section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-Green {
-  background-color: limegreen;
+  background: linear-gradient(45deg, limegreen, #005a1f);
 }
 section.main-card.craft-menu-container div.right-zone .craft-form .colors-selector .color-Brown {
-  background-color: brown;
+  background: linear-gradient(45deg, brown, #4e2e2e);
 }
 section.main-card.craft-menu-container div.right-zone .craft-form .submit-button .Craft-Form-Button {
   background-color: initial;
@@ -108,7 +106,14 @@ section.main-card.craft-menu-container div.right-zone .craft-form .submit-button
 
 @media (min-width: 426px) {
   section.main-card.craft-menu-container div.right-zone .craft-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    -moz-columns: 2;
+         columns: 2;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+  }
+  section.main-card.craft-menu-container div.right-zone .craft-form .craft-form-element {
+    -moz-column-break-inside: avoid;
+         break-inside: avoid;
+    margin-bottom: 0.5rem;
   }
 }/*# sourceMappingURL=craftStyles.css.map */

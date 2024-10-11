@@ -13,7 +13,7 @@ body {
 
 // =========================== Wrapper ===========================
 .wrapper {
-    width: min(800px, 90%);
+    width: 100%;
     margin-inline: auto;
 }
 
@@ -247,7 +247,26 @@ footer {
             padding: 0%;
             margin: 0%;
         }
+
+        .primary-footer__navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                li {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
     }
+
+
 }
 
 footer::after {
@@ -274,6 +293,8 @@ footer::after {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+
+    padding: $margin-xxs;
 }
 
 .hidden {
@@ -282,6 +303,11 @@ footer::after {
 
 // =========================== Media Queries ===========================
 @media (min-width: 426px) {
+    .wrapper {
+        width: min(800px, 90%);
+        margin-inline: auto;
+    }
+
     .primary-header {
         .primary-header__content {
             margin-bottom: $margin-xxl;

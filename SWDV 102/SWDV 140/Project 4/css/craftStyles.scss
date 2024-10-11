@@ -42,9 +42,11 @@ section.main-card.craft-menu-container {
         flex: 2;
 
         .craft-form {
-            display: grid;
+            // display: grid;
 
             .craft-form-element {
+
+                border-radius: $margin-xl;
                 img {
                     width: 2.7rem;
                     padding: 0.3rem;
@@ -85,23 +87,23 @@ section.main-card.craft-menu-container {
                     border-radius: $margin-xxs;
                 }
                 .color-Orange {
-                    background-color: $Burnt-Orange;
+                    background: linear-gradient(45deg, #bf4f00, #7a3b1a);
                 }
 
                 .color-Blue {
-                    background-color: $Burnt-Blue;
+                    background: linear-gradient(45deg, #0033cc, #001f8e);
                 }
 
                 .color-Yellow {
-                    background-color: yellow;
+                    background: linear-gradient(45deg, yellow, #ffa500);
                 }
 
                 .color-Green {
-                    background-color: limegreen;
+                    background: linear-gradient(45deg, limegreen, #005a1f);
                 }
 
                 .color-Brown {
-                    background-color: brown;
+                    background: linear-gradient(45deg, brown, #4e2e2e);
                 }
             }
 
@@ -154,8 +156,13 @@ section.main-card.craft-menu-container {
     section.main-card.craft-menu-container {
         div.right-zone {
             .craft-form {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
+                columns: 2;
+                column-gap: $margin-xs;
+
+                .craft-form-element {
+                    break-inside: avoid;
+                    margin-bottom: $margin-xs;
+                }
             }
         }
     }
