@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+body {
+  padding: 0%;
+  margin: 0%;
+  color: #ecf87f;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+header {
+  background-image: linear-gradient(180deg, #3d550c 50%, #2f5233 100%);
+  margin-bottom: 1.75rem;
+}
+header custom-header {
+  width: 100%;
+}
+header custom-header .header-title-and-cars {
+  display: flex;
+  justify-content: center;
+}
+header custom-header .header-title-and-cars .car-container {
+  padding: 0;
+  margin: 0;
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header custom-header .header-title-and-cars .car-container img {
+  width: 30%;
+  transform: scaleX(-1);
+}
+header custom-header .header-title-and-cars .header-container {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header custom-header .header-title-and-cars .header-container h1 a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #59981a;
+  color: #ecf87f;
+  padding: 1.75rem;
+  border: #3d550c 5px solid;
+  border-radius: 1rem;
+  font-weight: bold;
+  background-image: linear-gradient(45deg, #59981a 50%, #76b947 100%);
+}
+header custom-header .header-title-and-cars .header-container h1:hover {
+  background-color: #76b947;
+}
+header custom-header nav {
+  padding: 1rem;
+  margin: 0;
+  border-radius: 0.5rem;
+}
+header custom-header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+header custom-header nav ul li a {
+  background-color: #59981a;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  display: block;
+}
+header custom-header nav ul a:hover {
+  background-color: #76b947;
+}
+
+main {
+  margin-bottom: 1.25rem;
+}
+main h2 {
+  text-decoration: none;
+  background-color: #59981a;
+  color: #ecf87f;
+  padding: 1.75rem;
+  border: #3d550c 5px solid;
+  border-radius: 1rem;
+  font-weight: bold;
+  background-image: linear-gradient(45deg, #59981a 50%, #76b947 100%);
+}
+main section {
+  border: #3d550c 5px solid;
+  border-radius: 1rem;
+  background-image: linear-gradient(45deg, #2f5233 5%, #2f5233 100%);
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+footer {
+  background-image: linear-gradient(180deg, #3d550c 50%, #2f5233 100%);
+}
+footer custom-footer {
+  width: 100%;
+}
+footer custom-footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.big-button {
+  display: inline-block;
+  background-color: #59981a;
+  color: #ecf87f;
+  padding: 1.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.big-button:hover {
+  background-color: #76b947;
+}
+.big-button:active {
+  background-color: #406c13;
+}
+
+@media (min-width: 426px) {
+  header {
+    background-image: linear-gradient(180deg, #3d550c 50%, #2f5233 100%);
+  }
+  header custom-header {
+    width: 100%;
+  }
+  header custom-header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=mainStyles.css.map */

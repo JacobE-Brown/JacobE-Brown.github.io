@@ -1,0 +1,39 @@
+// =========================== Importing Fonts ===========================
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+
+// =========================== Color Scheme Definitions ===========================
+// Sourced from https://www.canva.com/colors/color-palettes/green-blaze/ and used ChatGPT to turn it to SCSS Variables
+
+$olive-green: #3d550c; // Olive Green
+$lime-green: #81b622; // Lime Green
+$yellow-green: #ecf87f; // Yellow Green
+$green: #59981a; // Green
+
+$lime-green: #76b947; // Lime Green
+$kelly-green: #b1d8b7; // Kelly Green
+$seafoam-green: #2f5233; // Seafoam Green
+$spearmint: #2f5233; // Spearmint
+
+// =========================== Margin Scale Variables ===========================
+$margin-xxs: 0.25rem;
+$margin-xs: 0.5rem;
+$margin-s: 0.75rem;
+$margin-m: 1rem;
+$margin-l: 1.25rem;
+$margin-xl: 1.75rem;
+$margin-xxl: 2.5rem;
+
+// =========================== Font Scale Variables ===========================
+$font-xxs: 0.25rem;
+$font-xs: 0.5rem;
+$font-s: 0.75rem;
+$font-m: 1rem;
+$font-l: 1.25rem;
+$font-xl: 1.75rem;
+$font-xxl: 2.5rem;
+
+//  Nav
+
+$background__Green: linear-gradient(180deg, $olive-green 50%, $seafoam-green 100%);
+$background__steal-green: linear-gradient(45deg, $seafoam-green 5%, $spearmint 100%);
+$background__light-green: linear-gradient(45deg, $green 50%, $lime-green 100%);

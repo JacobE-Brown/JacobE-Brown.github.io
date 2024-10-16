@@ -1,3 +1,10 @@
+98548ae - Jacob Brown, 2024-10-11 11:45:22 -0600 : Uploaded final website to a new folder.
+dff314d - Jacob Brown, 2024-10-11 10:34:51 -0600 : Fixed the inproperly eddited TS code on the Navigation.
+66361a9 - Jacob Brown, 2024-10-11 10:23:30 -0600 : Fixed the bubbles in the Header to be round.
+facdede - Jacob Brown, 2024-10-10 20:56:49 -0600 : Fixed a lot of minor things. Added Footer Nav menu. Added Many headers to pages. Made Craft use columns.
+89ec2a7 - Jacob Brown, 2024-10-09 19:24:48 -0600 : Merge branch 'Menu-Testing' With New Menu
+33e886c - Jacob Brown, 2024-10-09 19:22:09 -0600 : Modified the Nav Bar to better fit the site.
+55d5aa1 - Jacob Brown, 2024-10-09 18:11:54 -0600 : Fixing minor issues with Website
 928e7e6 - Jacob Brown, 2024-10-06 20:12:11 -0600 : Added RegEx, A jquery widgit to my Gallery,put text into the About us page fixed the footer so that it contains non lorem ipsum and added Grid to the body element so that the footer is always on the bottom of the page.
 f0b2bcd - Jacob Brown, 2024-09-29 13:13:53 -0600 : Finished the Form on the Craft Menu.
 ffebdb7 - Jacob Brown, 2024-09-28 21:44:49 -0600 : Refactored all the JS code into TS code.

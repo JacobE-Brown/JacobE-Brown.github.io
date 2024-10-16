@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.landingPageBox {
+  padding: 1rem;
+  margin: 1rem;
+  border: solid 5px #3d550c;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(180deg, #3d550c 50%, #2f5233 100%);
+}
+.landingPageBox .animatedCars {
+  overflow: hidden;
+  justify-content: center;
+}
+.landingPageBox .animatedCars .car {
+  width: 30%;
+  transform: scaleX(-1);
+  opacity: 0;
+  animation: moveIn 1s ease forwards;
+}
+.landingPageBox .animatedCars .car:nth-child(1) {
+  animation-delay: 0s;
+}
+.landingPageBox .animatedCars .car:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.landingPageBox .animatedCars .car:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.landingPageBox .LandingPageButton {
+  display: inline-block;
+  background-color: #59981a;
+  color: #ecf87f;
+  padding: 1.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.landingPageBox .LandingPageButton:hover {
+  background-color: #76b947;
+}
+.landingPageBox .LandingPageButton:active {
+  background-color: #406c13;
+}
+
+@keyframes moveIn {
+  0% {
+    transform: translateX(-200px) scaleX(-1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scaleX(-1);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=landingPage.css.map */

@@ -1,0 +1,184 @@
+@import "variables";
+
+body {
+    padding: 0%;
+    margin: 0%;
+
+    color: $yellow-green;
+
+    display: grid;
+
+    grid-template-columns: 1;
+    grid-template-rows: auto 1fr auto;
+
+    height: 100vh;
+}
+
+.wrapper {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+header {
+    background-image: $background__Green;
+    margin-bottom: $margin-xl;
+    custom-header {
+        width: 100%;
+        .header-title-and-cars {
+            display: flex;
+            justify-content: center;
+
+            .car-container {
+                padding: 0;
+                margin: 0;
+                flex: 1 1 50%;
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                img {
+                    width: 30%;
+                    transform: scaleX(-1);
+                }
+            }
+            .header-container {
+                flex: 1 1 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h1 {
+                    a {
+                        text-decoration: none;
+                        display: inline-block;
+                        background-color: $green;
+                        color: $yellow-green;
+                        padding: $margin-xl;
+                        border: $olive-green 5px solid;
+                        border-radius: $margin-m;
+                        font-weight: bold;
+                        background-image: $background__light-green;
+                    }
+
+                    &:hover {
+                        background-color: $lime-green;
+                    }
+                }
+            }
+        }
+        nav {
+            padding: $margin-m;
+            margin: 0;
+            border-radius: $margin-xs;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                li {
+                    a {
+                        background-color: $green;
+                        padding: $margin-m;
+                        border-radius: $margin-xs;
+                        text-decoration: none;
+                        font-weight: bold;
+                        transition: background-color 0.3s;
+                        display: block;
+                    }
+                }
+
+                a:hover {
+                    background-color: $lime-green;
+                }
+            }
+        }
+    }
+}
+
+main {
+    h2 {
+        text-decoration: none;
+        background-color: $green;
+        color: $yellow-green;
+        padding: $margin-xl;
+        border: $olive-green 5px solid;
+        border-radius: $margin-m;
+        font-weight: bold;
+        background-image: $background__light-green;
+    }
+
+    section {
+        border: $olive-green 5px solid;
+        border-radius: $margin-m;
+        background-image: $background__steal-green;
+        padding: $margin-m;
+        margin-bottom: $margin-s;
+    }
+
+    margin-bottom: $margin-l;
+}
+
+footer {
+    background-image: $background__Green;
+    custom-footer {
+        width: 100%;
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+.big-button {
+    display: inline-block;
+    background-color: $green;
+    color: $yellow-green;
+    padding: $margin-xl;
+    border: none;
+    border-radius: $margin-xs;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: $lime-green;
+    }
+
+    &:active {
+        background-color: darken($green, 10%);
+    }
+}
+
+@media (min-width: 426px) {
+    header {
+        background-image: $background__Green;
+        custom-header {
+            width: 100%;
+            // .header-title-and-cars {
+
+            //     .car-container {
+            //     }
+            // }
+            nav {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    gap: $margin-m;
+                }
+            }
+        }
+    }
+}

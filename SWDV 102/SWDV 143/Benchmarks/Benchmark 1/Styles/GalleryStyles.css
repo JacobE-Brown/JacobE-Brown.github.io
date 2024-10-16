@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+.GalleryBox {
+  -moz-columns: 3;
+       columns: 3;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  border: #3d550c 5px solid;
+  border-radius: 1rem;
+  background-image: linear-gradient(45deg, #2f5233 5%, #2f5233 100%);
+  padding: 1rem;
+}
+.GalleryBox .picture-label {
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.GalleryBox .picture-label .car-image {
+  width: 100%;
+}/*# sourceMappingURL=GalleryStyles.css.map */

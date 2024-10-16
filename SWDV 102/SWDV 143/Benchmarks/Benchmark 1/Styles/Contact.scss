@@ -1,0 +1,28 @@
+@import "variables";
+
+#contactForm {
+    width: 60%;
+    label {
+        width: 100%;
+        padding: $margin-m 0;
+        text-decoration: none;
+        background-color: $green;
+        color: $yellow-green;
+        border: $olive-green 1px solid;
+        border-radius: $margin-m;
+        font-weight: bold;
+        background-image: $background__light-green;
+        display: block;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: $margin-m 0;
+
+        border: $olive-green 1px solid;
+        border-radius: $margin-m;
+        font-weight: bold;
+        
+    }
+
+}

@@ -1,0 +1,74 @@
+@import "variables";
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.landingPageBox {
+    padding: $margin-m;
+    margin: 1rem;
+    border: solid 5px $olive-green;
+    border-radius: $margin-xs;
+    background-image: $background__Green;
+    .animatedCars {
+        overflow: hidden;
+        justify-content: center;
+        
+        .car {
+            width: 30%;
+            transform: scaleX(-1);
+            opacity: 0;
+
+            animation: moveIn 1s ease forwards;
+
+        }
+
+        .car:nth-child(1) {
+            animation-delay: 0s;
+        }
+        
+        .car:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+        
+        .car:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+    }
+    .LandingPageButton {
+        display: inline-block;
+        background-color: $green;
+        color: $yellow-green;
+        padding: $margin-xl;
+        border: none;
+        border-radius: $margin-xs;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $lime-green;
+        }
+
+        &:active {
+            background-color: darken($green, 10%);
+        }
+    }
+}
+
+
+@keyframes moveIn {
+    0% {
+        transform: translateX(-200px) scaleX(-1);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) scaleX(-1);
+        opacity: 1;
+    }
+}
+

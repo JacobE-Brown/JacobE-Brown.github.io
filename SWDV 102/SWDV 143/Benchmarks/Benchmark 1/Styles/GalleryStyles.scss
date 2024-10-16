@@ -1,0 +1,23 @@
+@import "variables";
+
+.GalleryBox {
+
+    columns: 3; 
+    column-gap: $margin-m;
+
+    border: $olive-green 5px solid;
+    border-radius: $margin-m;
+    background-image: $background__steal-green;
+    padding: $margin-m;
+
+    .picture-label {
+        margin-top: $margin-m;
+        cursor: pointer;
+        border-radius: $margin-m;
+        overflow: hidden;
+
+        .car-image {
+            width: 100%;
+        }
+    }
+}
