@@ -88,6 +88,16 @@
     background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
 }
 
+.source-styles {
+    text-decoration: none;
+    color: inherit;
+}
+
+.source-styles:hover {
+    color: inherit; /* Prevent hover color change */
+    text-decoration: none; /* Prevent underline on hover */
+}
+
 // Media Querry to make parallax work on mobile.
 @media (max-width: 768px) {
     .parallax {
@@ -96,13 +106,13 @@
 
     /* Disable fixed background on mobile */
     .bgimg {
-        background-attachment: scroll;  /* Disable parallax effect on mobile */
+        background-attachment: scroll; /* Disable parallax effect on mobile */
         background-size: cover; /* Ensure the image still covers the container */
     }
 
     /* Adjust text size for smaller screens */
     .parallax-content {
-        font-size: 1.5rem;  /* Reduce font size on mobile */
+        font-size: 1.5rem; /* Reduce font size on mobile */
         padding: 1rem; /* Add padding for better spacing */
     }
 }
