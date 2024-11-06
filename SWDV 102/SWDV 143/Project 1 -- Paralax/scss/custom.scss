@@ -40,7 +40,7 @@
     height: 100vh;
 }
 
-/* Individual Background Images */
+/* Define common styles for background images */
 .bgimg {
     position: relative;
     opacity: 0.65;
@@ -51,6 +51,27 @@
     min-height: 100%; /* Ensure it covers the viewport */
 }
 
+/* Individual Background Images */
+.bgimg-1 {
+    background-image: url("../images/mountainSunset.jpg");
+}
+
+.bgimg-2 {
+    background-image: url("../images/WikipediaParalax.png");
+}
+
+.bgimg-3 {
+    background-image: url("../images/Hipparchus.jpg");
+}
+
+.bgimg-4 {
+    background-image: url("../images/new-horizons-4q-poster-v4.webp");
+}
+
+.bgimg-5 {
+    background-image: url("../images/maxresdefault-3717894925.jpg");
+}
+
 /* Centering Text */
 .parallax-content {
     position: absolute;
@@ -59,23 +80,10 @@
     transform: translate(-50%, -50%);
     font-size: 3rem;
     text-align: center;
-    padding: 1rem;
 }
 
-/* Custom Colors */
+// Custom Colors
+
 .bg-dark-transparent {
     background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
-}
-
-/* Media Queries for Small Screens */
-@media (max-width: 768px) {
-    /* Disable fixed background for small screens */
-    .bgimg {
-        background-attachment: scroll;
-    }
-
-    /* Adjust font size for smaller screens */
-    .parallax-content {
-        font-size: 1.5rem; /* Smaller text size */
-    }
 }
