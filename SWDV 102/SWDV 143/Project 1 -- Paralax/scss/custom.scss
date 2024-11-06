@@ -90,7 +90,19 @@
 
 // Media Querry to make parallax work on mobile.
 @media (max-width: 768px) {
+    .parallax {
+        height: 60vh; /* Reduced height for mobile to avoid excessive scroll */
+    }
+
+    /* Disable fixed background on mobile */
     .bgimg {
-        background-attachment: scroll;  /* Disable fixed background on mobile */
+        background-attachment: scroll;  /* Disable parallax effect on mobile */
+        background-size: cover; /* Ensure the image still covers the container */
+    }
+
+    /* Adjust text size for smaller screens */
+    .parallax-content {
+        font-size: 1.5rem;  /* Reduce font size on mobile */
+        padding: 1rem; /* Add padding for better spacing */
     }
 }
