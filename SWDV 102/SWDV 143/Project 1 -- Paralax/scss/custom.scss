@@ -87,3 +87,10 @@
 .bg-dark-transparent {
     background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
 }
+
+// Media Querry to make parallax work on mobile.
+@media (max-width: 768px) {
+    .bgimg {
+        background-attachment: scroll;  /* Disable fixed background on mobile */
+    }
+}
