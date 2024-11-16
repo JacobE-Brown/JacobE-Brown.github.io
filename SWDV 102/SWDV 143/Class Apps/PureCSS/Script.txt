@@ -1,0 +1,26 @@
+Pure CSS is based upun Normalize.css, which aims to make browsers render elements more consistently.
+
+"At the time of writing, normalize.css is used in some form by Twitter Bootstrap, HTML5 Boilerplate, GOV.UK, Rdio, CSS Tricks, 
+and many other frameworks, toolkits, and sites." https://nicolasgallagher.com/about-normalize-css/
+
+To use Pure SCC, use the normalize link here: <link rel="stylesheet" 
+href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
+
+To use pure grids, You need two tags:
+
+pure-g and pure-u-*
+and pure-u can be made to respond to specific screens by puting in a screen size into the class name:
+pure-u-sm-*
+
+pure-g creates the grid element and the pure-u are the units that the children ocupy in the grid.
+
+The elements are made by fractions, so if you wanted to make a half it would be 1-2, or a third 1-3.
+pure-u-1-3
+
+
+Pure Forms:
+Allows you to set up your forms with pre made common styles by use of the pure-form class on the form element.
+
+There are many applications, including pure-form-aligned, that allines all the elements and labels neatly in the middle of the element.
+
+
