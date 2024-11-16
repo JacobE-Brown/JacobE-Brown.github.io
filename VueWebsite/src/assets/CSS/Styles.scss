@@ -1,0 +1,10 @@
+@use "pico";
+@use "colors" as *;
+
+@use "pico" with (
+    $theme-color: "red"
+);
+
+h2 {
+    color: $pink-500;
+}
