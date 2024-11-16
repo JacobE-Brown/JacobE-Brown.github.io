@@ -12,13 +12,14 @@ export default {
             </h3>
             <slot name="post-link">
                 <a href="#" class="pure-button">
-                    <slot name="post-button">Button</slot>
+                    <slot name="post-button">Visit</slot>
                 </a>
             </slot>
-
         </div>
         <div class="pure-u-sm-1 pure-u-md-2-3">
-            <slot name="post-image"><img src="https://picsum.photos/300/100"></slot>
+            <slot name="post-image">
+                <img src="https://picsum.photos/300/100">
+            </slot>
             <p>
                 <slot name="post-content"> Ea ex blanditiis recusandae debitis tenetur. Voluptates aut reprehenderit.
                 </slot>

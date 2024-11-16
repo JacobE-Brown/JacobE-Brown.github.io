@@ -1,5 +1,6 @@
 // Added 11-14 and adds PureCSS to the app
 import 'purecss/build/pure-min.css';
+import '@picocss/pico/css/pico.min.css';
 
 import { createApp } from 'vue'
 import App from './App.vue'
